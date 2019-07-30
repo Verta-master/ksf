@@ -1,8 +1,49 @@
 .btn {
+  position: relative;
+  z-index: 2;
   display: inline-block;
   vertical-align: middle;
   padding: 12px 25px;
   color: #fff;
   background-color: #001E20;
-  box-shadow: 0px 6px 0px #FFFFFF;
+  .transition();
+//  box-shadow: 0px 6px 0px #FFFFFF;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    height: 6px;
+    background-color: #fff;
+    .transition();
+  }
+  
+  &:hover,
+  &:active {
+    color: #000;
+    .transition();
+    
+    &::after {
+      height: ~"calc(100% + 6px)";
+      .transition();
+    }
+  }
+  
+  &--yellow {
+    color: #001E20;
+    background-color: #FFC856;
+    
+    &::after {
+      background-color: #001E20;
+    }
+    
+    &:hover,
+    &:active {
+      color: #fff;
+    .transition();
+    }
+  }
 }

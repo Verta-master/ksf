@@ -36,3 +36,41 @@
     top: 25px;
   }
 }
+
+.more-link {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  
+  span {
+    border-bottom: 1px solid #001E20;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 22px;
+    background-image: url(../img/icons/arrows-down.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &:hover,
+  &:active {
+    &::before {
+      animation: moveDown2 1s infinite;
+    }
+  }
+}
+
+@keyframes moveDown2 {
+  0% {
+    top: -5px;
+  }
+  100% {
+    top: 5px;
+  }
+}
