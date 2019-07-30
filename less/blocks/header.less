@@ -1,0 +1,33 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #001E20;
+  background-color: #fff;
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__link {
+  display: block;
+  padding: 5px 10px;
+  font-size: 14px;
+  line-height: 1;
+  border: 1px solid #000000;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: #fff;
+    background-color: #001E20;
+    .transition();
+  }
+}

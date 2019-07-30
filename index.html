@@ -5,13 +5,26 @@
   <meta name="robots" content="noindex">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>Repo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+  <!-- SVG codes -->
+  <svg style="display:none">
+    <symbol id="logo">
+      <path d="M28.787 29H0V0H28.787L14.3935 14.5L28.787 29Z"/>
+      <path d="M56.4257 0H42.0322L27.6387 14.5L42.0322 29H56.4257L42.0322 14.5L56.4257 0Z"/>
+      <path d="M99.6064 0H92.4301H85.2539H78.0776H70.9013L56.5078 14.5L70.9013 29H78.0776H85.2539H92.4301H99.6064L114 14.5L99.6064 0ZM70.8193 14.5L77.9956 7.27066V21.7707L70.8193 14.5ZM92.4301 21.7293V7.22934L99.6064 14.4587L92.4301 21.7293Z"/>
+    </symbol>
+  </svg>
+  <!-- End of SVG codes -->
+  
   <header class="header">
     <div class="wrapper header__wrap">
       <div class="logo">
-        <img src="img/images/ksf-black.svg" alt="Logo" width="114" height="29">
+        <svg width="114" height="29" viewBox="0 0 114 29" fill="#001E20" xmlns="http://www.w3.org/2000/svg">
+          <use href="#logo"></use>
+        </svg>
       </div>
       <nav class="menu">
         <button type="button" class="menu__btn"></button>
@@ -49,12 +62,28 @@
             <p class="promo__preview">Это место, где</p>
             <p>80% вступивших окупают клуб за неделю<br>и начинают зарабатывать в 2-3 раза больше спустя месяц, просто потому что делают правильные вещи<br>и находятся в правильном окружении.</p>
             <p class="promo__slogan">А 20% смотрят на эти 80% и вдохновляются их делами.</p>
+            <figure class="promo__img">
+              <img src="img/images/ksf.svg" alt="КСФ" width="140" height="140">
+            </figure>
           </div>
-          <figure class="promo__img">
-            <img src="img/images/cube.svg" alt="Клуб Сытых Фрилансеров">
-          </figure>
+          <div class="promo__links">
+            <a href="#" class="promo__link promo__link--black">
+              <img src="img/images/example_1.jpg" alt="Link">
+            </a>
+            <a href="#" class="promo__link promo__link--green">
+              <img src="img/images/example_3.jpg" alt="Link">
+            </a>
+            <a href="#" class="promo__link promo__link--white">
+              <img src="img/images/example_2.jpg" alt="Link">
+            </a>
+            <a href="#" class="promo__link promo__link--red">
+              <img src="img/images/example_3.jpg" alt="Link">
+            </a>
+            <a href="#" class="promo__link promo__link--yellow">
+              <img src="img/images/example_1.jpg" alt="Link">
+            </a>
+          </div>
         </div>
-        <img src="img/images/ksf.svg" alt="КСФ" width="140" height="140">
       </div>
     </section>
     
@@ -62,49 +91,77 @@
       <div class="wrapper">
         <ul class="show__list">
           <li class="show__item">
-            <img src="img/images/example_1.jpg" alt="Example">
+            <a data-fancybox="gallery" href="img/images/example_1.jpg" class="show__link">
+              <img src="img/images/example_1.jpg" alt="Example">
+            </a>
           </li>
           <li class="show__item">
-            <img src="img/images/example_2.jpg" alt="Example">
+            <a data-fancybox="gallery" href="img/images/example_2.jpg" class="show__link">
+              <img src="img/images/example_2.jpg" alt="Example">
+            </a>
           </li>
           <li class="show__item">
-            <img src="img/images/example_1.jpg" alt="Example">
+            <a data-fancybox="gallery" href="img/images/example_1.jpg" class="show__link">
+              <img src="img/images/example_1.jpg" alt="Example">
+            </a>
           </li>
           <li class="show__item">
-            <img src="img/images/example_3.jpg" alt="Example">
+            <a data-fancybox="gallery" href="img/images/example_3.jpg" class="show__link">
+              <img src="img/images/example_3.jpg" alt="Example">
+            </a>
           </li>
           <li class="show__item">
-            <img src="img/images/example_1.jpg" alt="Example">
+            <a data-fancybox="gallery" href="img/images/example_1.jpg" class="show__link">
+              <img src="img/images/example_1.jpg" alt="Example">
+            </a>
           </li>
           <li class="show__item">
-            <img src="img/images/example_3.jpg" alt="Example">
+            <a data-fancybox="gallery" href="img/images/example_3.jpg" class="show__link">
+              <img src="img/images/example_3.jpg" alt="Example">
+            </a>
           </li>
           <li class="show__item">
-            <img src="img/images/example_1.jpg" alt="Example">
+            <a data-fancybox="gallery" href="img/images/example_1.jpg" class="show__link">
+              <img src="img/images/example_1.jpg" alt="Example">
+            </a>
           </li>
           <li class="show__item">
-            <img src="img/images/example_2.jpg" alt="Example">
+            <a data-fancybox="gallery" href="img/images/example_2.jpg" class="show__link">
+              <img src="img/images/example_2.jpg" alt="Example">
+            </a>
           </li>
           <li class="show__item">
-            <img src="img/images/example_1.jpg" alt="Example">
+            <a data-fancybox="gallery" href="img/images/example_1.jpg" class="show__link">
+              <img src="img/images/example_1.jpg" alt="Example">
+            </a>
           </li>
-          <li class="show__item show__item--hidden">
-            <img src="img/images/example_1.jpg" alt="Example">
+          <li class="show__item">
+            <a data-fancybox="gallery" href="img/images/example_1.jpg" class="show__link">
+              <img src="img/images/example_1.jpg" alt="Example">
+            </a>
           </li>
-          <li class="show__item show__item--hidden">
-            <img src="img/images/example_2.jpg" alt="Example">
+          <li class="show__item">
+            <a data-fancybox="gallery" href="img/images/example_2.jpg" class="show__link">
+              <img src="img/images/example_2.jpg" alt="Example">
+            </a>
           </li>
-          <li class="show__item show__item--hidden">
-            <img src="img/images/example_1.jpg" alt="Example">
+          <li class="show__item">
+            <a data-fancybox="gallery" href="img/images/example_1.jpg" class="show__link">
+              <img src="img/images/example_1.jpg" alt="Example">
+            </a>
           </li>
-          <li class="show__item show__item--hidden">
-            <img src="img/images/example_3.jpg" alt="Example">
+          <li class="show__item">
+            <a data-fancybox="gallery" href="img/images/example_3.jpg" class="show__link">
+              <img src="img/images/example_3.jpg" alt="Example">
+            </a>
           </li>
-          <li class="show__item show__item--hidden">
-            <img src="img/images/example_1.jpg" alt="Example">
+          <li class="show__item">
+            <a data-fancybox="gallery" href="img/images/example_1.jpg" class="show__link">
+              <img src="img/images/example_1.jpg" alt="Example">
+            </a>
           </li>
         </ul>
-        <button type="button" class="more">Показать остальное</button>
+        <button type="button" class="more show__btn">Показать остальное</button>
       </div>
     </section>
     
@@ -422,10 +479,10 @@
       <div class="footer__block">
         <p>ИП Варга Давид Валентинович<br>ОГРНИП 314231207700042<br>ИНН 231217849364</p>
       </div>
-      <div class="footer__block">
+      <div class="footer__block footer__block--design">
         <span>Design</span>
         <img src="img/images/design-logo.svg" alt="Design" width="44" height="47">
-        <span>by Eglit.</span>
+        <a href="#">by Eglit.</a>
       </div>
       <div class="footer__block">
         <a href="#">Политика конфиденциальности</a>
@@ -436,5 +493,6 @@
   </footer>
   
   <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,114 @@
+.promo {
+  padding-top: 70px;
+  padding-bottom: 154px;
+  background-image: url(../img/images/people.svg);
+  background-position: bottom -70px center;
+  background-repeat: no-repeat;
+  background-size: 720px 379px;
+  overflow: hidden;
+}
+
+.promo__preview {
+  margin-bottom: 78px;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.promo__slogan {
+  margin-top: 69px;
+  margin-bottom: 68px;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.promo__info {
+  max-width: 500px;
+  margin-right: 160px;
+}
+
+.promo__img {
+  img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+.promo__wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.promo__links {
+  margin-top: 100px;
+  position: relative;
+}
+
+.promo__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 234px;
+  height: 234px;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    max-width: none;
+    height: 100%;
+    width: auto;
+    .transition();
+  }
+  
+  &:hover,
+  &:active {
+    img {
+      transform: scale(1.05);
+      .transition();
+    }
+  }
+  
+  &--black {
+    transform: rotateX(55deg) rotateY(0deg) rotateZ(-45deg);
+    background-color: #001E20;
+    
+    img {
+//      width: 600px;
+//      transform: rotateZ(45deg) rotateY(55deg) rotateX(0deg);
+    }
+  }
+  &--green {
+    position: absolute;
+    top: 143px;
+    left: -82px;
+    background-color: #007550;
+    transform: rotateX(35deg) rotateY(45deg) rotateZ(0deg);
+    
+    img {
+//      transform: rotateZ(0deg) rotateY(-45deg) rotateX(-35deg);
+    }
+  }
+  &--white {
+    position: absolute;
+    top: 143px;
+    right: -82px;
+    background-color: #fff;
+    transform: rotateX(-35deg) rotateY(45deg) rotateZ(0deg);
+  }
+  &--red {
+    position: absolute;
+    top: 143px;
+    right: -247px;
+    background-color: #FF513F;
+    transform: rotateX(35deg) rotateY(45deg) rotateZ(0deg);
+  }
+  &--yellow {
+    position: absolute;
+    bottom: -286px;
+    right: -165px;
+    background-color: #FFC856;
+    transform: rotateX(55deg) rotateY(0deg) rotateZ(-45deg);
+  }
+}
