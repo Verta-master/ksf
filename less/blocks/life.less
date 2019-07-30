@@ -1,0 +1,79 @@
+.life {
+  padding-top: 144px;
+  padding-bottom: 135px;
+  color: #fff;
+  background-color: #007550;
+  
+  .title {
+    color: #fff;
+  }
+}
+
+.life__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.life__info {
+  width: 425px;
+}
+
+.life__img {
+  margin-top: 80px;
+  
+  img {
+    width: 546px;
+    height: 383px;
+  }
+}
+
+.life__subtitle {
+  margin-top: 40px;
+  margin-bottom: 100px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: @yellow;
+}
+
+.life__slogan {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 101px;
+  color: #001E20;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -33px;
+    transform: translateY(-50%);
+    z-index: -1;
+    width: 462px;
+    height: 146px;
+    background-image: url(../img/images/frame-yellow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.life__number {
+  margin-top: 56px;
+  margin-bottom: 60px;
+  
+  span {
+    display: block;
+    color: @yellow;
+  }
+}
+
+.life__btn {
+  width: 300px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
