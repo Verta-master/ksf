@@ -5,6 +5,7 @@
   vertical-align: middle;
   padding: 12px 25px;
   color: #fff;
+  line-height: 1;
   text-align: center;
   background-color: #001E20;
   .transition();
@@ -62,6 +63,19 @@
     
     &::after {
       background-color: @yellow;
+    }
+  }
+  
+  &--red {
+    background-color: #FF513F;
+  }
+  
+  &--yellow-white {
+    color: #001E20;
+    background-color: #FFC856;
+    
+    &::after {
+      background-color: #fff;
     }
   }
 }
