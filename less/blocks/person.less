@@ -1,0 +1,90 @@
+.person {
+  padding-top: 170px;
+  color: #fff;
+  background-color: #001E20;
+  overflow: hidden;
+  
+  .title {
+    color: #fff;
+  }
+}
+
+.person__wrap {
+  max-width: 677px;
+  
+  span {
+    display: block;
+    color: @yellow;
+  }
+  b {
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+
+.person__title {
+  margin-top: 55px;
+  margin-bottom: 55px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 36px;
+  line-height: 42px;
+  
+  p {
+    margin: 0;
+    margin-right: 50px;
+  }
+}
+
+.person__list {
+  .reset();
+  list-style: none;
+  color: @yellow;
+  margin-top: 70px;
+  
+  li {
+    position: relative;
+    z-index: 2;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      top: 7px;
+      left: 0;
+      display: block;
+      width: 8px;
+      height: 9px;
+      background-image: url(../img/icons/next.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    
+    &:last-child {
+      font-size: 24px;
+    }
+  }
+}
+
+.person__btn {
+  margin-bottom: 55px;
+}
+
+.person__quote {
+  width: 100%;
+  padding: 38px 35px 47px 46px;
+  background-image: url(../img/images/frame-closed.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.person__field {
+  padding-bottom: 60px;
+  background-image: url(../img/images/men-full.svg);
+  background-repeat: no-repeat;
+  background-size: 340px 1224px;
+  background-position: right top 550px;
+}

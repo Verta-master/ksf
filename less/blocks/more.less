@@ -26,6 +26,15 @@
       animation: moveDown 1s infinite;
     }
   }
+  
+  &--yellow {
+    color: @yellow;
+    border-color: @yellow;
+    
+    &::before {
+      background-image: url(../img/icons/arrows-down-yellow.svg);
+    }
+  }
 }
 
 @keyframes moveDown {
