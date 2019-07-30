@@ -1,0 +1,47 @@
+.fact {
+  padding-top: 117px;
+  padding-bottom: 240px;
+  background-image: linear-gradient(165deg, #FFC856 0%, #FFC856 70%, #fff 70%, #fff 100%);
+}
+
+.fact__info {
+  position: relative;
+  max-width: 840px;
+  font-size: 24px;
+  font-weight: 500;
+  
+  span {
+    color: #fff;
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -100px;
+    display: block;
+    width: 405px;
+    height: 334px;
+    background-image: url(../img/images/steps.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.fact__title {
+  margin-top: 0;
+  margin-bottom: 63px;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  
+  span {
+    color: #fff;
+  }
+}
+
+.fact__btn {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
