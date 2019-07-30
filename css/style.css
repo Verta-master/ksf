@@ -489,6 +489,7 @@ h1 {
   vertical-align: middle;
   padding: 12px 25px;
   color: #fff;
+  text-align: center;
   background-color: #001E20;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
@@ -529,6 +530,11 @@ h1 {
   color: #fff;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
+}
+.btn--black::after {
+  bottom: -4px;
+  height: 4px;
+  background-color: #FFC856;
 }
 .footer {
   padding-top: 25px;
@@ -894,6 +900,13 @@ h1 {
   -webkit-animation: moveDown 1s infinite;
           animation: moveDown 1s infinite;
 }
+.more--yellow {
+  color: #FFC856;
+  border-color: #FFC856;
+}
+.more--yellow::before {
+  background-image: url(../img/icons/arrows-down-yellow.svg);
+}
 @-webkit-keyframes moveDown {
   0% {
     top: 10px;
@@ -1089,4 +1102,111 @@ h1 {
 }
 .recommend__link {
   margin-bottom: 97px;
+}
+.person {
+  padding-top: 170px;
+  color: #fff;
+  background-color: #001E20;
+  overflow: hidden;
+}
+.person .title {
+  color: #fff;
+}
+.person__wrap {
+  max-width: 677px;
+}
+.person__wrap span {
+  display: block;
+  color: #FFC856;
+}
+.person__wrap b {
+  font-size: 24px;
+  font-weight: 500;
+}
+.person__title {
+  margin-top: 55px;
+  margin-bottom: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 36px;
+  line-height: 42px;
+}
+.person__title p {
+  margin: 0;
+  margin-right: 50px;
+}
+.person__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #FFC856;
+  margin-top: 70px;
+}
+.person__list li {
+  position: relative;
+  z-index: 2;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.person__list li::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 7px;
+  left: 0;
+  display: block;
+  width: 8px;
+  height: 9px;
+  background-image: url(../img/icons/next.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.person__list li:last-child {
+  font-size: 24px;
+}
+.person__btn {
+  margin-bottom: 55px;
+}
+.person__quote {
+  width: 100%;
+  padding: 38px 35px 47px 46px;
+  background-image: url(../img/images/frame-closed.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.person__field {
+  padding-bottom: 60px;
+  background-image: url(../img/images/men-full.svg);
+  background-repeat: no-repeat;
+  background-size: 340px 1224px;
+  background-position: right top 550px;
+}
+.quality {
+  padding-top: 99px;
+  padding-bottom: 90px;
+  background-color: #FF513F;
+  background-image: url(../img/images/steps-black.svg);
+  background-repeat: no-repeat;
+  background-size: 1056px 1115px;
+  background-position: right center;
+}
+.quality__info {
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+.quality__info span {
+  color: #fff;
+}
+.quality__info p {
+  max-width: 600px;
+}
+.quality__btn {
+  width: 300px;
 }
