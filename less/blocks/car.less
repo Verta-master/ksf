@@ -26,4 +26,36 @@
   position: absolute;
   bottom: 70px;
   right: 0;
+  padding-top: 190px;
+}
+
+@keyframes shake-vertical {
+  0%, 100% {
+    transform: translateY(0);
+    transform: translateY(0); 
+  }
+  10%, 30%, 50%, 70% {
+    transform: translateY(-8px);
+    transform: translateY(-8px); 
+  }
+  20%, 40%, 60% {
+    transform: translateY(8px);
+    transform: translateY(8px); 
+  }
+  80% {
+    transform: translateY(6.4px);
+    transform: translateY(6.4px); 
+  }
+  90% {
+    transform: translateY(-6.4px);
+    transform: translateY(-6.4px); 
+  } 
+}
+
+.car__question {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 200px;
+  animation: shake-vertical 3s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
 }
