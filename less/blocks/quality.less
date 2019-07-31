@@ -1,11 +1,25 @@
 .quality {
+  background-color: #FF513F;
+  overflow: hidden;
+}
+
+.quality__wrap {
+  position: relative;
   padding-top: 95px;
   padding-bottom: 90px;
-  background-color: #FF513F;
-  background-image: url(../img/images/steps-black.svg);
-  background-repeat: no-repeat;
-  background-size: 1056px 1115px;
-  background-position: right center;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translateY(-50%);
+    width: 1056px;
+    height: 1115px;
+    background-image: url(../img/images/steps-black.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 .quality__img {
