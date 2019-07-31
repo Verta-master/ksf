@@ -238,7 +238,13 @@
         <button class="more-link recommend__link"><span>Посмотреть все за неделю</span></button>
         <a href="#" class="btn btn--yellow recommend__btn">Как стать участником Клуба?</a>
         <figure class="recommend__img">
-          <img src="img/images/fish.svg" alt="Рекомендации" width="557" height="328">
+          <img src="img/images/fish.svg" class="recommend__fish" alt="Рекомендации" width="440" height="328">
+          <img src="img/images/fish-small-1.svg" class="recommend__fish-1 paroller-1" alt="Рекомендации" width="31" height="25">
+          <img src="img/images/fish-small-2.svg" class="recommend__fish-2 paroller-2" alt="Рекомендации" width="33" height="32">
+          <img src="img/images/fish-small-3.svg" class="recommend__fish-3 paroller-3" alt="Рекомендации" width="37" height="27">
+          <img src="img/images/fish-small-3.svg" class="recommend__fish-4 paroller-3" alt="Рекомендации" width="64" height="36">
+          <img src="img/images/fish-small-2.svg" class="recommend__fish-5 paroller-1" alt="Рекомендации" width="50" height="49">
+          <img src="img/images/fish-small-1.svg" class="recommend__fish-6 paroller-2" alt="Рекомендации" width="48" height="38">
         </figure>
       </div>
     </section>
@@ -519,5 +525,23 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/jquery.paroller.min.js"></script>
+  <script>
+    $(".paroller-1, [data-paroller-factor]").paroller({
+      factor: 0.1,
+      type: 'foreground',
+      direction: 'horizontal'
+    });
+    $(".paroller-2, [data-paroller-factor]").paroller({
+      factor: 0.3,
+      type: 'foreground',
+      direction: 'horizontal'
+    });
+    $(".paroller-3, [data-paroller-factor]").paroller({
+      factor: 0.2,
+      type: 'foreground',
+      direction: 'horizontal'
+    });
+  </script>
 </body>
 </html>
