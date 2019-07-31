@@ -1,6 +1,6 @@
 .ksf {
   padding-top: 135px;
-  padding-bottom: 140px;
+  padding-bottom: 150px;
   color: #fff;
   background-color: #001E20;
   
@@ -28,9 +28,9 @@
 
 .ksf__block {
   width: 546px;
-  margin-top: 48px;
+  margin-top: 55px;
   margin-bottom: 99px;
-  padding: 25px 34px;
+  padding: 30px 34px;
   color: @yellow;
   border: 1px solid #FFFFFF;
   
@@ -62,11 +62,27 @@
 
 .ksf__img {
   position: absolute;
-  right: 0;
-  top: 50px;
+  right: 30px;
+  top: 55px;
   
   img {
     width: 420px;
     height: 420px;
+  }
+}
+
+.ksf__crab {
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: -55px;
+    right: 0;
+    width: 68px;
+    height: 68px;
+    background-image: url(../img/images/crab.svg);
+    background-repeat: no-repeat;
+    background-size: contain
   }
 }

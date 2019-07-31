@@ -1,24 +1,15 @@
 .fact {
+  position: relative;
   padding-top: 117px;
   padding-bottom: 240px;
-  background-image: linear-gradient(165deg, #FFC856 0%, #FFC856 70%, #fff 70%, #fff 100%);
-}
-
-.fact__info {
-  position: relative;
-  max-width: 840px;
-  font-size: 24px;
-  font-weight: 500;
-  
-  span {
-    color: #fff;
-  }
+  background-image: linear-gradient(164.5deg, #FFC856 0%, #FFC856 64%, #fff 64%, #fff 100%);
   
   &::after {
     content: "";
     position: absolute;
-    bottom: 0;
-    right: -100px;
+    bottom: 300px;
+    left: 55.5%;
+    transform: translateX(-50%);
     display: block;
     width: 405px;
     height: 334px;
@@ -28,9 +19,20 @@
   }
 }
 
+.fact__info {
+  max-width: 840px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  
+  span {
+    color: #fff;
+  }
+}
+
 .fact__title {
   margin-top: 0;
-  margin-bottom: 63px;
+  margin-bottom: 73px;
   font-size: 36px;
   line-height: 42px;
   font-weight: 500;
@@ -42,6 +44,8 @@
 }
 
 .fact__btn {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 15px 25px;
+  font-size: 18px;
 }

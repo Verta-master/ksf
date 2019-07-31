@@ -29,3 +29,20 @@ $('.person__btn').click(function() {
   $('.person__quote').addClass('person__quote--open');
   $(this).hide();
 });
+
+//Parallax
+$(".paroller-1, [data-paroller-factor]").paroller({
+  factor: 0.1,
+  type: 'foreground',
+  direction: 'horizontal'
+});
+$(".paroller-2, [data-paroller-factor]").paroller({
+  factor: 0.3,
+  type: 'foreground',
+  direction: 'horizontal'
+});
+$(".paroller-3, [data-paroller-factor]").paroller({
+  factor: 0.2,
+  type: 'foreground',
+  direction: 'horizontal'
+});

@@ -1,5 +1,5 @@
 .person {
-  padding-top: 170px;
+  padding-top: 175px;
   color: #fff;
   background-color: #001E20;
   overflow: hidden;
@@ -20,20 +20,24 @@
     font-size: 24px;
     font-weight: 500;
   }
+  p {
+    margin-bottom: 25px;
+  }
 }
 
 .person__title {
-  margin-top: 55px;
-  margin-bottom: 55px;
+  margin-top: 60px;
+  margin-bottom: 70px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   font-size: 36px;
   line-height: 42px;
+  font-weight: 500;
   
   p {
     margin: 0;
-    margin-right: 50px;
+    margin-right: 70px;
   }
 }
 
@@ -43,7 +47,7 @@
   .reset();
   list-style: none;
   color: @yellow;
-  margin-top: 70px;
+  margin-top: 60px;
   
   li {
     position: relative;
@@ -93,13 +97,19 @@
 }
 
 .person__btn {
-  margin-bottom: 55px;
-  margin-top: 25px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  width: 300px;
+  padding-left: 18px;
+  
+  &::before {
+    left: 15px;
+  }
 }
 
 .person__quote {
   width: 100%;
-  padding: 38px 35px 47px 46px;
+  padding: 45px 35px 40px 46px;
   background-image: url(../img/images/frame-closed.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -110,9 +120,9 @@
 }
 
 .person__field {
-  padding-bottom: 60px;
+  padding-bottom: 35px;
   background-image: url(../img/images/men-full.svg);
   background-repeat: no-repeat;
   background-size: 340px 1224px;
-  background-position: right top 550px;
+  background-position: right 60px top 550px;
 }

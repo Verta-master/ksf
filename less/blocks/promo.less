@@ -1,15 +1,25 @@
 .promo {
-  padding-top: 70px;
-  padding-bottom: 154px;
-  background-image: url(../img/images/people.svg);
-  background-position: bottom -70px center;
-  background-repeat: no-repeat;
-  background-size: 720px 379px;
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 150px;
   overflow: hidden;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -75px;
+    left: 36%;
+    width: 720px;
+    height: 379px;
+    background-image: url(../img/images/people.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 .promo__preview {
-  margin-bottom: 78px;
+  margin-top: 80px;
+  margin-bottom: 85px;
   font-size: 36px;
   line-height: 42px;
   font-weight: 500;
@@ -18,14 +28,15 @@
 
 .promo__slogan {
   margin-top: 69px;
-  margin-bottom: 68px;
+  margin-bottom: 70px;
   font-size: 24px;
   line-height: 28px;
+  font-weight: 500;
 }
 
 .promo__info {
   max-width: 500px;
-  margin-right: 160px;
+  margin-right: 190px;
 }
 
 .promo__img {
