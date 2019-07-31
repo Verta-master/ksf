@@ -474,6 +474,9 @@ h1 {
   margin-left: auto;
   margin-right: auto;
 }
+.wrapper-crop {
+  overflow: hidden;
+}
 .title {
   margin-top: 0;
   margin-bottom: 0;
@@ -1003,6 +1006,7 @@ h1 {
   padding-top: 58px;
   padding-bottom: 30px;
   background-color: #fff;
+  overflow: hidden;
 }
 .how__wrap {
   display: -webkit-box;
@@ -1355,13 +1359,26 @@ h1 {
   transition: ease-out 0.3s;
 }
 .quality {
+  background-color: #FF513F;
+  overflow: hidden;
+}
+.quality__wrap {
+  position: relative;
   padding-top: 95px;
   padding-bottom: 90px;
-  background-color: #FF513F;
+}
+.quality__wrap::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 1056px;
+  height: 1115px;
   background-image: url(../img/images/steps-black.svg);
   background-repeat: no-repeat;
-  background-size: 1056px 1115px;
-  background-position: right center;
+  background-size: contain;
 }
 .quality__img {
   margin-bottom: 15px;
