@@ -706,16 +706,18 @@ h1 {
   right: 0;
 }
 .promo {
-  position: relative;
   padding-top: 75px;
-  padding-bottom: 150px;
   overflow: hidden;
 }
-.promo::after {
+.promo__wrap {
+  position: relative;
+  padding-bottom: 150px;
+}
+.promo__wrap::after {
   content: "";
   position: absolute;
   bottom: -75px;
-  left: 36%;
+  right: 150px;
   width: 720px;
   height: 379px;
   background-image: url(../img/images/people.svg);
@@ -773,7 +775,6 @@ h1 {
   width: 234px;
   height: 234px;
   overflow: hidden;
-  border: 1px solid #000;
 }
 .promo__link img {
   display: block;
@@ -997,8 +998,11 @@ h1 {
   }
 }
 .how {
+  position: relative;
+  z-index: 5;
   padding-top: 58px;
   padding-bottom: 30px;
+  background-color: #fff;
 }
 .how__wrap {
   display: -webkit-box;
@@ -1028,23 +1032,36 @@ h1 {
 }
 .fact {
   position: relative;
+  z-index: 0;
   padding-top: 117px;
   padding-bottom: 240px;
-  background-image: linear-gradient(164.5deg, #FFC856 0%, #FFC856 64%, #fff 64%, #fff 100%);
 }
 .fact::after {
   content: "";
   position: absolute;
-  bottom: 300px;
-  left: 55.5%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  z-index: 3;
+  top: 53%;
+  left: 56%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   display: block;
   width: 405px;
   height: 334px;
   background-image: url(../img/images/steps.svg);
   background-repeat: no-repeat;
   background-size: contain;
+}
+.fact::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: calc(50vw - 1920px);
+  width: 3840px;
+  height: 960px;
+  background-color: #FFC856;
+  -webkit-transform: rotate(-15deg) scale(1.2) translateY(-308px);
+          transform: rotate(-15deg) scale(1.2) translateY(-308px);
 }
 .fact__info {
   max-width: 840px;
@@ -1728,6 +1745,9 @@ h1 {
 }
 .faq__item:last-child {
   border-bottom: 0;
+}
+.faq__item--first .faq__answer {
+  display: block;
 }
 .faq__item--open {
   border-color: rgba(255, 255, 255, 0);
