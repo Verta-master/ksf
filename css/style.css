@@ -1469,3 +1469,121 @@ h1 {
   width: 420px;
   height: 420px;
 }
+.faq {
+  padding-top: 77px;
+  padding-bottom: 112px;
+}
+.faq__columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 45px;
+}
+.faq__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 46%;
+}
+.faq__item {
+  border-bottom: 1px solid #000000;
+}
+.faq__item:last-child {
+  border-bottom: 0;
+}
+.faq__item--open {
+  border-color: rgba(255, 255, 255, 0);
+}
+.faq__item--open .faq__question::before {
+  left: -50px;
+  opacity: 1;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.faq__item--open .faq__question::after {
+  opacity: 1;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.faq__item--open .faq__answer::before {
+  opacity: 1;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.faq__question {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-height: 70px;
+  margin: 0;
+  padding: 10px 0;
+  font-weight: 500;
+  cursor: pointer;
+}
+.faq__question::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -100px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 31px;
+  height: 37px;
+  background-image: url(../img/icons/next-black.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.faq__question::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -35px;
+  right: 0;
+  top: -1px;
+  bottom: 0;
+  background-color: #FFC856;
+  opacity: 0;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.faq__answer {
+  display: none;
+  position: relative;
+  z-index: 2;
+  padding: 20px 35px;
+  padding-left: 0;
+  color: #000;
+}
+.faq__answer::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -35px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: 1px solid #FFC856;
+  opacity: 0;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
