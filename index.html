@@ -200,32 +200,42 @@
         <p class="recommend__subtitle">Последние заказы, отданные участникам:</p>
         <ul class="recommend__list">
           <li class="recommend__item">
-            <span>10.10.2019г.</span>
-            <p>Лендинг+контекст+инстаграм</p>
-            <p>140 000 ₽</p>
+            <div class="recommend__line">
+              <span>10.10.2019г.</span>
+              <p>Лендинг+контекст+инстаграм</p>
+              <p>140 000 ₽</p>
+            </div>
           </li>
           <li class="recommend__item">
-            <span>10.10.2019г.</span>
-            <p>Лендинг+контекст+инстаграм</p>
-            <p>140 000 ₽</p>
+            <div class="recommend__line">
+              <span>10.10.2019г.</span>
+              <p>Лендинг+контекст+инстаграм</p>
+              <p>140 000 ₽</p>
+            </div>
           </li>
           <li class="recommend__item">
-            <span>10.10.2019г.</span>
-            <p>Лендинг+контекст+инстаграм</p>
-            <p>140 000 ₽</p>
+            <div class="recommend__line">
+              <span>10.10.2019г.</span>
+              <p>Лендинг+контекст+инстаграм</p>
+              <p>140 000 ₽</p>
+            </div>
           </li>
           <li class="recommend__item">
-            <span>10.10.2019г.</span>
-            <p>Лендинг+контекст+инстаграм</p>
-            <p>140 000 ₽</p>
+            <div class="recommend__line">
+              <span>10.10.2019г.</span>
+              <p>Лендинг+контекст+инстаграм</p>
+              <p>140 000 ₽</p>
+            </div>
           </li>
           <li class="recommend__item">
-            <span>10.10.2019г.</span>
-            <p>Лендинг+контекст+инстаграм</p>
-            <p>140 000 ₽</p>
+            <div class="recommend__line">
+              <span>10.10.2019г.</span>
+              <p>Лендинг+контекст+инстаграм</p>
+              <p>140 000 ₽</p>
+            </div>
           </li>
         </ul>
-        <a href="#" class="more-link recommend__link"><span>Посмотреть все за неделю</span></a>
+        <button class="more-link recommend__link"><span>Посмотреть все за неделю</span></button>
         <a href="#" class="btn btn--yellow recommend__btn">Как стать участником Клуба?</a>
         <figure class="recommend__img">
           <img src="img/images/fish.svg" alt="Рекомендации" width="557" height="328">
@@ -508,5 +518,24 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="js/faq.js"></script>
+  <script>
+    //Show more buttons
+    
+    $('.show__btn').click(function() {
+      $('.show__item:nth-child(n + 10)').slideDown();
+      $(this).hide();
+    });
+    
+    $('.recommend__link').click(function() {
+      $('.recommend__item:nth-child(n + 4)').slideDown();
+      $(this).hide();
+    });
+    
+    $('.person__btn').click(function() {
+      $('.person__list li:nth-child(n + 3)').slideDown();
+      $('.person__list').addClass('person__list--open');
+      $(this).hide();
+    });
+  </script>
 </body>
 </html>

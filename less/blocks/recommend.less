@@ -34,16 +34,20 @@
   list-style: none;
   max-width: 595px;
   margin-bottom: 18px;
+  border-bottom: 1px solid #000;
 }
 
 .recommend__item {
-  display: flex;
-  justify-content: flex-start;
   border-top: 1px solid #000;
   
-  &:last-child {
-    border-bottom: 1px solid #000;
+  &:nth-child(n + 4) {
+    display: none;
   }
+}
+
+.recommend__line {
+  display: flex;
+  justify-content: flex-start;
   
   span {
     width: 112px;
@@ -78,6 +82,6 @@
   z-index: -1;
 }
 
-.recommend__link {
-  margin-bottom: 97px;
+.recommend__btn {
+  margin-top: 97px;
 }
