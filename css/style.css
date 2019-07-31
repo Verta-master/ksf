@@ -773,6 +773,7 @@ h1 {
   width: 234px;
   height: 234px;
   overflow: hidden;
+  border: 1px solid #000;
 }
 .promo__link img {
   display: block;
