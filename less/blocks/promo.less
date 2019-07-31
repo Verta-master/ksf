@@ -1,14 +1,17 @@
 .promo {
-  position: relative;
   padding-top: 75px;
-  padding-bottom: 150px;
   overflow: hidden;
+}
+
+.promo__wrap {
+  position: relative;
+  padding-bottom: 150px;
   
   &::after {
     content: "";
     position: absolute;
     bottom: -75px;
-    left: 36%;
+    right: 150px;
     width: 720px;
     height: 379px;
     background-image: url(../img/images/people.svg);
@@ -64,7 +67,6 @@
   width: 234px;
   height: 234px;
   overflow: hidden;
-  border: 1px solid #000;
   
   img {
     display: block;
