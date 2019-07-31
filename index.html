@@ -9,12 +9,23 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <!-- SVG codes -->
+  <!-- SVG codes / Do not remove! -->
   <svg style="display:none">
     <symbol id="logo">
       <path d="M28.787 29H0V0H28.787L14.3935 14.5L28.787 29Z"/>
       <path d="M56.4257 0H42.0322L27.6387 14.5L42.0322 29H56.4257L42.0322 14.5L56.4257 0Z"/>
       <path d="M99.6064 0H92.4301H85.2539H78.0776H70.9013L56.5078 14.5L70.9013 29H78.0776H85.2539H92.4301H99.6064L114 14.5L99.6064 0ZM70.8193 14.5L77.9956 7.27066V21.7707L70.8193 14.5ZM92.4301 21.7293V7.22934L99.6064 14.4587L92.4301 21.7293Z"/>
+    </symbol>
+    <symbol id="icon-menu">
+      <rect width="32" height="6" fill="#007550"/>
+      <rect y="11" width="32" height="6" fill="#001E20"/>
+      <rect y="22" width="32" height="6" fill="#FF513F"/>
+    </symbol>
+    <symbol id="icon-cross">
+      <rect width="32" height="6" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 26.8701 22.6274)" fill="#001E20"/>
+      <rect width="13.0111" height="6" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 13.4429 9.2002)" fill="#007550"/>
+      <rect width="32" height="6" transform="matrix(-0.707107 0.707107 0.707107 0.707107 22.6274 -6.10352e-05)" fill="#001E20"/>
+      <rect width="13.0109" height="6" transform="matrix(-0.707107 0.707107 0.707107 0.707107 9.20013 13.4272)" fill="#FF513F"/>
     </symbol>
   </svg>
   <!-- End of SVG codes -->
@@ -27,7 +38,14 @@
         </svg>
       </div>
       <nav class="menu">
-        <button type="button" class="menu__btn"></button>
+        <button type="button" class="menu__btn">
+          <svg class="menu__ham" width="32" height="28" viewBox="0 0 32 28" xmlns="http://www.w3.org/2000/svg">
+            <use href="#icon-menu"></use>
+          </svg>
+          <svg class="menu__cross" width="27" height="27" viewBox="0 0 27 27" xmlns="http://www.w3.org/2000/svg">
+            <use href="#icon-cross"></use>
+          </svg>
+        </button>
         <ul class="menu__list">
           <li class="menu__item menu__item--active">
             <a href="#" class="menu__link">О Клубе</a>
@@ -67,21 +85,11 @@
             </figure>
           </div>
           <div class="promo__links">
-            <a href="#" class="promo__link promo__link--black">
-              <img src="img/images/example_1.jpg" alt="Link">
-            </a>
-            <a href="#" class="promo__link promo__link--green">
-              <img src="img/images/example_3.jpg" alt="Link">
-            </a>
-            <a href="#" class="promo__link promo__link--white">
-              <img src="img/images/example_2.jpg" alt="Link">
-            </a>
-            <a href="#" class="promo__link promo__link--red">
-              <img src="img/images/example_3.jpg" alt="Link">
-            </a>
-            <a href="#" class="promo__link promo__link--yellow">
-              <img src="img/images/example_1.jpg" alt="Link">
-            </a>
+            <a href="#" class="promo__link promo__link--black"></a>
+            <a href="#" class="promo__link promo__link--green"></a>
+            <a href="#" class="promo__link promo__link--white"></a>
+            <a href="#" class="promo__link promo__link--red"></a>
+            <a href="#" class="promo__link promo__link--yellow"></a>
           </div>
         </div>
       </div>
@@ -237,14 +245,14 @@
         </ul>
         <button class="more-link recommend__link"><span>Посмотреть все за неделю</span></button>
         <a href="#" class="btn btn--yellow recommend__btn">Как стать участником Клуба?</a>
-        <figure class="recommend__img">
-          <img src="img/images/fish.svg" class="recommend__fish" alt="Рекомендации" width="440" height="328">
-          <img src="img/images/fish-small-1.svg" class="recommend__fish-1 paroller-1" alt="Рекомендации" width="31" height="25">
-          <img src="img/images/fish-small-2.svg" class="recommend__fish-2 paroller-2" alt="Рекомендации" width="33" height="32">
-          <img src="img/images/fish-small-3.svg" class="recommend__fish-3 paroller-3" alt="Рекомендации" width="37" height="27">
-          <img src="img/images/fish-small-3.svg" class="recommend__fish-4 paroller-3" alt="Рекомендации" width="64" height="36">
-          <img src="img/images/fish-small-2.svg" class="recommend__fish-5 paroller-1" alt="Рекомендации" width="50" height="49">
-          <img src="img/images/fish-small-1.svg" class="recommend__fish-6 paroller-2" alt="Рекомендации" width="48" height="38">
+        <figure class="recommend__img parallax">
+          <img src="img/images/fish.svg" class="recommend__fish parallax-layer" data-parallax-deep="400" alt="Рекомендации" width="440" height="328">
+          <img src="img/images/fish-small-1.svg" class="recommend__fish-1 parallax-layer" data-parallax-deep="20" alt="Рекомендации" width="31" height="25">
+          <img src="img/images/fish-small-2.svg" class="recommend__fish-2 parallax-layer" data-parallax-deep="50" alt="Рекомендации" width="33" height="32">
+          <img src="img/images/fish-small-3.svg" class="recommend__fish-3 parallax-layer" data-parallax-deep="10" alt="Рекомендации" width="37" height="27">
+          <img src="img/images/fish-small-3.svg" class="recommend__fish-4 parallax-layer" alt="Рекомендации" width="64" height="36" data-parallax-deep="25">
+          <img src="img/images/fish-small-2.svg" class="recommend__fish-5 parallax-layer" alt="Рекомендации" width="50" height="49" data-parallax-deep="40">
+          <img src="img/images/fish-small-1.svg" class="recommend__fish-6 parallax-layer" data-parallax-deep="35" alt="Рекомендации" width="48" height="38">
         </figure>
       </div>
     </section>
@@ -524,7 +532,6 @@
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
-  <script src="js/jquery.paroller.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
