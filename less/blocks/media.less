@@ -1,0 +1,379 @@
+@media (max-width: 1170px) {
+  .wrapper {
+    width: 100%;
+  }
+  .header__link {
+    display: none;
+  }
+  .menu__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+  }
+  .menu__ham {
+    display: block;
+  }
+  .menu__cross {
+    display: none;
+  }
+  .menu__list {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+  }
+  .menu {
+    &--main .menu__ham {
+      .line-top {
+        fill: #007550;
+      }
+      .line-middle {
+        fill: #001E20;
+      }
+      .line-bottom {
+        fill: #FF513F;
+      }
+    }
+    &--opened {
+      .menu__ham {
+        display: none;
+      }
+      .menu__cross {
+        display: block;
+      }
+    }
+  }
+  .promo__info {
+    margin-right: 40px;
+  }
+  .show__list {
+    justify-content: space-around;
+  }
+  .show__item {
+    margin-right: 0;
+  }
+  .car__img,
+  .person__field::after {
+    right: 0;
+  }
+  .person__wrap {
+    max-width: 650px;
+  }
+  .ksf__img img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+//-----------------------------------------------------------
+@media (max-width: 1022px) {
+  .promo__preview {
+    margin-top: 650px;
+  }
+  .promo__info {
+    position: relative;
+  }
+  .promo__links {
+    margin-top: 0;
+    position: absolute;
+    top: 400px;
+    left: 50px;
+  }
+  .promo__wrap::after {
+    right: 0;
+    width: 600px;
+    bottom: -125px;
+  }
+  .fact::after {
+    right: 0;
+    left: auto;
+    top: 53%;
+    transform: translateY(-50%);
+  }
+  .fact::before {
+    width: 4210px;
+  }
+  .fact {
+    padding-bottom: 150px;
+  }
+  .recommend__img {
+    top: 0;
+  }
+  .person__list {
+    margin-top: 1300px;
+  }
+  .person__field::after {
+    left: 15px;
+    right: auto;
+    top: 630px;
+  }
+  .car__img {
+    position: relative;
+    bottom: 0;
+    
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .car__question {
+    left: 45%;
+    transform: translateX(-50%);
+  }
+  .benefits__item {
+    width: 220px;
+  }
+  .benefits__list {
+    flex-wrap: wrap;
+  }
+  .life__number {
+    margin-bottom: 500px;
+  }
+  .life__wrap {
+    position: relative;
+  }
+  .life__img {
+    margin-top: 0;
+    position: absolute;
+    left: 0;
+    bottom: 200px;
+  }
+  .life__slogan {
+    left: 30px;
+  }
+  .ksf {
+    padding-top: 0;
+  }
+  .ksf__wrap {
+    padding-top: 470px;
+  }
+  .ksf__img {
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .footer {
+    padding-bottom: 10px;
+  }
+  .footer__wrap {
+    flex-direction: column;
+  }
+  .footer__block:last-of-type {
+    text-align: center;
+  }
+  .footer__block {
+    margin-bottom: 20px;
+  }
+}
+
+//-----------------------------------------------------------
+@media (max-width: 766px) {
+  h1,
+  .title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .promo__links {
+    top: 250px;
+  }
+  .promo__img {
+    display: none;
+  }
+  .promo__wrap::after {
+    width: 100%;
+    bottom: -180px;
+  }
+  .how__wrap {
+    display: block;
+  }
+  .how__info {
+    width: 100%;
+  }
+  .fact__info {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .fact__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .fact {
+    padding-bottom: 300px;
+  }
+  .fact::before {
+    width: 5000px;
+  }
+  .fact::after {
+    top: auto;
+    bottom: 140px;
+    right: 0;
+    left: auto;
+    transform: none;
+    width: 312px;
+    height: 257px;
+  }
+  .recommend__info {
+    margin-bottom: 300px;
+  }
+  .recommend__img {
+    left: 15px;
+    top: 380px;
+  }
+  .recommend__line p:first-of-type {
+    flex-grow: 0;
+    width: ~"calc(100% - 170px)";
+    overflow: hidden;
+  }
+  .person__title {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .person__logo {
+    margin-bottom: 50px;
+  }
+  .person__field::after {
+    width: 276px;
+    height: 976px;
+  }
+  .person__list {
+    margin-top: 1100px;
+  }
+  .quality__wrap::before {
+    display: none;
+  }
+  .benefits__list {
+    margin-top: 70px;
+  }
+  .benefits__item {
+    margin-bottom: 50px;
+  }
+  .benefits {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .reason__list {
+    margin-top: 50px;
+  }
+  .reason__item {
+    margin-bottom: 50px;
+  }
+  .ksf__block {
+    font-size: 14px;
+    line-height: 18px;
+    
+    b {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  .faq__columns,
+  .ksf__btns {
+    display: block;
+  }
+  .ksf__btn {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .ksf {
+    padding-bottom: 80px;
+  }
+  .faq__list {
+    width: 100%;
+  }
+  .faq__item:last-child {
+    border-bottom: 1px solid #000;
+  }
+  .recommend__line {
+    font-size: 14px;
+    
+    span {
+      width: 85px;
+    }
+    p:last-of-type {
+      width: 90px;
+    }
+  }
+}
+
+//-----------------------------------------------------------
+@media (max-width: 480px) {
+  .ksf__img {
+    width: 319px;
+    height: 319px;
+  }
+  .btn {
+    width: 100%;
+  }
+  .life__slogan {
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    
+    &::before {
+      width: 100%;
+      left: 0;
+      height: 100px;
+    }
+  }
+  .life__number {
+    margin-bottom: 300px;
+  }
+  .life__img {
+    img {
+      height: 224px;
+      width: auto;
+    }
+  }
+  .life {
+    padding-bottom: 90px;
+  }
+  .person {
+    padding-top: 80px;
+  }
+  .person__field::after {
+    top: 800px;
+  }
+  .recommend__img {
+    top: 500px;
+  }
+  .how__img,
+  .how__img img {
+    width: 265px;
+    height: 265px;
+  }
+  .how__img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .promo__wrap {
+    padding-bottom: 100px;
+  }
+  .promo__wrap::after {
+    height: 152px;
+    bottom: -30px;
+  }
+  .promo__info {
+    font-size: 14px;
+  }
+  .promo__slogan {
+    margin-top: 44px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .promo__preview {
+    margin-bottom: 44px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}

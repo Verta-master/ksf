@@ -16,17 +16,6 @@
       <path d="M56.4257 0H42.0322L27.6387 14.5L42.0322 29H56.4257L42.0322 14.5L56.4257 0Z"/>
       <path d="M99.6064 0H92.4301H85.2539H78.0776H70.9013L56.5078 14.5L70.9013 29H78.0776H85.2539H92.4301H99.6064L114 14.5L99.6064 0ZM70.8193 14.5L77.9956 7.27066V21.7707L70.8193 14.5ZM92.4301 21.7293V7.22934L99.6064 14.4587L92.4301 21.7293Z"/>
     </symbol>
-    <symbol id="icon-menu">
-      <rect width="32" height="6" fill="#007550"/>
-      <rect y="11" width="32" height="6" fill="#001E20"/>
-      <rect y="22" width="32" height="6" fill="#FF513F"/>
-    </symbol>
-    <symbol id="icon-cross">
-      <rect width="32" height="6" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 26.8701 22.6274)" fill="#001E20"/>
-      <rect width="13.0111" height="6" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 13.4429 9.2002)" fill="#007550"/>
-      <rect width="32" height="6" transform="matrix(-0.707107 0.707107 0.707107 0.707107 22.6274 -6.10352e-05)" fill="#001E20"/>
-      <rect width="13.0109" height="6" transform="matrix(-0.707107 0.707107 0.707107 0.707107 9.20013 13.4272)" fill="#FF513F"/>
-    </symbol>
   </svg>
   <!-- End of SVG codes -->
   
@@ -37,13 +26,18 @@
           <use href="#logo"></use>
         </svg>
       </div>
-      <nav class="menu">
+      <nav class="menu menu--main">
         <button type="button" class="menu__btn">
           <svg class="menu__ham" width="32" height="28" viewBox="0 0 32 28" xmlns="http://www.w3.org/2000/svg">
-            <use href="#icon-menu"></use>
+            <rect class="line-top" width="32" height="6"/>
+            <rect class="line-middle" y="11" width="32" height="6"/>
+            <rect class="line-bottom" y="22" width="32" height="6"/>
           </svg>
           <svg class="menu__cross" width="27" height="27" viewBox="0 0 27 27" xmlns="http://www.w3.org/2000/svg">
-            <use href="#icon-cross"></use>
+            <rect width="32" height="6" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 26.8701 22.6274)" fill="#001E20"/>
+            <rect width="13.0111" height="6" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 13.4429 9.2002)" fill="#007550"/>
+            <rect width="32" height="6" transform="matrix(-0.707107 0.707107 0.707107 0.707107 22.6274 -6.10352e-05)" fill="#001E20"/>
+            <rect width="13.0109" height="6" transform="matrix(-0.707107 0.707107 0.707107 0.707107 9.20013 13.4272)" fill="#FF513F"/>
           </svg>
         </button>
         <ul class="menu__list">
@@ -535,5 +529,6 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/menu.js"></script>
 </body>
 </html>
