@@ -2231,6 +2231,7 @@ h1 {
   }
   .promo__info {
     font-size: 14px;
+    margin-right: 0;
   }
   .promo__slogan {
     margin-top: 44px;
@@ -2238,8 +2239,32 @@ h1 {
     line-height: 24px;
   }
   .promo__preview {
+    margin-top: 450px;
     margin-bottom: 44px;
     font-size: 24px;
     line-height: 28px;
+  }
+  .promo__links {
+    left: 30px;
+  }
+  .promo__link {
+    width: 140px;
+    height: 140px;
+  }
+  .promo__link--red {
+    top: 85px;
+    right: -147px;
+  }
+  .promo__link--green {
+    top: 85px;
+    left: -49px;
+  }
+  .promo__link--yellow {
+    bottom: -170px;
+    right: -97px;
+  }
+  .promo__link--white {
+    top: 85px;
+    right: -49px;
   }
 }
