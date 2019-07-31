@@ -302,6 +302,7 @@
           <p>Это про грамотную, последовательную работу и деньги, это про качественную работу и вложенную душу.</p>
         </div>
         <figure class="car__img">
+          <img src="img/images/question.svg" class="car__question" alt="Красивые фото и громкие слова?" width="93" height="137">
           <img src="img/images/car.svg" alt="Красивые фото и громкие слова?" width="517" height="401">
         </figure>
       </div>
@@ -517,25 +518,6 @@
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
-  <script src="js/faq.js"></script>
-  <script>
-    //Show more buttons
-    
-    $('.show__btn').click(function() {
-      $('.show__item:nth-child(n + 10)').slideDown();
-      $(this).hide();
-    });
-    
-    $('.recommend__link').click(function() {
-      $('.recommend__item:nth-child(n + 4)').slideDown();
-      $(this).hide();
-    });
-    
-    $('.person__btn').click(function() {
-      $('.person__list li:nth-child(n + 3)').slideDown();
-      $('.person__list').addClass('person__list--open');
-      $(this).hide();
-    });
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>

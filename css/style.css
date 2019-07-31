@@ -1226,6 +1226,9 @@ h1 {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+.person__quote--open {
+  background-image: url(../img/images/frame.svg);
+}
 .person__field {
   padding-bottom: 60px;
   background-image: url(../img/images/men-full.svg);
@@ -1278,6 +1281,71 @@ h1 {
   position: absolute;
   bottom: 70px;
   right: 0;
+  padding-top: 190px;
+}
+@-webkit-keyframes shake-vertical {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px);
+  }
+  80% {
+    -webkit-transform: translateY(6.4px);
+            transform: translateY(6.4px);
+  }
+  90% {
+    -webkit-transform: translateY(-6.4px);
+            transform: translateY(-6.4px);
+  }
+}
+@keyframes shake-vertical {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px);
+  }
+  80% {
+    -webkit-transform: translateY(6.4px);
+            transform: translateY(6.4px);
+  }
+  90% {
+    -webkit-transform: translateY(-6.4px);
+            transform: translateY(-6.4px);
+  }
+}
+.car__question {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 200px;
+  -webkit-animation: shake-vertical 3s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+          animation: shake-vertical 3s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
 }
 .benefits {
   padding-top: 125px;
