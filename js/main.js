@@ -27,6 +27,7 @@ $('.person__btn').click(function() {
   $('.person__list li:nth-child(n + 3)').slideDown();
   $('.person__list').addClass('person__list--open');
   $('.person__quote').addClass('person__quote--open');
+  $('.person__field').addClass('person__field--open');
   $(this).hide();
 });
 
