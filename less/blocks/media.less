@@ -153,13 +153,19 @@
     bottom: -125px;
   }
   .fact::after {
-    right: 0;
+    display: block;
+    right: -50px;
     left: auto;
-    top: 53%;
+    top: 51%;
     transform: translateY(-50%);
   }
   .fact::before {
-    width: 4210px;
+    width: 3840px;
+    height: 960px;
+    left: ~"calc(50vw - 1920px)";
+    background-color: #FFC856;
+    transform: rotate(-15deg) scale(1.2) translateY(-308px);
+    background-image: none;
   }
   .fact {
     padding-bottom: 150px;
@@ -503,12 +509,14 @@
   }
   .fact {
     padding-top: 60px;
+    background-image: url(../img/images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
   }
+  .fact::after,
   .fact::before {
-    width: 4900px;
-  }
-  .fact::after {
-    bottom: 70px;
+    display: none;
   }
   .fact__title {
     margin-bottom: 55px;
@@ -749,38 +757,11 @@
       }
     }
   }
-  .footer {
-    padding-top: 70px;
-  }
   .footer__block {
     width: 100%;
     
-    &--person {
-      order: 1;
-      margin-bottom: 60px;
-    }
-    &--design {
-      order: 3;
-      justify-content: flex-start;
-      margin-top: 10px;
-      
-      span {
-        order: 2;
-        margin-right: 5px;
-      }
-      img {
-        order: 1;
-        margin-left: 0;
-      }
-      a {
-        order: 3;
-      }
-    }
     &--policy {
-      order: 2;
-      
       a {
-        margin-bottom: 40px;
         text-align: left;
       }
     }
