@@ -1849,6 +1849,10 @@ h1 {
   font-weight: 500;
   cursor: pointer;
 }
+.faq__question p {
+  max-width: 100%;
+  margin: 0;
+}
 .faq__question::before {
   content: "";
   position: absolute;
@@ -2306,9 +2310,6 @@ h1 {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
-  .recommend__img {
-    top: 500px;
-  }
   .how__img,
   .how__img img {
     width: 265px;
@@ -2425,7 +2426,6 @@ h1 {
     margin-bottom: 40px;
   }
   .recommend__info {
-    margin-bottom: 250px;
     font-size: 14px;
   }
   .recommend__subtitle {
@@ -2437,6 +2437,8 @@ h1 {
   .recommend__img {
     top: 340px;
     padding-right: 100px;
+    max-width: 100%;
+    overflow: hidden;
   }
   .recommend__fish-1 {
     top: 30px;
@@ -2680,5 +2682,10 @@ h1 {
   .footer__block--policy a {
     margin-bottom: 40px;
     text-align: left;
+  }
+}
+@media (max-width: 360px) {
+  .recommend__info {
+    margin-bottom: 250px;
   }
 }
