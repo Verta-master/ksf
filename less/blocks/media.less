@@ -405,7 +405,9 @@
     padding-top: 80px;
   }
   .person__field::after {
-    top: 800px;
+    top: 630px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .recommend__img {
     top: 500px;
@@ -420,24 +422,25 @@
     margin-right: auto;
   }
   .promo__wrap {
-    padding-bottom: 100px;
+    padding-bottom: 102px;
   }
   .promo__wrap::after {
     height: 152px;
     bottom: -30px;
+    right: -20px;
   }
   .promo__info {
     font-size: 14px;
     margin-right: 0;
   }
   .promo__slogan {
-    margin-top: 44px;
+    margin-top: 62px;
     font-size: 18px;
     line-height: 24px;
   }
   .promo__preview {
-    margin-top: 450px;
-    margin-bottom: 44px;
+    margin-top: 440px;
+    margin-bottom: 46px;
     font-size: 24px;
     line-height: 28px;
   }
@@ -463,5 +466,135 @@
   .promo__link--white {
     top: 85px;
     right: -49px;
+  }
+  .promo {
+    padding-top: 62px;
+  }
+  h1,
+  .title {
+    font-weight: 500;
+  }
+  .logo svg {
+    display: block;
+    width: 114px;
+    height: 36px;
+  }
+  .show {
+    padding-top: 55px;
+    padding-bottom: 50px;
+  }
+  .show__item {
+    height: 180px;
+    margin-bottom: 28px;
+    
+    &:nth-child(n + 4) {
+      display: none;
+    }
+  }
+  .show__btn {
+    margin-top: 15px;
+  }
+  .how {
+    padding-top: 45px;
+    padding-bottom: 52px;
+    
+    .title {
+      max-width: 200px;
+    }
+  }
+  .how__info {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .fact {
+    padding-top: 60px;
+  }
+  .fact::before {
+    width: 4900px;
+  }
+  .fact::after {
+    bottom: 70px;
+  }
+  .fact__title {
+    margin-bottom: 55px;
+  }
+  .fact__btn {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .recommend {
+    margin-top: -80px;
+    padding-bottom: 65px;
+  }
+  .recommend__title {
+    margin-bottom: 40px;
+  }
+  .recommend__info {
+    margin-bottom: 250px;
+    font-size: 14px;
+  }
+  .recommend__subtitle {
+    max-width: 200px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .recommend__img {
+    top: 340px;
+    padding-right: 100px;
+  }
+  .recommend__fish-1 {
+    top: 30px;
+  }
+  .recommend__fish-4 {
+    bottom: 40px;
+    right: 50px;
+  }
+  .recommend__fish-5 {
+    bottom: 60px;
+    right: 100px;
+  }
+  .recommend__fish-6 {
+    bottom: 20px;
+    right: 120px;
+  }
+  .recommend__line {
+    p:first-of-type {
+      padding: 12px 15px;
+    }
+    p:last-of-type,
+    span {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+  .recommend__link {
+    margin-top: 65px;
+  }
+  .recommend__btn {
+    margin-top: 60px;
+  }
+  .person__title {
+    margin-bottom: 20px;
+  }
+  .person__wrap {
+    font-size: 14px;
+    
+    b {
+      font-size: 18px;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+  }
+  .person__list {
+    margin-top: 1120px;
+    font-size: 18px;
+  }
+  .person__quote {
+    padding: 15px;
+    padding-top: 60px;
+    font-size: 14px;
+    background-image: url(../img/images/frame-mobile.svg);
   }
 }
