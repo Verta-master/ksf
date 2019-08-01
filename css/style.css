@@ -587,30 +587,6 @@ h1 {
 .footer__block p {
   margin: 0;
 }
-.footer__block--design {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.footer__block--design img {
-  display: block;
-  margin: 0 20px;
-  width: 44px;
-  height: 47px;
-}
-.footer__block--design a {
-  text-decoration: none;
-}
-.footer__block--design a:hover,
-.footer__block--design a:active {
-  text-decoration: underline;
-}
 .header {
   position: fixed;
   top: 0;
@@ -1088,7 +1064,7 @@ h1 {
   left: 56%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  display: block;
+  display: none;
   width: 405px;
   height: 334px;
   background-image: url(../img/images/steps.svg);
@@ -1100,12 +1076,15 @@ h1 {
   position: absolute;
   z-index: -1;
   top: 0;
-  left: calc(50vw - 1920px);
-  width: 3840px;
-  height: 960px;
-  background-color: #FFC856;
-  -webkit-transform: rotate(-15deg) scale(1.2) translateY(-308px);
-          transform: rotate(-15deg) scale(1.2) translateY(-308px);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 5000px;
+  height: 1500px;
+  background-image: url(../img/images/bg-yellow-big.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 .fact__info {
   max-width: 840px;
@@ -1367,7 +1346,7 @@ h1 {
 }
 .person__quote {
   width: 100%;
-  padding: 45px 35px 40px 46px;
+  padding: 45px 35px 20px 46px;
   background-image: url(../img/images/frame-closed.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1410,7 +1389,7 @@ h1 {
 .quality__wrap::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 40%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -2050,14 +2029,21 @@ h1 {
     bottom: -125px;
   }
   .fact::after {
-    right: 0;
+    display: block;
+    right: -50px;
     left: auto;
-    top: 53%;
+    top: 51%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
   .fact::before {
-    width: 4210px;
+    width: 3840px;
+    height: 960px;
+    left: calc(50vw - 1920px);
+    background-color: #FFC856;
+    -webkit-transform: rotate(-15deg) scale(1.2) translateY(-308px);
+            transform: rotate(-15deg) scale(1.2) translateY(-308px);
+    background-image: none;
   }
   .fact {
     padding-bottom: 150px;
@@ -2404,12 +2390,14 @@ h1 {
   }
   .fact {
     padding-top: 60px;
+    background-image: url(../img/images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
   }
+  .fact::after,
   .fact::before {
-    width: 4900px;
-  }
-  .fact::after {
-    bottom: 70px;
+    display: none;
   }
   .fact__title {
     margin-bottom: 55px;
@@ -2636,51 +2624,10 @@ h1 {
   .faq__item--open .faq__question::before {
     left: -15px;
   }
-  .footer {
-    padding-top: 70px;
-  }
   .footer__block {
     width: 100%;
   }
-  .footer__block--person {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    margin-bottom: 60px;
-  }
-  .footer__block--design {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    margin-top: 10px;
-  }
-  .footer__block--design span {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    margin-right: 5px;
-  }
-  .footer__block--design img {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    margin-left: 0;
-  }
-  .footer__block--design a {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-  }
-  .footer__block--policy {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
   .footer__block--policy a {
-    margin-bottom: 40px;
     text-align: left;
   }
 }
