@@ -87,6 +87,14 @@ function ajaxInit() {
     $(this).hide();
     $('.menu__btn--open').show();
   });
+  
+  //Mobile show buttons
+  if (window.innerWidth < 480) {
+    $('.show__btn').click(function() {
+      $('.show__item:nth-child(n + 4)').slideDown();
+      $(this).hide();
+    });
+  }
 }
 
 $(document).ready(function(){
