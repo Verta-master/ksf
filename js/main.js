@@ -37,6 +37,19 @@ function Parallax(options) {
   return this;
 }
 
+var target = window.location.hash,
+  target = target.replace('#', '');
+
+window.location.hash = "";
+
+$(window).on('load', function () {
+  if (target) {
+    $('html, body').animate({
+      scrollTop: $('#' + target).offset().top + 350
+    }, 1000);
+  }
+});
+
 function ajaxInit() {
   new Parallax();
   
@@ -79,6 +92,7 @@ function ajaxInit() {
     $(this).next().slideDown();
     $(this).hide();
     $('.menu__btn--close').show();
+    $('.logo').addClass('logo--open');
   });
   
   $('.menu__btn--close').click(function(e) {
@@ -86,6 +100,7 @@ function ajaxInit() {
     $(this).next().slideUp();
     $(this).hide();
     $('.menu__btn--open').show();
+    $('.logo').removeClass('logo--open');
   });
   
   //Mobile show buttons
