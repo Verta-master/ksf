@@ -6,17 +6,17 @@
     display: none;
   }
   .menu__btn {
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 35px;
     height: 35px;
-  }
-  .menu__ham {
-    display: block;
-  }
-  .menu__cross {
-    display: none;
+    
+    &--open {
+      display: flex;
+    }
+    &--close {
+      display: none;
+    }
   }
   .menu__list {
     display: none;
@@ -25,10 +25,72 @@
     top: 100%;
     left: 0;
     right: 0;
+    padding-left: 15px;
+    padding-top: 20px;
     background-color: #fff;
   }
-  .menu {
-    &--main .menu__ham {
+  .menu__item {
+    position: relative;
+    padding-left: 40px;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 0;
+      width: 14px;
+      height: 14px;
+      display: block;
+    }
+    &:first-child {
+      &::before {
+        width: 20px;
+        height: 20px;
+        background-image: url(../img/icons/icon-label.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+    &:nth-child(2) {
+      &::before {
+        background-color: @red;
+        transform: rotate(45deg);
+      }
+    }
+    &:nth-child(3) {
+      &::before {
+        background-color: @yellow;
+        transform: rotate(45deg);
+      }
+    }
+    &:nth-child(4) {
+      &::before {
+        background-color: @green;
+        transform: rotate(45deg);
+      }
+    }
+    &:nth-child(5) {
+      &::before {
+        background-color: #fff;
+        border: 1px solid #000;
+        transform: rotate(45deg);
+      }
+    }
+    &:nth-child(6) {
+      &::before {
+        background-color: @black;
+        transform: rotate(45deg);
+      }
+    }
+  }
+  .menu__link {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+  .header {
+    &--main {
       .line-top {
         fill: #007550;
       }
@@ -38,13 +100,14 @@
       .line-bottom {
         fill: #FF513F;
       }
-    }
-    &--opened {
-      .menu__ham {
-        display: none;
+      .line-black {
+        fill: #001E20;
       }
-      .menu__cross {
-        display: block;
+      .line-green {
+        fill: #007550;
+      }
+      .line-red {
+        fill: #FF513F;
       }
     }
   }

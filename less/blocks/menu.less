@@ -25,6 +25,36 @@
         .transition();
       }
     }
+    &:nth-child(4) {
+      .menu__link {
+        color: @green;
+        
+        &::before,
+        &::after {
+          background-color: @green;
+        }
+      }
+    }
+    &:nth-child(2) {
+      .menu__link {
+        color: @red;
+        
+        &::before,
+        &::after {
+          background-color: @red;
+        }
+      }
+    }
+    &:nth-child(3) {
+      .menu__link {
+        color: @yellow;
+        
+        &::before,
+        &::after {
+          background-color: @yellow;
+        }
+      }
+    }
   }
 }
 
