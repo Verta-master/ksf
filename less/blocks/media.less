@@ -833,9 +833,21 @@
     }
   }
   .promo--portfolio {
-    position: relative;
     padding-top: 80px;
     
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      display: block;
+      width: 233px;
+      height: 640px;
+      top: 10px;
+      left: -20px;
+      background-image: url(../../img/images/bg-portfolio-mobile.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
     h1 {
       margin-bottom: 10px;
     }
