@@ -25,13 +25,16 @@
     top: 100%;
     left: 0;
     right: 0;
-    padding-left: 15px;
+    padding-left: 45px;
     padding-top: 20px;
+    padding-bottom: 10px;
     background-color: #fff;
   }
   .menu__item {
     position: relative;
     padding-left: 40px;
+    padding-top: 0;
+    padding-bottom: 0;
     
     &::before {
       content: "";
@@ -85,11 +88,16 @@
   }
   .menu__link {
     display: inline-block;
+    padding-top: 7px;
+    padding-bottom: 7px;
     font-size: 18px;
     line-height: 24px;
     font-weight: 500;
   }
   .header {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    
     &--main {
       .line-top {
         fill: #007550;
@@ -100,14 +108,33 @@
       .line-bottom {
         fill: #FF513F;
       }
-      .line-black {
-        fill: #001E20;
-      }
-      .line-green {
-        fill: #007550;
-      }
-      .line-red {
-        fill: #FF513F;
+    }
+    .line-black {
+      fill: #001E20;
+    }
+    .line-green {
+      fill: #007550;
+    }
+    .line-red {
+      fill: #FF513F;
+    }
+  }
+  .header--portfolio {
+    .line-top,
+    .line-middle,
+    .line-bottom {
+      fill: @green;
+    }
+    .menu__item:nth-child(4) {
+      background-color: rgba(255,255,255,0);
+      
+      .menu__link {
+        color: @green;
+        
+        &::before,
+        &::after {
+          background-color: @green;
+        }
       }
     }
   }
@@ -148,6 +175,22 @@
   .ksf__img img {
     width: 350px;
     height: 350px;
+  }
+  .promo--portfolio {
+    &::after {
+      display: none;
+    }
+    .promo__wrap {
+      padding-bottom: 100px;
+    }
+  }
+  .portfolio__list,
+  .portfolio__nav {
+    justify-content: space-around;
+    
+    li {
+      margin-right: 0;
+    }
   }
 }
 
@@ -253,10 +296,15 @@
     flex-direction: column;
   }
   .footer__block:last-of-type {
-    text-align: center;
+    text-align: left;
   }
   .footer__block {
     margin-bottom: 20px;
+  }
+  .promo--portfolio {
+    .promo__text {
+      margin-top: 600px;
+    }
   }
 }
 
@@ -783,6 +831,88 @@
         text-align: left;
       }
     }
+  }
+  .promo--portfolio {
+    position: relative;
+    padding-top: 80px;
+    
+    h1 {
+      margin-bottom: 10px;
+    }
+    .promo__text {
+      margin-top: 445px;
+      
+      p {
+        margin-bottom: 20px;
+      }
+    }
+    .promo__last {
+      margin-top: 35px;
+    }
+    .promo__wrap {
+      padding-bottom: 195px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 55px;
+      top: auto;
+      left: 50%;
+      display: block;
+      width: 150px;
+      height: 123px;
+      transform: translateX(-50%);
+      background-image: url(../img/images/bird-single.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  .portfolio {
+    padding-top: 55px;
+  }
+  .portfolio__nav {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+  .portfolio__nav li {
+    margin-bottom: 15px;
+  }
+  .portfolio__nav li a {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .portfolio__list li {
+    width: 320px;
+    height: 320px;
+    max-width: 100%;
+    padding-top: 70px;
+  }
+  .portfolio__info {
+    opacity: 1;
+    bottom: auto;
+    padding: 0;
+    color: @black;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: rgba(255,255,255,0) !important;
+    
+    p {
+      margin: 0;
+    }
+    .portfolio__title {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 500;
+    }
+  }
+  .portfolio__name,
+  .portfolio__button {
+    display: none;
+  }
+  .portfolio__preview {
+    overflow: hidden;
   }
 }
 

@@ -3,15 +3,44 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  z-index: 100;
+//  padding-top: 15px;
+//  padding-bottom: 15px;
   color: #001E20;
   background-color: #fff;
 }
 
 .header--main .logo svg {
   fill: @black;
+}
+
+.header--portfolio {
+  .logo svg {
+    fill: @green;
+  }
+  .menu__item {
+    &:nth-child(4) {
+      background-color: @green;
+
+      .menu__link {
+        color: #fff;
+
+        &::before,
+        &::after {
+          background-color: #fff;
+        }
+      }
+    }
+    &:hover:nth-child(4) .menu__link,
+    &:active:nth-child(4) .menu__link {
+      color: #fff;
+
+      &::before,
+      &::after {
+        background-color: #fff;
+      }
+    }
+  }
 }
 
 .header__wrap {
