@@ -3039,7 +3039,7 @@ h1 {
     height: 640px;
     top: 10px;
     left: -20px;
-    background-image: url(../../img/images/bg-portfolio-mobile.svg);
+    background-image: url(../img/images/bg-portfolio-mobile.svg);
     background-repeat: no-repeat;
     background-size: contain;
   }
