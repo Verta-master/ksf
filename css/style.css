@@ -1871,7 +1871,7 @@ h1 {
   z-index: -1;
   left: -35px;
   right: 0;
-  top: -1px;
+  top: -2px;
   bottom: 0;
   background-color: #FFC856;
   opacity: 0;
@@ -2273,6 +2273,7 @@ h1 {
   .ksf__img {
     width: 319px;
     height: 319px;
+    top: 60px;
   }
   .btn {
     width: 100%;
@@ -2295,9 +2296,6 @@ h1 {
   .life__img img {
     height: 224px;
     width: auto;
-  }
-  .life {
-    padding-bottom: 90px;
   }
   .person {
     padding-top: 80px;
@@ -2490,5 +2488,197 @@ h1 {
     padding-top: 60px;
     font-size: 14px;
     background-image: url(../img/images/frame-mobile.svg);
+  }
+  .person__field {
+    padding-bottom: 63px;
+  }
+  .quality__wrap {
+    padding-top: 70px;
+    padding-bottom: 63px;
+  }
+  .quality__info {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-size: 14px;
+  }
+  .quality__info p {
+    margin-bottom: 18px;
+  }
+  .car__wrap {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+  .car__info {
+    margin-top: 50px;
+    font-size: 14px;
+  }
+  .car__info span {
+    color: #001E20;
+  }
+  .car__info p {
+    margin-bottom: 25px;
+  }
+  .car__question {
+    width: 58px;
+    height: 85px;
+    top: 20px;
+  }
+  .car__img {
+    padding-top: 140px;
+  }
+  .benefits {
+    padding-top: 75px;
+    padding-bottom: 55px;
+  }
+  .benefits__list {
+    margin-top: 40px;
+  }
+  .benefits__item {
+    margin-bottom: 38px;
+  }
+  .life {
+    padding-top: 90px;
+    padding-bottom: 80px;
+  }
+  .life__info {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .life__subtitle {
+    margin-top: 35px;
+    margin-bottom: 60px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .life__slogan {
+    margin-bottom: 70px;
+  }
+  .life__number {
+    margin-top: 30px;
+    margin-bottom: 355px;
+  }
+  .reason__wrap {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+  .reason__item p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .reason__item p span,
+  .reason__item p b {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .reason__item p span {
+    max-width: 300px;
+  }
+  .reason__icon {
+    margin-bottom: 40px;
+  }
+  .ksf__wrap {
+    padding-top: 435px;
+  }
+  .ksf .title {
+    margin-bottom: 40px;
+  }
+  .ksf__column {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .ksf__block {
+    padding: 25px 20px;
+    margin-bottom: 105px;
+  }
+  .ksf__btn {
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+  }
+  .ksf {
+    padding-bottom: 60px;
+  }
+  .faq {
+    padding-top: 55px;
+    padding-bottom: 78px;
+  }
+  .faq__title {
+    margin-bottom: 43px;
+    padding-left: 5px;
+    font-size: 24px;
+  }
+  .faq__columns {
+    padding-left: 5px;
+  }
+  .faq__question {
+    font-size: 14px;
+    padding: 12px 0;
+    min-height: auto;
+  }
+  .faq__question::before {
+    width: 13px;
+    height: 15px;
+  }
+  .faq__question::after {
+    left: -20px;
+    right: -15px;
+  }
+  .faq__answer {
+    font-size: 14px;
+  }
+  .faq__answer::before {
+    left: -20px;
+    right: -15px;
+  }
+  .faq__item--open .faq__question::before {
+    left: -15px;
+  }
+  .footer {
+    padding-top: 70px;
+  }
+  .footer__block {
+    width: 100%;
+  }
+  .footer__block--person {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 60px;
+  }
+  .footer__block--design {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 10px;
+  }
+  .footer__block--design span {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-right: 5px;
+  }
+  .footer__block--design img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-left: 0;
+  }
+  .footer__block--design a {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .footer__block--policy {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .footer__block--policy a {
+    margin-bottom: 40px;
+    text-align: left;
   }
 }
