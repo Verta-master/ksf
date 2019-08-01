@@ -4,8 +4,6 @@
   left: 0;
   right: 0;
   z-index: 100;
-//  padding-top: 15px;
-//  padding-bottom: 15px;
   color: #001E20;
   background-color: #fff;
 }
@@ -27,6 +25,8 @@
 
         &::before,
         &::after {
+          width: 100%;
+          opacity: 1;
           background-color: #fff;
         }
       }
@@ -38,6 +38,28 @@
       &::before,
       &::after {
         background-color: #fff;
+      }
+    }
+  }
+}
+
+.header--blacklist {
+  .logo svg {
+    fill: @black;
+  }
+  .menu__item {
+    &:nth-child(6) {
+      background-color: @black;
+
+      .menu__link {
+        color: #fff;
+
+        &::before,
+        &::after {
+          width: 100%;
+          opacity: 1;
+          background-color: #fff;
+        }
       }
     }
   }

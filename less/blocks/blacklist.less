@@ -1,0 +1,155 @@
+.blacklist {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  background-color: @black;
+}
+
+.blacklist__nav {
+  .reset();
+  list-style: none;
+  margin-bottom: 126px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  
+  li {
+    margin-right: 76px;
+    
+    a {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 42px;
+      .transition();
+    }
+    
+    &:nth-child(2) a {
+      color: @red;
+      
+      &:hover,
+      &:active {
+        color: #FF513F;
+        border-bottom: 4px solid #FF513F;
+        .transition();
+      }
+    }
+    
+    &:last-child a {
+      color: #FFC856;
+      
+      &:hover,
+      &:active {
+        color: @yellow;
+        border-bottom: 4px solid @yellow;
+        .transition();
+      }
+    }
+  }
+}
+
+.blacklist__active {
+  color: #fff;
+  border-bottom: 4px solid #fff;
+}
+
+.blacklist__notfound {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 124px;
+  margin-top: 0;
+}
+
+.blacklist__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 75px;
+  
+  li {
+    position: relative;
+    z-index: 1;
+    width: 249px;
+    margin-bottom: 86px;
+    margin-right: 35px;
+  }
+}
+
+.blacklist__avatar {
+  position: relative;
+  margin-bottom: 18px;
+  width: 100%;
+  height: 249px;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50%;
+  }
+  
+  b {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  p {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.blacklist__freelancer {
+  .blacklist__avatar {
+    border: 10px solid #FF513F;
+  }
+  .blacklist__reason {
+    background-color: @red;
+  }
+}
+
+.blacklist__client {
+  .blacklist__avatar {
+    border: 10px solid @yellow;
+  }
+  .blacklist__reason {
+    color: @black;
+    background-color: @yellow;
+  }
+}
+
+.blacklist__reason {
+  position: absolute;
+  padding: 14px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+//  opacity: 0;
+}
+
+.blacklist__content {
+  p {
+    margin: 0;
+  }
+}
+
+.blacklist__name {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.blacklist__type {
+  
+}
+
+.blacklist__date {
+  color: @yellow;
+}

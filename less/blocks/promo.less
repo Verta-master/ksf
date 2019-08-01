@@ -1,40 +1,81 @@
 .promo {
+  position: relative;
   padding-top: 75px;
   overflow: hidden;
-  
-  &--portfolio {
-    position: relative;
-    color: #fff;
-    background-color: @green;
-    
+}
+
+.promo--blacklist,
+.promo--portfolio {
+  color: #fff;
+  background-color: @green;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1363px;
+    height: 1151px;
+    z-index: 1;
+    top: -3px;
+    right: 50vw;
+    transform: translateX(457px);
+    background-image: url(../img/images/bg-portfolio.svg);
+  }
+  .promo__wrap {
+    padding-bottom: 400px;
+
     &::after {
-      content: "";
-      position: absolute;
-      width: 1363px;
-      height: 1151px;
-      z-index: 1;
-      top: -3px;
-      right: 50vw;
-      transform: translateX(457px);
-      background-image: url(../img/images/bg-portfolio.svg);
+      display: none;
     }
-    .promo__wrap {
-      padding-bottom: 400px;
-      
-      &::after {
-        display: none;
-      }
+  }
+  h1 {
+    margin-bottom: 60px;
+    color: #fff;
+  }
+  .promo__info {
+    max-width: 600px;
+  }
+  .promo__preview {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.promo--portfolio {
+  .promo__link {
+    &--green {
+      background-color: rgba(255,255,255,0);
     }
-    h1 {
-      margin-bottom: 60px;
-      color: #fff;
+    &--black {
+      background-color: rgba(0,0,0,0.7);
     }
-    .promo__info {
-      max-width: 600px;
+  }
+}
+
+.promo--blacklist {
+  background-color: @black;
+  
+  &::after {
+    width: 1363px;
+    height: 1267px;
+    background-image: url(../img/images/bg-blacklist.svg);
+  }
+  .promo__preview {
+    color: @red;
+  }
+  .promo__wrap {
+    &::after {
+      display: block;
+      bottom: 140px;
+      left: 0;
+      right: auto;
+      width: 144px;
+      height: 134px;
+      background-image: url(../img/images/mask.svg);
     }
-    .promo__preview {
-      margin-top: 0;
-      margin-bottom: 30px;
+  }
+  .promo__link {
+    &--black {
+      background-color: rgba(255,255,255,0);
     }
   }
 }
@@ -114,6 +155,7 @@
 .promo__links {
   margin-top: 100px;
   position: relative;
+  z-index: 5;
 }
 
 .promo__link {
