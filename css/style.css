@@ -681,6 +681,45 @@ h1 {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
+.menu__item:hover:nth-child(4) .menu__link,
+.menu__item:active:nth-child(4) .menu__link,
+.menu__item--active:nth-child(4) .menu__link {
+  color: #007550;
+}
+.menu__item:hover:nth-child(4) .menu__link::before,
+.menu__item:active:nth-child(4) .menu__link::before,
+.menu__item--active:nth-child(4) .menu__link::before,
+.menu__item:hover:nth-child(4) .menu__link::after,
+.menu__item:active:nth-child(4) .menu__link::after,
+.menu__item--active:nth-child(4) .menu__link::after {
+  background-color: #007550;
+}
+.menu__item:hover:nth-child(2) .menu__link,
+.menu__item:active:nth-child(2) .menu__link,
+.menu__item--active:nth-child(2) .menu__link {
+  color: #FF513F;
+}
+.menu__item:hover:nth-child(2) .menu__link::before,
+.menu__item:active:nth-child(2) .menu__link::before,
+.menu__item--active:nth-child(2) .menu__link::before,
+.menu__item:hover:nth-child(2) .menu__link::after,
+.menu__item:active:nth-child(2) .menu__link::after,
+.menu__item--active:nth-child(2) .menu__link::after {
+  background-color: #FF513F;
+}
+.menu__item:hover:nth-child(3) .menu__link,
+.menu__item:active:nth-child(3) .menu__link,
+.menu__item--active:nth-child(3) .menu__link {
+  color: #FFC856;
+}
+.menu__item:hover:nth-child(3) .menu__link::before,
+.menu__item:active:nth-child(3) .menu__link::before,
+.menu__item--active:nth-child(3) .menu__link::before,
+.menu__item:hover:nth-child(3) .menu__link::after,
+.menu__item:active:nth-child(3) .menu__link::after,
+.menu__item--active:nth-child(3) .menu__link::after {
+  background-color: #FFC856;
+}
 .menu__link {
   display: block;
   position: relative;
@@ -1868,9 +1907,6 @@ h1 {
     display: none;
   }
   .menu__btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1880,10 +1916,12 @@ h1 {
     width: 35px;
     height: 35px;
   }
-  .menu__ham {
-    display: block;
+  .menu__btn--open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  .menu__cross {
+  .menu__btn--close {
     display: none;
   }
   .menu__list {
@@ -1893,22 +1931,79 @@ h1 {
     top: 100%;
     left: 0;
     right: 0;
+    padding-left: 15px;
+    padding-top: 20px;
     background-color: #fff;
   }
-  .menu--main .menu__ham .line-top {
+  .menu__item {
+    position: relative;
+    padding-left: 40px;
+  }
+  .menu__item::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    display: block;
+  }
+  .menu__item:first-child::before {
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/icons/icon-label.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .menu__item:nth-child(2)::before {
+    background-color: #FF513F;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .menu__item:nth-child(3)::before {
+    background-color: #FFC856;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .menu__item:nth-child(4)::before {
+    background-color: #007550;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .menu__item:nth-child(5)::before {
+    background-color: #fff;
+    border: 1px solid #000;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .menu__item:nth-child(6)::before {
+    background-color: #001E20;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .menu__link {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+  .header--main .line-top {
     fill: #007550;
   }
-  .menu--main .menu__ham .line-middle {
+  .header--main .line-middle {
     fill: #001E20;
   }
-  .menu--main .menu__ham .line-bottom {
+  .header--main .line-bottom {
     fill: #FF513F;
   }
-  .menu--opened .menu__ham {
-    display: none;
+  .header--main .line-black {
+    fill: #001E20;
   }
-  .menu--opened .menu__cross {
-    display: block;
+  .header--main .line-green {
+    fill: #007550;
+  }
+  .header--main .line-red {
+    fill: #FF513F;
   }
   .promo__info {
     margin-right: 40px;

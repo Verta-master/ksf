@@ -71,7 +71,22 @@ function ajaxInit() {
     $('.person__quote').addClass('person__quote--open');
     $('.person__field').addClass('person__field--open');
     $(this).hide();
-  });  
+  });
+  
+  //Mobile menu
+  $('.menu__btn--open').click(function(e) {
+    e.stopPropagation();
+    $(this).next().slideDown();
+    $(this).hide();
+    $('.menu__btn--close').show();
+  });
+  
+  $('.menu__btn--close').click(function(e) {
+    e.stopPropagation();
+    $(this).next().slideUp();
+    $(this).hide();
+    $('.menu__btn--open').show();
+  });
 }
 
 $(document).ready(function(){
