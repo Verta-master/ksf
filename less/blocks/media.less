@@ -152,6 +152,33 @@
       }
     }
   }
+  .header--whitelist {
+    .logo {
+      width: 114px;
+      height: 36px;
+      background-image: url(../img/images/logo-whitelist.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      
+      svg {
+        opacity: 0;
+      }
+      
+      &--open {
+        background-image: none;
+        
+        svg {
+          opacity: 1;
+        }
+      }
+    }
+    .line-top,
+    .line-middle,
+    .line-bottom {
+      fill: none;
+      stroke: @black;
+    }
+  }
   .logo--open {
     .logo__black {
       fill: @black;
@@ -344,6 +371,7 @@
     right: auto;
     left: -1015px;
   }
+  .promo--whitelist .promo__text,
   .promo--blacklist .promo__text {
     margin-top: 600px;
   }
@@ -492,6 +520,11 @@
   .promo--portfolio::after {
     top: 147px;
   }
+  .promo__preview,
+  .promo--whitelist .promo__preview {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
 
 //-----------------------------------------------------------
@@ -560,11 +593,15 @@
     font-size: 18px;
     line-height: 24px;
   }
+  .promo--whitelist .promo__preview,
   .promo__preview {
     margin-top: 440px;
     margin-bottom: 46px;
     font-size: 24px;
     line-height: 28px;
+  }
+  .promo--whitelist .promo__preview {
+    margin-top: 0;
   }
   .promo__links {
     left: 30px;
@@ -887,6 +924,7 @@
       }
     }
   }
+  .promo--whitelist,
   .promo--blacklist,
   .promo--portfolio {
     padding-top: 80px;
@@ -923,6 +961,14 @@
     .promo__info {
       max-width: 100%;
       margin: 0;
+    }
+  }
+  .promo--whitelist {
+    .promo__text {
+      margin-top: 430px;
+    }
+    .promo__pic {
+      margin-top: 100px;
     }
   }
   .promo--blacklist::after,
@@ -1061,6 +1107,30 @@
     img {
       width: 150px;
       height: 123px;
+    }
+  }
+  .portfolio--whitelist {
+    padding-top: 40px;
+    
+    .portfolio__nav li {
+      margin-bottom: 40px;
+    }
+    .portfolio__nav li:first-child {
+      a {
+        font-size: 36px;
+        line-height: 42px;
+        font-weight: 500;
+      }
+    }
+    .portfolio__list li {
+      padding-top: 0;
+      margin-bottom: 40px;
+    }
+    .portfolio__preview {
+      height: 320px;
+    }
+    .portfolio__button {
+      display: flex;
     }
   }
 }

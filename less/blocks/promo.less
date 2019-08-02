@@ -23,10 +23,6 @@
   }
   .promo__wrap {
     padding-bottom: 140px;
-
-    &::after {
-      display: none;
-    }
   }
   h1 {
     margin-bottom: 60px;
@@ -61,14 +57,48 @@
   }
 }
 
+.promo--whitelist {
+  .promo__wrap {
+    padding-bottom: 55px;
+  }
+  h1 {
+    margin-bottom: 60px;
+  }
+  .promo__info {
+    max-width: 600px;
+    margin-right: 145px;
+  }
+  .promo__preview {
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: @green;
+  }
+  .promo__link {
+    border: 1px solid #000;
+    background-color: rgba(255,255,255,0);
+  }
+  .promo__text {
+    max-width: 370px;
+  }
+  .promo__last {
+    margin-top: 35px;
+  }
+  .promo__pic {
+    margin-left: -20px;
+    margin-top: 135px;
+  }
+}
+
 .promo__wrap {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   position: relative;
   padding-bottom: 150px;
-  
-  &::after {
+}
+
+.promo--main {
+  .promo__wrap::after {
     content: "";
     position: absolute;
     bottom: -75px;
