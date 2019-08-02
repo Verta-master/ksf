@@ -3,4 +3,123 @@
   padding-bottom: 130px;
   color: #fff;
   background-color: @black;
+  overflow: hidden;
+  
+  .title {
+    margin-bottom: 60px;
+    color: #fff;
+  }
+}
+
+.pill__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.pill_info {
+  width: ~"calc(100% - 450px)";
+}
+
+.pill__img {
+  width: 448px;
+  position: relative;
+  text-align: center;
+}
+
+.pill__text {
+  position: relative;
+  margin-bottom: 220px;
+  
+  span {
+    color: @red;
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -96px;
+    left: 0;
+    width: 88px;
+    height: 25px;
+    background-image: url(../img/images/deco-red.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.pill__btn {
+  margin-top: 124px;
+}
+
+.pill__tablet {
+  position: absolute;
+  top: 0;
+  left: 212px;
+}
+
+.pill__tube-1 {
+  position: relative;
+  z-index: 5;
+  width: 176px;
+  height: 142px;
+  transform: scale(1.2) translateZ(68px);
+  animation: pill-circle-top 8s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite both;
+}
+
+.pill__tube-2 {
+  position: relative;
+  z-index: 4;
+  width: 275px;
+  height: 221px;
+  transform: scale(1.2) translateZ(51.4px);
+  animation: pill-circle-mid 12s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite both;
+}
+
+.pill__tube-3 {
+  position: relative;
+  z-index: 3;
+  width: 358px;
+  height: 288px;
+  transform: scale(1.2) translateZ(27px);
+  animation: pill-circle-bottom 16s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite both;
+}
+
+@keyframes pill-circle-bottom {
+  0%, 100% {
+    transform: scale(1.2) translateZ(27px) translateY(0); }
+  10%, 30%, 50%, 70% {
+    transform: scale(1.2) translateZ(27px) translateY(-8px); }
+  20%, 40%, 60% {
+    transform: scale(1.2) translateZ(27px) translateY(8px); }
+  80% {
+    transform: scale(1.2) translateZ(27px) translateY(8px); }
+  90% {
+    transform: scale(1.2) translateZ(27px) translateY(-8px); } 
+}
+
+@keyframes pill-circle-mid {
+  0%, 100% {
+    transform: scale(1.2) translateZ(61px) translateY(0); }
+  10%, 30%, 50%, 70% {
+    transform: scale(1.2) translateZ(61px) translateY(-8px); }
+  20%, 40%, 60% {
+    transform: scale(1.2) translateZ(61px) translateY(8px); }
+  80% {
+    transform: scale(1.2) translateZ(61px) translateY(8px); }
+  90% {
+    transform: scale(1.2) translateZ(61px) translateY(-8px); } 
+}
+
+@keyframes pill-circle-top {
+  0%, 100% {
+    transform: scale(1.2) translateZ(68.5px) translateY(0); }
+  10%, 30%, 50%, 70% {
+    transform: scale(1.2) translateZ(68.5px) translateY(-8px); }
+  20%, 40%, 60% {
+    transform: scale(1.2) translateZ(68.5px) translateY(8px); }
+  80% {
+    transform: scale(1.2) translateZ(68.5px) translateY(8px); }
+  90% {
+    transform: scale(1.2) translateZ(68.5px) translateY(-8px); } 
 }
