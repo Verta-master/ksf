@@ -13,7 +13,7 @@
   
   li {
     width: 249px;
-    margin-right: 35px;
+    margin-right: 48px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -107,14 +107,15 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   margin-bottom: 75px;
+  margin-right: -48px;
   
   li {
     position: relative;
     z-index: 1;
     width: 249px;
     height: 249px;
+    margin-right: 48px;
     margin-bottom: 48px;
-    margin-right: 35px;
     overflow: hidden;
 
     &:hover {
@@ -140,6 +141,11 @@
   
   img {
     display: block;
+    width: auto;
+    max-width: none;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50%;
   }
 }
 
@@ -168,6 +174,11 @@
 
 .portfolio__text {
   font-weight: 300;
+}
+
+.portfolio__title,
+.portfolio__name {
+  font-weight: 400;
 }
 
 .portfolio__button {

@@ -201,6 +201,7 @@
   .portfolio__list,
   .portfolio__nav {
     justify-content: space-around;
+    margin-right: 0;
     
     li {
       margin-right: 0;
@@ -212,6 +213,10 @@
   .blacklist__list {
     justify-content: space-around;
     margin-right: 0;
+    
+    li {
+      margin-right: 0;
+    }
   }
 }
 
@@ -950,9 +955,12 @@
   }
   .portfolio__list li {
     width: 320px;
-    height: 320px;
+    height: auto;
     max-width: 100%;
     padding-top: 70px;
+  }
+  .portfolio__preview {
+    height: 320px;
   }
   .portfolio__info {
     opacity: 1;
