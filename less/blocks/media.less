@@ -138,6 +138,20 @@
       }
     }
   }
+  .header--blacklist {
+    .menu__item:nth-child(6) {
+      background-color: rgba(255,255,255,0);
+      
+      .menu__link {
+        color: @black;
+        
+        &::before,
+        &::after {
+          background-color: @black;
+        }
+      }
+    }
+  }
   .logo--open {
     .logo__black {
       fill: @black;
@@ -191,6 +205,9 @@
     li {
       margin-right: 0;
     }
+  }
+  .promo--blacklist::after {
+    transform: translateX(370px);
   }
 }
 
@@ -305,6 +322,26 @@
     .promo__text {
       margin-top: 600px;
     }
+  }
+  .promo--blacklist::after {
+    display: none;
+  }
+  .promo--blacklist .promo__text {
+    margin-top: 600px;
+  }
+  .promo--blacklist .promo__wrap::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .blacklist__list {
+    justify-content: space-around;
+    margin-bottom: 0;
+  }
+  .blacklist__list li {
+    margin-right: 0;
+  }
+  .blacklist__nav li {
+    margin-bottom: 20px;
   }
 }
 
@@ -832,6 +869,7 @@
       }
     }
   }
+  .promo--blacklist,
   .promo--portfolio {
     padding-top: 80px;
     
@@ -864,6 +902,8 @@
     .promo__wrap {
       padding-bottom: 195px;
     }
+  }
+  .promo--portfolio {
     &::after {
       content: "";
       position: absolute;
@@ -877,6 +917,11 @@
       background-image: url(../img/images/bird-single.svg);
       background-repeat: no-repeat;
       background-size: contain;
+    }
+  }
+  .promo--blacklist {
+    .promo__wrap::after {
+      bottom: 10px;
     }
   }
   .portfolio {
@@ -925,6 +970,69 @@
   }
   .portfolio__preview {
     overflow: hidden;
+  }
+  .blacklist {
+    padding-top: 135px;
+    padding-bottom: 25px;
+  }
+  .blacklist__nav {
+    margin-bottom: 80px;
+  }
+  .blacklist__nav li {
+    margin-right: 50px;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .blacklist__notfound,
+  .blacklist__nav li a {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+  .blacklist__notfound {
+    margin-bottom: 95px;
+  }
+  .blacklist__list li {
+    width: 320px;
+    position: relative;
+    max-width: 100%;
+    padding-top: 30px;
+    margin-bottom: 50px;
+  }
+  .blacklist__name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+  .blacklist__type,
+  .blacklist__date {
+    display: none;
+  }
+  .blacklist__img {
+    height: 320px;
+  }
+  .blacklist__reason {
+    opacity: 1;
+    position: static;
+    height: auto;
+    margin-bottom: 15px;
+    padding: 0;
+    color: #fff !important;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: rgba(255,255,255,0) !important;
+    
+    b {
+      display: none;
+    }
+    p {
+      margin: 0;
+    }
   }
 }
 

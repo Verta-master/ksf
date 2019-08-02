@@ -14,11 +14,12 @@
     position: absolute;
     width: 1363px;
     height: 1151px;
-    z-index: 1;
+    z-index: 101;
     top: -3px;
     right: 50vw;
-    transform: translateX(457px);
+    transform: translateX(458px);
     background-image: url(../img/images/bg-portfolio.svg);
+    pointer-events: none;
   }
   .promo__wrap {
     padding-bottom: 400px;
@@ -40,17 +41,6 @@
   }
 }
 
-.promo--portfolio {
-  .promo__link {
-    &--green {
-      background-color: rgba(255,255,255,0);
-    }
-    &--black {
-      background-color: rgba(0,0,0,0.7);
-    }
-  }
-}
-
 .promo--blacklist {
   background-color: @black;
   
@@ -65,17 +55,12 @@
   .promo__wrap {
     &::after {
       display: block;
-      bottom: 140px;
+      bottom: 155px;
       left: 0;
       right: auto;
       width: 144px;
       height: 134px;
       background-image: url(../img/images/mask.svg);
-    }
-  }
-  .promo__link {
-    &--black {
-      background-color: rgba(255,255,255,0);
     }
   }
 }

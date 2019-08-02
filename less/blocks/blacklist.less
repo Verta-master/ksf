@@ -1,6 +1,6 @@
 .blacklist {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 55px;
+  padding-bottom: 105px;
   color: #fff;
   background-color: @black;
 }
@@ -26,31 +26,31 @@
     
     &:nth-child(2) a {
       color: @red;
-      
-      &:hover,
-      &:active {
-        color: #FF513F;
-        border-bottom: 4px solid #FF513F;
-        .transition();
-      }
     }
     
     &:last-child a {
       color: #FFC856;
-      
-      &:hover,
-      &:active {
-        color: @yellow;
-        border-bottom: 4px solid @yellow;
-        .transition();
-      }
     }
   }
 }
 
-.blacklist__active {
+.blacklist__nav li:first-child a:hover,
+.blacklist__nav li:first-child a.active {
   color: #fff;
   border-bottom: 4px solid #fff;
+  .transition();
+}
+.blacklist-members__nav li:nth-child(2) a:hover,
+.blacklist-members__nav li:nth-child(2) a.active {
+  color: #FF513F;
+  border-bottom: 4px solid #FF513F;
+  .transition();
+}
+.blacklist-members__nav li:last-child a:hover,
+.blacklist-members__nav li:last-child a.active {
+  color: #FFC856;
+  border-bottom: 4px solid #FFC856;
+  .transition();
 }
 
 .blacklist__notfound {
@@ -77,9 +77,7 @@
   }
 }
 
-.blacklist__avatar {
-  position: relative;
-  margin-bottom: 18px;
+.blacklist__img {
   width: 100%;
   height: 249px;
   overflow: hidden;
@@ -91,6 +89,12 @@
     object-fit: cover;
     object-position: 50%;
   }
+}
+
+.blacklist__avatar {
+  position: relative;
+  margin-bottom: 18px;
+  width: 100%;
   
   b {
     font-weight: 400;
@@ -103,10 +107,17 @@
     font-size: 14px;
     line-height: 18px;
   }
+  
+  &:hover {
+    .blacklist__reason {
+      opacity: 1;
+      .transition();
+    }
+  }
 }
 
 .blacklist__freelancer {
-  .blacklist__avatar {
+  .blacklist__img {
     border: 10px solid #FF513F;
   }
   .blacklist__reason {
@@ -115,7 +126,7 @@
 }
 
 .blacklist__client {
-  .blacklist__avatar {
+  .blacklist__img {
     border: 10px solid @yellow;
   }
   .blacklist__reason {
@@ -129,9 +140,10 @@
   padding: 14px;
   top: 0;
   left: 0;
-  bottom: 0;
   right: 0;
-//  opacity: 0;
+  height: 249px;
+  opacity: 0;
+  .transition();
 }
 
 .blacklist__content {
