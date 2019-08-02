@@ -905,7 +905,7 @@ h1 {
 }
 .promo--member h1 {
   position: absolute;
-  top: 50px;
+  top: 40px;
   left: 0;
   margin-top: 0;
   width: 770px;
@@ -917,6 +917,7 @@ h1 {
 }
 .promo--member .promo__wrap {
   position: relative;
+  padding-bottom: 140px;
 }
 .promo--member .promo__wrap::after {
   content: "";
@@ -937,7 +938,11 @@ h1 {
   max-width: 100%;
   margin-right: 145px;
 }
-.promo--member promo__pic img {
+.promo--member .promo__pic {
+  margin-top: 130px;
+  margin-left: -2px;
+}
+.promo--member .promo__pic img {
   width: 167px;
   height: 138px;
 }
@@ -1091,7 +1096,7 @@ h1 {
 .promo__list li {
   position: relative;
   padding-left: 85px;
-  margin-bottom: 55px;
+  margin-bottom: 65px;
 }
 .promo__list li::before {
   content: "";
@@ -1394,8 +1399,11 @@ h1 {
   padding-bottom: 0;
 }
 .recommend--member .title {
-  margin-top: 100px;
-  margin-bottom: 40px;
+  margin-top: 115px;
+  margin-bottom: 55px;
+}
+.recommend--member .recommend__btn {
+  margin-top: 120px;
 }
 .recommend__wrap {
   position: relative;
@@ -1404,24 +1412,23 @@ h1 {
 .recommend__deco {
   position: relative;
   padding-top: 115px;
-  padding-bottom: 115px;
+  padding-bottom: 120px;
   background-image: url(../img/images/deco.svg);
   background-repeat: no-repeat;
   background-size: 144px 41px;
-  background-position: top 115px left;
+  background-position: top 115px left 13px;
 }
 .recommend__deco::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 0;
   right: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
   width: 464px;
   height: 1473px;
   background-image: url(../img/images/deco-green.svg);
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: top -50px center;
 }
 .recommend__title {
   margin-bottom: 80px;
@@ -1548,10 +1555,13 @@ h1 {
 }
 .recommend__text {
   max-width: 600px;
-  margin-bottom: 75px;
+  margin-bottom: 80px;
 }
 .recommend__text span {
   color: #FFC856;
+}
+.recommend__text p {
+  margin-bottom: 30px;
 }
 .person {
   padding-top: 175px;
@@ -2682,13 +2692,13 @@ h1 {
   color: #FFC856;
 }
 .rule {
-  padding-top: 170px;
-  padding-bottom: 150px;
+  padding-top: 165px;
+  padding-bottom: 140px;
   background-color: #FFC856;
   background-image: radial-gradient(962.23px at -0.83% 100%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
 }
 .rule .title {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 .rule .title span {
   display: block;
@@ -2711,6 +2721,8 @@ h1 {
 .rule__img img {
   width: 100%;
   height: 454px;
+  margin-top: -50px;
+  margin-left: -10px;
 }
 .rule__info {
   width: 50%;
@@ -2729,11 +2741,14 @@ h1 {
   font-weight: 500;
 }
 .rule__text {
-  max-width: 490px;
-  margin-bottom: 160px;
+  max-width: 470px;
+  margin-bottom: 170px;
 }
 .rule__text span {
   color: #fff;
+}
+.rule__text p {
+  margin-bottom: 35px;
 }
 .rule__btn {
   display: -webkit-box;
@@ -2757,7 +2772,7 @@ h1 {
   overflow: hidden;
 }
 .price__columns {
-  margin-top: 255px;
+  margin-top: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2772,7 +2787,7 @@ h1 {
 .price__column::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: 30px;
   z-index: -1;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2793,6 +2808,7 @@ h1 {
   background-image: url(../img/images/people-2.svg);
 }
 .price__column--profy .price__list {
+  padding-left: 60px;
   border-right: 1px solid #001E20;
 }
 .price__column--profy .price__list p {
@@ -2816,6 +2832,9 @@ h1 {
   height: 172px;
   top: -100px;
   background-image: url(../img/images/heads.svg);
+}
+.price__column--newby .price__list {
+  padding-right: 60px;
 }
 .price__column--newby .price__item {
   padding-left: 97px;
@@ -2872,10 +2891,10 @@ h1 {
 }
 .price__item:first-child {
   height: 135px;
-  padding-top: 30px;
+  padding-top: 40px;
 }
 .price__item:first-child::before {
-  top: 60%;
+  top: 65%;
 }
 .price__item::before {
   content: "";
@@ -2937,8 +2956,8 @@ h1 {
   background-color: #FFC856;
 }
 .payment {
-  padding-top: 50px;
-  padding-bottom: 100px;
+  padding-top: 60px;
+  padding-bottom: 145px;
 }
 .payment__wrap {
   display: -webkit-box;
@@ -2950,12 +2969,13 @@ h1 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  width: 1050px;
 }
 .payment__block {
   width: 300px;
 }
 .payment__block--profy {
-  padding-top: 65px;
+  padding-top: 60px;
 }
 .payment__center {
   width: 370px;
@@ -2971,9 +2991,11 @@ h1 {
   line-height: 28px;
 }
 .payment__price--red {
+  margin-bottom: 5px;
   color: #FF513F;
 }
 .payment__price--green {
+  margin-bottom: 5px;
   color: #007550;
   font-weight: 700;
 }
@@ -2991,13 +3013,24 @@ h1 {
 }
 .payment__comment {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 300;
 }
 .payment__btn {
   width: 100%;
+  height: 54px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 20px;
 }
 .timer {
@@ -3053,6 +3086,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  overflow: hidden;
 }
 .auto__wrap {
   position: relative;
@@ -3066,11 +3100,12 @@ h1 {
 .auto__car {
   position: relative;
   z-index: 5;
-  top: -50px;
+  top: -150px;
 }
 .auto__text {
   position: relative;
-  top: -100px;
+  z-index: 10;
+  top: -155px;
   max-width: 460px;
   color: #fff;
 }
@@ -3085,19 +3120,20 @@ h1 {
   color: #fff;
 }
 .auto__club {
+  margin-bottom: 45px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 500;
 }
 .pill {
-  padding-top: 70px;
+  padding-top: 80px;
   padding-bottom: 130px;
   color: #fff;
   background-color: #001E20;
   overflow: hidden;
 }
 .pill .title {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   color: #fff;
 }
 .pill__wrap {
@@ -3126,10 +3162,13 @@ h1 {
 .pill__text span {
   color: #FF513F;
 }
+.pill__text p {
+  margin-bottom: 25px;
+}
 .pill__text::after {
   content: "";
   position: absolute;
-  bottom: -96px;
+  bottom: -120px;
   left: 0;
   width: 88px;
   height: 25px;
@@ -3138,7 +3177,7 @@ h1 {
   background-size: contain;
 }
 .pill__btn {
-  margin-top: 124px;
+  margin-top: 110px;
 }
 .pill__tablet {
   position: absolute;
@@ -3358,8 +3397,8 @@ h1 {
   content: "";
   position: absolute;
   z-index: -1;
-  top: 60%;
-  right: -100px;
+  top: 62%;
+  left: 20%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 1522px;
@@ -3382,16 +3421,23 @@ h1 {
           justify-content: space-between;
 }
 .closed__info {
-  width: 500px;
+  width: 50%;
 }
 .closed__persons {
-  width: 420px;
+  width: 50%;
+  padding-left: 25px;
+  padding-top: 15px;
 }
 .closed__text {
+  max-width: 450px;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 110px;
+}
+.closed__text p {
+  margin-bottom: 30px;
 }
 .closed__subtitle {
+  margin-top: 0;
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.02em;
@@ -3401,14 +3447,17 @@ h1 {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-top: 90px;
+  margin-top: 95px;
   color: #001E20;
   font-size: 24px;
   line-height: 28px;
   font-weight: 500;
 }
 .closed__list li {
-  margin-bottom: 30px;
+  margin-bottom: 38px;
+}
+.closed__list li:last-child {
+  margin-bottom: 0;
 }
 @media (max-width: 1170px) {
   .wrapper {
