@@ -695,6 +695,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-right: 10px;
 }
 .menu__item {
   padding-left: 22px;
@@ -798,14 +799,14 @@ h1 {
   z-index: 101;
   top: -3px;
   right: 50vw;
-  -webkit-transform: translateX(458px);
-          transform: translateX(458px);
+  -webkit-transform: translateX(413px);
+          transform: translateX(413px);
   background-image: url(../img/images/bg-portfolio.svg);
   pointer-events: none;
 }
 .promo--blacklist .promo__wrap,
 .promo--portfolio .promo__wrap {
-  padding-bottom: 400px;
+  padding-bottom: 140px;
 }
 .promo--blacklist .promo__wrap::after,
 .promo--portfolio .promo__wrap::after {
@@ -819,6 +820,7 @@ h1 {
 .promo--blacklist .promo__info,
 .promo--portfolio .promo__info {
   max-width: 600px;
+  margin-right: 145px;
 }
 .promo--blacklist .promo__preview,
 .promo--portfolio .promo__preview {
@@ -836,16 +838,20 @@ h1 {
 .promo--blacklist .promo__preview {
   color: #FF513F;
 }
-.promo--blacklist .promo__wrap::after {
-  display: block;
-  bottom: 155px;
-  left: 0;
-  right: auto;
+.promo--blacklist .promo__pic img {
   width: 144px;
   height: 134px;
-  background-image: url(../img/images/mask.svg);
 }
 .promo__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   position: relative;
   padding-bottom: 150px;
 }
@@ -888,17 +894,6 @@ h1 {
 .promo__img img {
   width: 140px;
   height: 140px;
-}
-.promo__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 .promo__last {
   margin-top: 55px;
@@ -979,6 +974,14 @@ h1 {
   background-color: #FFC856;
   -webkit-transform: rotateX(55deg) rotateY(0deg) rotateZ(-45deg);
           transform: rotateX(55deg) rotateY(0deg) rotateZ(-45deg);
+}
+.promo__pic {
+  margin-top: 140px;
+  margin-left: 10px;
+}
+.promo__pic img {
+  width: 180px;
+  height: 148px;
 }
 .show {
   padding-top: 75px;
@@ -2267,7 +2270,7 @@ h1 {
   transition: ease-out 0.3s;
 }
 .blacklist {
-  padding-top: 55px;
+  padding-top: 65px;
   padding-bottom: 105px;
   color: #fff;
   background-color: #001E20;
@@ -2606,7 +2609,8 @@ h1 {
     height: 350px;
   }
   .promo--portfolio::after {
-    display: none;
+    -webkit-transform: translateX(475px);
+            transform: translateX(475px);
   }
   .promo--portfolio .promo__wrap {
     padding-bottom: 100px;
@@ -2621,8 +2625,13 @@ h1 {
     margin-right: 0;
   }
   .promo--blacklist::after {
-    -webkit-transform: translateX(370px);
-            transform: translateX(370px);
+    -webkit-transform: translateX(475px);
+            transform: translateX(475px);
+  }
+  .blacklist__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-right: 0;
   }
 }
 @media (max-width: 1022px) {
@@ -2741,8 +2750,19 @@ h1 {
   .promo--portfolio .promo__text {
     margin-top: 600px;
   }
+  .promo--portfolio::after {
+    -webkit-transform: none;
+            transform: none;
+    top: 297px;
+    right: auto;
+    left: -1015px;
+  }
   .promo--blacklist::after {
-    display: none;
+    -webkit-transform: none;
+            transform: none;
+    top: 297px;
+    right: auto;
+    left: -1015px;
   }
   .promo--blacklist .promo__text {
     margin-top: 600px;
@@ -2751,11 +2771,6 @@ h1 {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-  }
-  .blacklist__list {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    margin-bottom: 0;
   }
   .blacklist__list li {
     margin-right: 0;
@@ -2897,6 +2912,10 @@ h1 {
   }
   .recommend__line p:last-of-type {
     width: 90px;
+  }
+  .promo--blacklist::after,
+  .promo--portfolio::after {
+    top: 147px;
   }
 }
 @media (max-width: 480px) {
@@ -3306,25 +3325,22 @@ h1 {
   }
   .promo--blacklist .promo__wrap,
   .promo--portfolio .promo__wrap {
-    padding-bottom: 195px;
+    padding-bottom: 53px;
   }
+  .promo--blacklist .promo__info,
+  .promo--portfolio .promo__info {
+    max-width: 100%;
+    margin: 0;
+  }
+  .promo--blacklist::after,
   .promo--portfolio::after {
-    content: "";
-    position: absolute;
-    bottom: 55px;
-    top: auto;
-    left: 50%;
-    display: block;
-    width: 150px;
-    height: 123px;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    background-image: url(../img/images/bird-single.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
+    display: none;
   }
   .promo--blacklist .promo__wrap::after {
     bottom: 10px;
+  }
+  .promo--blacklist .promo__pic {
+    margin-top: 70px;
   }
   .portfolio {
     padding-top: 55px;
@@ -3380,7 +3396,7 @@ h1 {
     overflow: hidden;
   }
   .blacklist {
-    padding-top: 135px;
+    padding-top: 90px;
     padding-bottom: 25px;
   }
   .blacklist__nav {
@@ -3442,6 +3458,15 @@ h1 {
   }
   .blacklist__reason p {
     margin: 0;
+  }
+  .promo__pic {
+    margin-left: 0;
+    margin-top: 35px;
+    text-align: center;
+  }
+  .promo__pic img {
+    width: 150px;
+    height: 123px;
   }
 }
 @media (max-width: 360px) {
