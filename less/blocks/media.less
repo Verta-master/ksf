@@ -192,7 +192,7 @@
   }
   .promo--portfolio {
     &::after {
-      display: none;
+      transform: translateX(475px);
     }
     .promo__wrap {
       padding-bottom: 100px;
@@ -207,7 +207,11 @@
     }
   }
   .promo--blacklist::after {
-    transform: translateX(370px);
+    transform: translateX(475px);
+  }
+  .blacklist__list {
+    justify-content: space-around;
+    margin-right: 0;
   }
 }
 
@@ -322,9 +326,18 @@
     .promo__text {
       margin-top: 600px;
     }
+    &::after {
+      transform: none;
+      top: 297px;
+      right: auto;
+      left: -1015px;
+    }
   }
   .promo--blacklist::after {
-    display: none;
+    transform: none;
+    top: 297px;
+    right: auto;
+    left: -1015px;
   }
   .promo--blacklist .promo__text {
     margin-top: 600px;
@@ -332,10 +345,6 @@
   .promo--blacklist .promo__wrap::after {
     left: 50%;
     transform: translateX(-50%);
-  }
-  .blacklist__list {
-    justify-content: space-around;
-    margin-bottom: 0;
   }
   .blacklist__list li {
     margin-right: 0;
@@ -473,6 +482,10 @@
     p:last-of-type {
       width: 90px;
     }
+  }
+  .promo--blacklist::after,
+  .promo--portfolio::after {
+    top: 147px;
   }
 }
 
@@ -900,28 +913,23 @@
       margin-top: 35px;
     }
     .promo__wrap {
-      padding-bottom: 195px;
+      padding-bottom: 53px;
+    }
+    .promo__info {
+      max-width: 100%;
+      margin: 0;
     }
   }
-  .promo--portfolio {
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 55px;
-      top: auto;
-      left: 50%;
-      display: block;
-      width: 150px;
-      height: 123px;
-      transform: translateX(-50%);
-      background-image: url(../img/images/bird-single.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
+  .promo--blacklist::after,
+  .promo--portfolio::after {
+    display: none;
   }
   .promo--blacklist {
     .promo__wrap::after {
       bottom: 10px;
+    }
+    .promo__pic {
+      margin-top: 70px;
     }
   }
   .portfolio {
@@ -972,7 +980,7 @@
     overflow: hidden;
   }
   .blacklist {
-    padding-top: 135px;
+    padding-top: 90px;
     padding-bottom: 25px;
   }
   .blacklist__nav {
@@ -1035,6 +1043,16 @@
     }
     p {
       margin: 0;
+    }
+  }
+  .promo__pic {
+    margin-left: 0;
+    margin-top: 35px;
+    text-align: center;
+    
+    img {
+      width: 150px;
+      height: 123px;
     }
   }
 }
