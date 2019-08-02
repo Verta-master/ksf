@@ -333,27 +333,27 @@
     
     <section class="pill">
       <div class="wrapper">
+        <p class="title">Будет сложно</p>
         <div class="pill__wrap">
           <div class="pill_info">
-            <p class="title">Будет сложно</p>
             <div class="pill__text">
               <p>В КСФ будет непросто — у всех участников сразу появится много дел и задач. Лениться, ныть и ковыряться в пупке будет тупо некогда.</p>
               <p>Подумайте несколько раз, возможно «жить нынешней жизнью и получать 30к» — это хороший для Вас вариант, который на самом деле устраивает.</p>
-              <p><span>Если же Вы чувствуете, что нет - тогда делайте уже что-нибудь.</span></p>
+              <p><span>Если же Вы чувствуете, что нет<br>- тогда делайте уже что-нибудь.</span></p>
             </div>
             <div class="pill__logo">
               <svg width="178" height="57" viewBox="0 0 114 29" fill="#fff" xmlns="http://www.w3.org/2000/svg">
                 <use href="#logo"></use>
               </svg>
-              <p>— это не волшебная таблетка.<br>Это скорее пинок под зад и чёткая инструкция:<br>как и что Вам делать. Но вместо Вас работать никто не будет. Придётся отрвать себя от стула и двигаться в сторону денег.</p>
+              <p>— это не волшебная таблетка.<br>Это скорее пинок под зад и чёткая инструкция:<br>как и что Вам делать. Но вместо Вас работать никто не будет.<br>Придётся отрвать себя от стула и двигаться в сторону денег.</p>
             </div>
             <a href="#" class="btn btn--red pill__btn">Оплатить участие</a>
           </div>
           <div class="pill__img">
-            <img src="img/images/pill.svg" class="pill__tablet" alt="волшебная таблетка" width="25" height="81">
-            <img src="img/images/tube-1.svg" class="pill__tube" alt="волшебная таблетка" width="220" height="176">
-            <img src="img/images/tube-1.svg" class="pill__tube" alt="волшебная таблетка" width="346" height="275">
-            <img src="img/images/tube-1.svg" class="pill__tube" alt="волшебная таблетка" width="448" height="358">
+            <img src="img/images/pill.svg" class="pill__tablet paroller-pill" alt="волшебная таблетка" width="25" height="81">
+            <img src="img/images/tube-1.svg" class="pill__tube pill__tube-1" alt="волшебная таблетка" width="220" height="176">
+            <img src="img/images/tube-1.svg" class="pill__tube pill__tube-2" alt="волшебная таблетка" width="346" height="275">
+            <img src="img/images/tube-1.svg" class="pill__tube pill__tube-3" alt="волшебная таблетка" width="448" height="358">
           </div>
         </div>
       </div>
@@ -439,6 +439,11 @@
       factor: 0.5,
       type: 'foreground',
       direction: 'horizontal'
+    });
+    $(".paroller-pill, [data-paroller-factor]").paroller({
+      factor: -0.6,
+      type: 'foreground',
+      direction: 'vertical'
     });
   </script>
   
