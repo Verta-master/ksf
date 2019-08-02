@@ -12,8 +12,8 @@
     content: "";
     position: absolute;
     z-index: -1;
-    top: 60%;
-    right: -100px;
+    top: 62%;
+    left: 20%;
     transform: translateY(-50%);
     width: 1522px;
     height: 1655px;
@@ -37,19 +37,27 @@
 }
 
 .closed__info {
-  width: 500px;
+  width: 50%;
 }
 
 .closed__persons {
-  width: 420px;
+  width: 50%;
+  padding-left: 25px;
+  padding-top: 15px;
 }
 
 .closed__text {
+  max-width: 450px;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 110px;
+  
+  p {
+    margin-bottom: 30px;
+  }
 }
 
 .closed__subtitle {
+  margin-top: 0;
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.02em;
@@ -59,13 +67,17 @@
 .closed__list {
   .reset();
   list-style: none;
-  margin-top: 90px;
+  margin-top: 95px;
   color: @black;
   font-size: 24px;
   line-height: 28px;
   font-weight: 500;
   
   li {
-    margin-bottom: 30px;
+    margin-bottom: 38px;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
