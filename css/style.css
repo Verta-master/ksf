@@ -2091,18 +2091,12 @@ h1 {
   font-size: 36px;
   line-height: 42px;
   margin-bottom: 10px;
-  border-bottom: 4px solid #fff;
+  border-bottom: 4px solid rgba(255, 255, 255, 0);
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
 .portfolio__nav li p {
   margin-top: 0;
-}
-.portfolio__nav li:first-child a:hover,
-.portfolio__nav li:first-child a.active {
-  border-bottom: 4px solid #001E20;
-  -webkit-transition: ease-out 0.3s;
-  transition: ease-out 0.3s;
 }
 .portfolio__nav li:nth-child(2) p {
   color: #FF513F;
@@ -2110,13 +2104,6 @@ h1 {
 .portfolio__nav li:nth-child(2) a {
   font-size: 24px;
   line-height: 28px;
-  -webkit-transition: ease-out 0.3s;
-  transition: ease-out 0.3s;
-}
-.portfolio__nav li:nth-child(2) a:hover,
-.portfolio__nav li:nth-child(2) a:active {
-  color: #FF513F;
-  border-bottom: 4px solid #FF513F;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
@@ -2129,13 +2116,6 @@ h1 {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
-.portfolio__nav li:nth-child(3) a:hover,
-.portfolio__nav li:nth-child(3) a:active {
-  color: #007550;
-  border-bottom: 4px solid #007550;
-  -webkit-transition: ease-out 0.3s;
-  transition: ease-out 0.3s;
-}
 .portfolio__nav li:last-child p {
   color: #FFC856;
 }
@@ -2145,10 +2125,31 @@ h1 {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
+.portfolio__nav li:first-child a:hover,
+.portfolio__nav li:first-child a.active {
+  color: #000;
+  border-color: #000;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.portfolio__nav li:nth-child(2) a:hover,
+.portfolio__nav li:nth-child(2) a.active {
+  color: #FF513F;
+  border-color: #FF513F;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.portfolio__nav li:nth-child(3) a:hover,
+.portfolio__nav li:nth-child(3) a.active {
+  color: #007550;
+  border-color: #007550;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
 .portfolio__nav li:last-child a:hover,
-.portfolio__nav li:last-child a:active {
+.portfolio__nav li:last-child a.active {
   color: #FFC856;
-  border-bottom: 4px solid #FFC856;
+  border-color: #FFC856;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
