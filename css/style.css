@@ -483,6 +483,9 @@ h1 {
 .wrapper-crop {
   overflow: hidden;
 }
+.hidden {
+  display: none;
+}
 .title {
   margin-top: 0;
   margin-bottom: 0;
@@ -792,12 +795,13 @@ h1 {
   position: absolute;
   width: 1363px;
   height: 1151px;
-  z-index: 1;
+  z-index: 101;
   top: -3px;
   right: 50vw;
-  -webkit-transform: translateX(457px);
-          transform: translateX(457px);
+  -webkit-transform: translateX(458px);
+          transform: translateX(458px);
   background-image: url(../img/images/bg-portfolio.svg);
+  pointer-events: none;
 }
 .promo--blacklist .promo__wrap,
 .promo--portfolio .promo__wrap {
@@ -821,12 +825,6 @@ h1 {
   margin-top: 0;
   margin-bottom: 30px;
 }
-.promo--portfolio .promo__link--green {
-  background-color: rgba(255, 255, 255, 0);
-}
-.promo--portfolio .promo__link--black {
-  background-color: rgba(0, 0, 0, 0.7);
-}
 .promo--blacklist {
   background-color: #001E20;
 }
@@ -840,15 +838,12 @@ h1 {
 }
 .promo--blacklist .promo__wrap::after {
   display: block;
-  bottom: 140px;
+  bottom: 155px;
   left: 0;
   right: auto;
   width: 144px;
   height: 134px;
   background-image: url(../img/images/mask.svg);
-}
-.promo--blacklist .promo__link--black {
-  background-color: rgba(255, 255, 255, 0);
 }
 .promo__wrap {
   position: relative;
@@ -2272,8 +2267,8 @@ h1 {
   transition: ease-out 0.3s;
 }
 .blacklist {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 55px;
+  padding-bottom: 105px;
   color: #fff;
   background-color: #001E20;
 }
@@ -2307,26 +2302,29 @@ h1 {
 .blacklist__nav li:nth-child(2) a {
   color: #FF513F;
 }
-.blacklist__nav li:nth-child(2) a:hover,
-.blacklist__nav li:nth-child(2) a:active {
+.blacklist__nav li:last-child a {
+  color: #FFC856;
+}
+.blacklist__nav li:first-child a:hover,
+.blacklist__nav li:first-child a.active {
+  color: #fff;
+  border-bottom: 4px solid #fff;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.blacklist-members__nav li:nth-child(2) a:hover,
+.blacklist-members__nav li:nth-child(2) a.active {
   color: #FF513F;
   border-bottom: 4px solid #FF513F;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
-.blacklist__nav li:last-child a {
-  color: #FFC856;
-}
-.blacklist__nav li:last-child a:hover,
-.blacklist__nav li:last-child a:active {
+.blacklist-members__nav li:last-child a:hover,
+.blacklist-members__nav li:last-child a.active {
   color: #FFC856;
   border-bottom: 4px solid #FFC856;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
-}
-.blacklist__active {
-  color: #fff;
-  border-bottom: 4px solid #fff;
 }
 .blacklist__notfound {
   font-size: 24px;
@@ -2355,14 +2353,12 @@ h1 {
   margin-bottom: 86px;
   margin-right: 35px;
 }
-.blacklist__avatar {
-  position: relative;
-  margin-bottom: 18px;
+.blacklist__img {
   width: 100%;
   height: 249px;
   overflow: hidden;
 }
-.blacklist__avatar img {
+.blacklist__img img {
   display: block;
   width: 100%;
   height: 100%;
@@ -2370,6 +2366,11 @@ h1 {
      object-fit: cover;
   -o-object-position: 50%;
      object-position: 50%;
+}
+.blacklist__avatar {
+  position: relative;
+  margin-bottom: 18px;
+  width: 100%;
 }
 .blacklist__avatar b {
   font-weight: 400;
@@ -2382,13 +2383,18 @@ h1 {
   font-size: 14px;
   line-height: 18px;
 }
-.blacklist__freelancer .blacklist__avatar {
+.blacklist__avatar:hover .blacklist__reason {
+  opacity: 1;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.blacklist__freelancer .blacklist__img {
   border: 10px solid #FF513F;
 }
 .blacklist__freelancer .blacklist__reason {
   background-color: #FF513F;
 }
-.blacklist__client .blacklist__avatar {
+.blacklist__client .blacklist__img {
   border: 10px solid #FFC856;
 }
 .blacklist__client .blacklist__reason {
@@ -2400,8 +2406,11 @@ h1 {
   padding: 14px;
   top: 0;
   left: 0;
-  bottom: 0;
   right: 0;
+  height: 249px;
+  opacity: 0;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
 .blacklist__content p {
   margin: 0;
@@ -2544,6 +2553,16 @@ h1 {
   .header--portfolio .menu__item:nth-child(4) .menu__link::after {
     background-color: #007550;
   }
+  .header--blacklist .menu__item:nth-child(6) {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .header--blacklist .menu__item:nth-child(6) .menu__link {
+    color: #001E20;
+  }
+  .header--blacklist .menu__item:nth-child(6) .menu__link::before,
+  .header--blacklist .menu__item:nth-child(6) .menu__link::after {
+    background-color: #001E20;
+  }
   .logo--open .logo__black {
     fill: #001E20;
     -webkit-transition: ease-out 0.3s;
@@ -2599,6 +2618,10 @@ h1 {
   .portfolio__list li,
   .portfolio__nav li {
     margin-right: 0;
+  }
+  .promo--blacklist::after {
+    -webkit-transform: translateX(370px);
+            transform: translateX(370px);
   }
 }
 @media (max-width: 1022px) {
@@ -2716,6 +2739,28 @@ h1 {
   }
   .promo--portfolio .promo__text {
     margin-top: 600px;
+  }
+  .promo--blacklist::after {
+    display: none;
+  }
+  .promo--blacklist .promo__text {
+    margin-top: 600px;
+  }
+  .promo--blacklist .promo__wrap::after {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .blacklist__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 0;
+  }
+  .blacklist__list li {
+    margin-right: 0;
+  }
+  .blacklist__nav li {
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 766px) {
@@ -3224,9 +3269,11 @@ h1 {
   .footer__block--policy a {
     text-align: left;
   }
+  .promo--blacklist,
   .promo--portfolio {
     padding-top: 80px;
   }
+  .promo--blacklist::before,
   .promo--portfolio::before {
     content: "";
     position: absolute;
@@ -3240,18 +3287,23 @@ h1 {
     background-repeat: no-repeat;
     background-size: contain;
   }
+  .promo--blacklist h1,
   .promo--portfolio h1 {
     margin-bottom: 10px;
   }
+  .promo--blacklist .promo__text,
   .promo--portfolio .promo__text {
     margin-top: 445px;
   }
+  .promo--blacklist .promo__text p,
   .promo--portfolio .promo__text p {
     margin-bottom: 20px;
   }
+  .promo--blacklist .promo__last,
   .promo--portfolio .promo__last {
     margin-top: 35px;
   }
+  .promo--blacklist .promo__wrap,
   .promo--portfolio .promo__wrap {
     padding-bottom: 195px;
   }
@@ -3269,6 +3321,9 @@ h1 {
     background-image: url(../img/images/bird-single.svg);
     background-repeat: no-repeat;
     background-size: contain;
+  }
+  .promo--blacklist .promo__wrap::after {
+    bottom: 10px;
   }
   .portfolio {
     padding-top: 55px;
@@ -3322,6 +3377,67 @@ h1 {
   }
   .portfolio__preview {
     overflow: hidden;
+  }
+  .blacklist {
+    padding-top: 135px;
+    padding-bottom: 25px;
+  }
+  .blacklist__nav {
+    margin-bottom: 80px;
+  }
+  .blacklist__nav li {
+    margin-right: 50px;
+  }
+  .blacklist__nav li:last-child {
+    margin-right: 0;
+  }
+  .blacklist__notfound,
+  .blacklist__nav li a {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+  .blacklist__notfound {
+    margin-bottom: 95px;
+  }
+  .blacklist__list li {
+    width: 320px;
+    position: relative;
+    max-width: 100%;
+    padding-top: 30px;
+    margin-bottom: 50px;
+  }
+  .blacklist__name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+  .blacklist__type,
+  .blacklist__date {
+    display: none;
+  }
+  .blacklist__img {
+    height: 320px;
+  }
+  .blacklist__reason {
+    opacity: 1;
+    position: static;
+    height: auto;
+    margin-bottom: 15px;
+    padding: 0;
+    color: #fff !important;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: rgba(255, 255, 255, 0) !important;
+  }
+  .blacklist__reason b {
+    display: none;
+  }
+  .blacklist__reason p {
+    margin: 0;
   }
 }
 @media (max-width: 360px) {
