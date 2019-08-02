@@ -65,6 +65,37 @@
   }
 }
 
+.header--member {
+  .logo svg {
+    fill: @red;
+  }
+  .menu__item {
+    &:nth-child(2) {
+      background-color: @red;
+
+      .menu__link {
+        color: #fff;
+
+        &::before,
+        &::after {
+          width: 100%;
+          opacity: 1;
+          background-color: #fff;
+        }
+      }
+    }
+    &:hover:nth-child(2) .menu__link,
+    &:active:nth-child(2) .menu__link {
+      color: #fff;
+
+      &::before,
+      &::after {
+        background-color: #fff;
+      }
+    }
+  }
+}
+
 .header__wrap {
   display: flex;
   justify-content: space-between;

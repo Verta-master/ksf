@@ -9,7 +9,6 @@
   text-align: center;
   background-color: #001E20;
   .transition();
-//  box-shadow: 0px 6px 0px #FFFFFF;
   
   &::after {
     content: "";
@@ -76,6 +75,11 @@
     
     &::after {
       background-color: #fff;
+    }
+  }
+  &--black-red {
+    &::after {
+      background-color: @red;
     }
   }
 }
