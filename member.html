@@ -267,22 +267,24 @@
       </div>
     </section>
     
-    <section class="car">
-      <div class="wrapper car__wrap">
-        <img src="img/images/sun.svg" alt="Ежемесячная оплата!" width="300" height="291">
-        <img src="img/images/car-red.svg" alt="Ежемесячная оплата!" width="1256" height="281">
-        <p class="car__title">Ежемесячная<br>оплата!</p>
-        <p class="car__club"><span>Это Клуб.<br>Доступ в Клуб<br>оплачивается каждый месяц.</span></p>
-        <p>Платёж рекуррентный, а не разовый. При оплате Вы соглашаетесь на автоплатёж, и каждый месяц, в один и тот же день с Вашей карты списывается фиксированная сумма.</p>
-        <p><span>В любой момент автоплатёж можно отключить.</span></p>
+    <section class="auto">
+      <div class="wrapper auto__wrap">
+        <img src="img/images/sun.svg" class="auto__sun paroller-sun" alt="Ежемесячная оплата!" width="300" height="291">
+        <img src="img/images/car-red.svg" class="auto__car paroller-car" alt="Ежемесячная оплата!" width="1256" height="281">
+        <div class="auto__text">
+          <p class="auto__title">Ежемесячная<br>оплата!</p>
+          <p class="auto__club"><span>Это Клуб.<br>Доступ в Клуб<br>оплачивается каждый месяц.</span></p>
+          <p>Платёж рекуррентный, а не разовый.<br>При оплате Вы соглашаетесь на автоплатёж,<br>и каждый месяц, в один и тот же день с Вашей карты списывается фиксированная сумма.</p>
+          <p><span>В любой момент автоплатёж<br>можно отключить.</span></p>
+        </div>
       </div>
     </section>
     
-    <section class="recommend">
-      <div class="wrapper">
-        <p class="recommend__deco">В Клубе<br>- не только учеба</p>
+    <section class="recommend recommend--member">
+      <div class="wrapper recommend__deco">
+        <p class="title">В Клубе<br>- не только учеба</p>
         <div class="recommend__text">
-          <p>Для всех участников Клуба доступно еще много «плюшек».<br>Но о них Вы узнаете, когда будете внутри. Некоторые из них «серые», некоторые - приватные.<br>Об этом публично мы не говорим.</p>
+          <p>Для всех участников Клуба доступно еще много «плюшек».<br>Но о них Вы узнаете, когда будете внутри.<br>Некоторые из них «серые», некоторые - приватные.<br>Об этом публично мы не говорим.</p>
           <p>Хотя тут скажу еще кое что:<br>Участники и администрация Клуба делают коллективную лидогенерацию,<br>так же передаю заказы другим участникам,<br>если нет времени или клиент не тянет бюджет,<br>который берет тот, к кому клиент обратился.</p>
           <p><span> Это значит работу можно получить прямо в Клубе.<br>Да, даже если нет кейсов. Да, даже если мало что умеешь.</span></p>
         </div>
@@ -424,7 +426,21 @@
   </footer>
   
   <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/timer.js"></script>
+  <script src="js/member.js"></script>
+  <script src="js/jquery.paroller.min.js"></script>
+  
+  <script>
+    $(".paroller-sun, [data-paroller-factor]").paroller({
+      factor: -0.2,
+      type: 'foreground',
+      direction: 'horizontal'
+    });
+    $(".paroller-car, [data-paroller-factor]").paroller({
+      factor: 0.5,
+      type: 'foreground',
+      direction: 'horizontal'
+    });
+  </script>
   
   <!-- Dynamic favicon -->
   <script>

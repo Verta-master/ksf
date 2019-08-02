@@ -1389,9 +1389,39 @@ h1 {
   padding-bottom: 120px;
   overflow: hidden;
 }
+.recommend--member {
+  margin-top: 0;
+  padding-bottom: 0;
+}
+.recommend--member .title {
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
 .recommend__wrap {
   position: relative;
   z-index: 5;
+}
+.recommend__deco {
+  position: relative;
+  padding-top: 115px;
+  padding-bottom: 115px;
+  background-image: url(../img/images/deco.svg);
+  background-repeat: no-repeat;
+  background-size: 144px 41px;
+  background-position: top 115px left;
+}
+.recommend__deco::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 464px;
+  height: 1473px;
+  background-image: url(../img/images/deco-green.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .recommend__title {
   margin-bottom: 80px;
@@ -1515,6 +1545,13 @@ h1 {
   position: absolute;
   bottom: 50px;
   right: 160px;
+}
+.recommend__text {
+  max-width: 600px;
+  margin-bottom: 75px;
+}
+.recommend__text span {
+  color: #FFC856;
 }
 .person {
   padding-top: 175px;
@@ -3009,6 +3046,54 @@ h1 {
 }
 .timer-block .next {
   bottom: -2px;
+}
+.auto {
+  height: 892px;
+  background-image: url(../img/images/bg-car.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+.auto__wrap {
+  position: relative;
+}
+.auto__sun {
+  position: relative;
+  z-index: -1;
+  left: 200px;
+  top: 0;
+}
+.auto__car {
+  position: relative;
+  z-index: 5;
+  top: -50px;
+}
+.auto__text {
+  position: relative;
+  top: -100px;
+  max-width: 460px;
+  color: #fff;
+}
+.auto__text span {
+  color: #FFC856;
+}
+.auto__title {
+  margin-top: 0;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 500;
+  color: #fff;
+}
+.auto__club {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+}
+.pill {
+  padding-top: 70px;
+  padding-bottom: 130px;
+  color: #fff;
+  background-color: #001E20;
 }
 @media (max-width: 1170px) {
   .wrapper {
