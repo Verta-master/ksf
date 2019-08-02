@@ -30,7 +30,7 @@
       font-size: 36px;
       line-height: 42px;
       margin-bottom: 10px;
-      border-bottom: 4px solid #fff;
+      border-bottom: 4px solid rgba(255,255,255,0);
       .transition();
     }
     
@@ -38,12 +38,6 @@
       margin-top: 0;
     }
   }
-}
-
-.portfolio__nav li:first-child a:hover,
-.portfolio__nav li:first-child a.active {
-  border-bottom: 4px solid #001E20;
-  .transition();
 }
 
 .portfolio__nav li:nth-child(2) {
@@ -54,13 +48,6 @@
     font-size: 24px;
     line-height: 28px;
     .transition();
-    
-    &:hover,
-    &:active {
-      color: #FF513F;
-      border-bottom: 4px solid #FF513F;
-      .transition();
-    }
   }
 }
 
@@ -72,13 +59,6 @@
     font-size: 24px;
     line-height: 28px;
     .transition();
-    
-    &:hover,
-    &:active {
-      color: @green;
-      border-bottom: 4px solid @green;
-      .transition();
-    }
   }
 }
 
@@ -90,15 +70,35 @@
     font-size: 24px;
     line-height: 28px;
     .transition();
-    
-    &:hover,
-    &:active {
-      color: @yellow;
-      border-bottom: 4px solid @yellow;
-      .transition();
-    }
   }
 }
+
+.portfolio__nav li:first-child a:hover,
+.portfolio__nav li:first-child a.active {
+  color: #000;
+  border-color: #000;
+  .transition();
+}
+.portfolio__nav li:nth-child(2) a:hover,
+.portfolio__nav li:nth-child(2) a.active {
+  color: #FF513F;
+  border-color: #FF513F;
+  .transition();
+}
+.portfolio__nav li:nth-child(3) a:hover,
+.portfolio__nav li:nth-child(3) a.active {
+  color: @green;
+  border-color: @green;
+  .transition();
+}
+
+.portfolio__nav li:last-child a:hover,
+.portfolio__nav li:last-child a.active {
+  color: @yellow;
+  border-color: @yellow;
+  .transition();
+}
+
 
 .portfolio__list {
   .reset();
