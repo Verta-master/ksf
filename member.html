@@ -148,6 +148,11 @@
               </li>
             </ul>
           </div>
+          <div class="payment__block payment__block--mobile">
+            <p class="payment__price">7000 ₽ в месяц</p>
+            <a href="#" class="btn btn--yellow payment__btn">Я профи: Оплатить доступ</a>
+            <span class="payment__comment">Перед оплатой система попросит авторизоваться в личном кабинете</span>
+          </div>
           
           <div class="price__column price__column--newby">
             <div class="price__head">
@@ -399,7 +404,7 @@
               <p>Если человек по какой-либо причине покидает КСФ - он туда вернуться не может. Забыл оплатить, был исключён за неадекватность, не хватило 5 рублей на оплату - вернуться нельзя.</p>
               <p>И через год, и через 5 лет - тоже.</p>
               <p>Я не хочу, чтоб люди бегали туда-сюда, это не забегаловка, в которую приходят кофе попить.<br>Это сообщество, в котором люди живут.<br>Это философия, которая тебе либо подходит, либо нет.</p>
-              <p><span>Так что подумайте дважды, перед тем, как вписаться. И подумайте 10 раз, прежде чем выйти :)</span></p>
+              <p class="rule__slogan"><span>Так что подумайте дважды, перед тем, как вписаться. И подумайте 10 раз, прежде чем выйти :)</span></p>
             </div>
           </div>
           <figure class="rule__img">
@@ -426,26 +431,9 @@
   </footer>
   
   <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/member.js"></script>
   <script src="js/jquery.paroller.min.js"></script>
-  
-  <script>
-    $(".paroller-sun, [data-paroller-factor]").paroller({
-      factor: -0.2,
-      type: 'foreground',
-      direction: 'horizontal'
-    });
-    $(".paroller-car, [data-paroller-factor]").paroller({
-      factor: 0.5,
-      type: 'foreground',
-      direction: 'horizontal'
-    });
-    $(".paroller-pill, [data-paroller-factor]").paroller({
-      factor: -0.6,
-      type: 'foreground',
-      direction: 'vertical'
-    });
-  </script>
+  <script src="js/countdown.min.js"></script>
+  <script src="js/member.js"></script>
   
   <!-- Dynamic favicon -->
   <script>
