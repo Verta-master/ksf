@@ -47,3 +47,13 @@ $('.recommend__link').click(function() {
   $('.recommend__item:nth-child(n + 4)').slideDown();
   $(this).hide();
 });
+
+//scroll to anchor
+$('.btn-scroll').click(function() {
+  event.preventDefault();
+  var id  = $(this).attr('href');
+  var top = $(window).height() - 220;
+  $('body, html').animate({
+        scrollTop: $('#payment').offset().top - top
+    }, 500);
+});
