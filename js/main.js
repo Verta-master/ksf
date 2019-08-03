@@ -186,6 +186,26 @@ $('.btn-scroll').click(function() {
   }, 500);
 });
 
+$(window).scroll(movePill);
+
+function movePill() {
+  try {
+    var pillOffset = $('.pill__img').offset().top - 600;
+    var pillOffsetStop = pillOffset + $('.pill__img').height() + 144;
+
+    if ($(this).scrollTop() >= pillOffset && $(this).scrollTop() <= pillOffsetStop) {
+      var transZ = 100 - ($(this).scrollTop() - pillOffset) * 0.09;
+      if ($(this).scrollTop() - pillOffset > 550 && $(this).scrollTop() - pillOffset < 760) {
+        transZ = 100 - ($(this).scrollTop() - pillOffset) * 0.05;
+      }
+      $('.pill__tablet').css({
+        "transform": "translateY(" + ($(this).scrollTop() - pillOffset) + "px)"
+        + "translateZ(" + transZ + "px)"
+      })
+    }
+  } catch (error) {}
+}
+
 //Mobile menu
 $('.menu__btn--open').click(function(e) {
   e.stopPropagation();
