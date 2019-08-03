@@ -1,6 +1,25 @@
+function throttle(fn, wait) {
+  var time = Date.now();
+  return function () {
+    if ((time + wait - Date.now()) < 0) {
+      fn();
+      time = Date.now();
+    }
+  }
+}
+
+function cutSeconds(seconds) {
+  var seconds = String(seconds);
+  if (seconds == "-1") {
+    return '0';
+  } else {
+    return seconds.length == 2 ? seconds.substr(1, 1) : seconds;
+  }
+}
+
 function initTimer() {
   try {
-    var date = $('.membership__container .center .timer').attr('data-countdown').split('.').map(function (currentValue) {
+    var date = $('.timer').attr('data-countdown').split('.').map(function (currentValue) {
       return Number(currentValue);
     });
 
@@ -10,12 +29,12 @@ function initTimer() {
 
     //Countdown timer
     var timer = countdown(new Date(year, month, day), function (countdown) {
-      $('.pay-block .timer .timer-block.hours p').html(countdown.hours);
-      $('.pay-block .timer .timer-block.minutes p').html(countdown.minutes);
+      $('.hours p').html(countdown.hours);
+      $('.minutes p').html(countdown.minutes);
 
-      $('.pay-block .timer .timer-block.seconds p.current').html(countdown.seconds);
-      $('.pay-block .timer .timer-block.seconds p.prev').html(cutSeconds(countdown.seconds + 1));
-      $('.pay-block .timer .timer-block.seconds p.next').html(cutSeconds(countdown.seconds - 1));
+      $('.seconds p.current').html(countdown.seconds);
+      $('.seconds p.prev').html(cutSeconds(countdown.seconds + 1));
+      $('.seconds p.next').html(cutSeconds(countdown.seconds - 1));
     },
       countdown.HOURS | countdown.MINUTES | countdown.SECONDS);
   } catch (error) { }
@@ -45,6 +64,25 @@ function ajaxInit() {
     $(this).hide();
     $('.menu__btn--open').show();
     $('.logo').removeClass('logo--open');
+  });
+  
+  //Parallax
+  $(".paroller-sun, [data-paroller-factor]").paroller({
+    factor: -0.2,
+    type: 'foreground',
+    direction: 'horizontal'
+  });
+  
+  $(".paroller-car, [data-paroller-factor]").paroller({
+    factor: 0.5,
+    type: 'foreground',
+    direction: 'horizontal'
+  });
+  
+  $(".paroller-pill, [data-paroller-factor]").paroller({
+    factor: -0.6,
+    type: 'foreground',
+    direction: 'vertical'
   });
 }
 

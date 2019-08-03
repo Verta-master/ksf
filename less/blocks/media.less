@@ -179,6 +179,26 @@
       stroke: @black;
     }
   }
+  .header--member {
+    .line-top,
+    .line-middle,
+    .line-bottom {
+      fill: @red;
+    }
+    
+    .menu__item:nth-child(2) {
+      background-color: rgba(255,255,255,0);
+      
+      .menu__link {
+        color: @red;
+        
+        &::before,
+        &::after {
+          background-color: @red;
+        }
+      }
+    }
+  }
   .logo--open {
     .logo__black {
       fill: @black;
@@ -243,6 +263,39 @@
     
     li {
       margin-right: 0;
+    }
+  }
+  .promo--member .promo__info {
+    margin-right: 0;
+    width: 500px;
+  }
+  .promo--member .promo__wrap::after {
+    right: -345px;
+  }
+  .price__head {
+    padding: 40px 15px;
+  }
+  .price__column--profy .price__list {
+    padding-left: 0;
+  }
+  .price__column--newby {
+    .price__list {
+      padding-right: 0;
+    }
+    .price__item {
+      padding-left: 42px;
+      
+      &::before {
+        left: 15px
+      }
+    }
+  }
+  .recommend__deco {
+    padding-bottom: 110px;
+    padding-top: 110px;
+    
+    &::before {
+      right: -160px;
     }
   }
 }
@@ -385,6 +438,85 @@
   .blacklist__nav li {
     margin-bottom: 20px;
   }
+  .promo--member .promo__info {
+    padding-top: 60px;
+    width: 100%;
+  }
+  .promo--member h1 {
+    position: static;
+    width: auto;
+  }
+  .promo__list {
+    margin-top: 550px;
+    padding-left: 40px;
+    max-width: 330px;
+    
+    li {
+      padding-left: 125px;
+    }
+  }
+  .promo--member .promo__wrap::after {
+    left: 165px;
+    right: auto;
+    top: 220px;
+    bottom: auto;
+  }
+  .price__head {
+    padding: 15px;
+  }
+  .price__item {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .payment__wrap {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .payment__block {
+    width: 370px;
+    
+    &--profy {
+      padding-top: 0;
+    }
+  }
+  .payment__center {
+    padding-top: 45px;
+    margin-bottom: 45px;
+  }
+  .recommend__deco::before {
+    display: none;
+  }
+  .rule__wrap,
+  .pill__wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pill_info {
+    width: 100%;
+    margin-bottom: 86px;
+  }
+  .pill__img {
+    padding-top: 85px;
+    padding-bottom: 50px;
+    top: 0;
+    overflow: hidden;
+  }
+  .rule__img,
+  .rule__info {
+    width: 100%;
+  }
+  .rule__btn {
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    + p {
+      max-width: 447px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }
 
 //-----------------------------------------------------------
@@ -524,6 +656,70 @@
   .promo--whitelist .promo__preview {
     font-size: 24px;
     line-height: 28px;
+  }
+  .promo--member .promo__wrap::after {
+    top: 70px;
+  }
+  .price__head {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .price__title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+  .price__column::before {
+    left: 0;
+  }
+  .auto__text {
+    top: 0;
+  }
+  .auto__sun {
+    left: 0;
+  }
+  .auto__car {
+    top: 0;
+    right: 0;
+  }
+  .closed__wrap {
+    display: block;
+  }
+  .closed__info,
+  .closed__persons {
+    width: 100%;
+    padding-left: 0;
+  }
+  .closed__text {
+    margin-bottom: 30px;
+  }
+  .closed__info {
+    padding-bottom: 130px;
+    margin-bottom: 30px;
+    position: relative;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 319px;
+      height: 65px;
+      background-image: url(../img/images/cross-mobile.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  .closed__list {
+    margin-top: 50px;
+  }
+  .closed {
+    background-image: linear-gradient(-45deg, @red 0%, @red 50px, #fff 50px, #fff 51px, @red 51px, @red 100px, #fff 100px, #fff 101px, @red 101px, @red 150px, #fff 150px, #fff 151px, @red 151px, @red 200px, #fff 200px, #fff 201px, @red 201px, @red 250px, #fff 250px, #fff 251px, @red 251px, @red 100%);
+    
+    &::before {
+      display: none;
+    }
   }
 }
 
@@ -1133,8 +1329,348 @@
       display: flex;
     }
   }
+  .promo--member .promo__wrap {
+    padding-bottom: 130px;
+  }
+  .promo--member .promo__wrap::after {
+    left: 98px;
+    top: -15px;
+  }
+  .promo__list {
+    padding-left: 30px;
+    margin-top: 370px;
+    
+    li {
+      padding-left: 70px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  .promo--member .promo__pic {
+    margin-top: 150px;
+    margin-left: 0;
+  }
+  .price {
+    padding-top: 100px;
+    
+    .wrapper {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .title {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  .price__columns {
+    display: block;
+    margin-top: 205px;
+  }
+  .price__column {
+    width: 100%;
+  }
+  .price__column--profy {
+    margin-bottom: 30px;
+    
+    .price__list {
+      border-right: 0;
+    }
+    &::before {
+      left: 80px;
+    }
+    .price__head {
+      padding-left: 15px;
+    }
+    .price__item::before {
+      left: 5px;
+    }
+  }
+  .payment__block--mobile {
+    display: block;
+    margin-bottom: 187px;
+    padding-left: 15px;
+    padding: 15px;
+  }
+  .payment__block--profy {
+    display: none;
+  }
+  .price__head {
+    padding: 30px 15px;
+    height: auto;
+    
+    &::before {
+      display: none;
+    }
+  }
+  .price__item:first-child {
+    padding-top: 0;
+    height: 85px;
+  }
+  .payment__comment {
+    max-width: 250px;
+    display: block;
+  }
+  .price__column--newby {
+    &::before {
+      left: 20px;
+    }
+    .price__item {
+      padding-left: 35px;
+      
+      &::before {
+        left: 5px;
+      }
+      
+      &:first-child {
+        height: 110px;
+        font-size: 18px;
+        line-height: 24px;
+        
+        &::before {
+          top: 50%;
+        }
+      }
+    }
+  }
+  .price__old {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .payment {
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+  .payment__center {
+    padding-top: 0;
+    margin-bottom: 30px;
+    width: 100%;
+    
+    b {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+    }
+    .payment__comment {
+      text-align: center;
+      max-width: 100%;
+    }
+  }
+  .timer {
+    margin: 0;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .payment__block {
+    width: 100%;
+  }
+  .timer-block {
+    width: 95px;
+    height: 55px;
+  }
+  .auto__title {
+    font-size: 24px;
+  line-height: 28px;
+  }
+  .auto__text {
+    padding-top: 150px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .auto__club {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .auto {
+    height: 720px;
+  }
+  .auto__sun {
+    display: block;
+    width: 96px;
+    height: 93px;
+    left: 200px;
+    top: 120px;
+  }
+  .auto__car {
+    display: block;
+    right: 200px;
+    top: 120px;
+  }
+  .recommend__deco {
+    padding-bottom: 70px;
+    background-size: 85px 25px;
+    background-position: top 140px left 20px;
+  }
+  .recommend--member {
+    padding-bottom: 0;
+    
+    .title {
+      margin-top: 85px;
+      margin-bottom: 25px;
+    }
+  }
+  .recommend__text p {
+    margin-bottom: 20px;
+    
+    span {
+      color: @green;
+    }
+  }
+  .recommend--member .recommend__btn {
+    margin-top: 45px;
+  }
+  .pill {
+    position: relative;
+    padding-top: 50px;
+    
+    .title {
+      margin-bottom: 35px;
+    }
+  }
+  .pill__text {
+    margin-bottom: 110px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300;
+    
+    p {
+      margin-bottom: 20px;
+    }
+    &::after {
+      bottom: -70px;
+    }
+  }
+  .pill__logo {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .pill__btn {
+    width: 95%;
+    margin-top: 0;
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .pill__img {
+    width: 100%;
+    padding-top: 170px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .pill__tube-3 {
+    display: block;
+    width: 258px;
+    height: auto;
+  }
+  .pill__tube-2 {
+    display: block;
+    width: 175px;
+    height: auto;
+  }
+  .pill__tube-1 {
+    display: block;
+    width: 76px;
+    height: auto;
+  }
+  .pill_info {
+    margin-bottom: 0;
+  }
+  .pill__tablet {
+    top: 0;
+    left: 48%;
+  }
+  .closed {
+    padding-top: 65px;
+    padding-bottom: 70px;
+    background-image: linear-gradient(-30deg, @red 0%, @red 50px, #fff 50px, #fff 51px, @red 51px, @red 100px, #fff 100px, #fff 101px, @red 101px, @red 150px, #fff 150px, #fff 151px, @red 151px, @red 200px, #fff 200px, #fff 201px, @red 201px, @red 250px, #fff 250px, #fff 251px, @red 251px, @red 100%);
+    
+    .title {
+      margin-bottom: 60px;
+    }
+  }
+  .closed__text {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    
+    p {
+      margin-bottom: 20px;
+    }
+  }
+  .closed__info {
+    margin-bottom: 25px;
+  }
+  .closed__list {
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    
+    li {
+      margin-bottom: 17px;
+    }
+  }
+  .closed__subtitle {
+    margin-bottom: 30px;
+  }
+  .rule {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    
+    .title {
+      margin-bottom: 50px;
+    }
+  }
+  .rule__subtitle {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .rule__subtitle-2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .rule__text {
+    position: relative;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .rule__slogan {
+    position: absolute;
+    left: 0;
+    bottom: -500px;
+    margin: 0;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+  .rule__img {
+    margin-top: -40px;
+  }
+  .rule__btn {
+    height: 60px;
+    margin-top: 125px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+  .rule__btn + p {
+    max-width: 200px;
+    margin-top: 20px;
+    padding-bottom: 0;
+    margin-left: 0;
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
+//------------------------------------------------------------------
 @media (max-width: 360px) {
   .recommend__info {
     margin-bottom: 250px;
