@@ -2907,6 +2907,7 @@ h1 {
 }
 .price__item p {
   margin: 0;
+  max-width: 100%;
 }
 .price__item a {
   color: blue;
