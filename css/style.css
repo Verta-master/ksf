@@ -1485,7 +1485,7 @@ h1 {
 .recommend__deco {
   position: relative;
   padding-top: 115px;
-  padding-bottom: 120px;
+  padding-bottom: 115px;
   background-image: url(../img/images/deco.svg);
   background-repeat: no-repeat;
   background-size: 144px 41px;
@@ -1497,7 +1497,7 @@ h1 {
   top: 0;
   right: 0;
   width: 464px;
-  height: 1473px;
+  height: 2857px;
   background-image: url(../img/images/deco-green.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -2141,8 +2141,8 @@ h1 {
   right: 0;
   width: 420px;
   height: 420px;
-  -webkit-animation: rotation 1.5s infinite;
-          animation: rotation 1.5s infinite;
+  -webkit-animation: rotation 1.2s infinite;
+          animation: rotation 1.2s infinite;
 }
 .ksf__circle-logo {
   width: 291px;
@@ -2153,33 +2153,41 @@ h1 {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
-  12.5% {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+  10% {
+    -webkit-transform: rotate(36deg);
+            transform: rotate(36deg);
   }
-  25% {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+  20% {
+    -webkit-transform: rotate(72deg);
+            transform: rotate(72deg);
   }
-  37.5% {
-    -webkit-transform: rotate(135deg);
-            transform: rotate(135deg);
+  30% {
+    -webkit-transform: rotate(108deg);
+            transform: rotate(108deg);
+  }
+  40% {
+    -webkit-transform: rotate(144deg);
+            transform: rotate(144deg);
   }
   50% {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
   }
-  62.5% {
-    -webkit-transform: rotate(225deg);
-            transform: rotate(225deg);
+  60% {
+    -webkit-transform: rotate(216deg);
+            transform: rotate(216deg);
   }
-  75% {
-    -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
+  70% {
+    -webkit-transform: rotate(252deg);
+            transform: rotate(252deg);
   }
-  87.5% {
-    -webkit-transform: rotate(315deg);
-            transform: rotate(315deg);
+  80% {
+    -webkit-transform: rotate(288deg);
+            transform: rotate(288deg);
+  }
+  90% {
+    -webkit-transform: rotate(324deg);
+            transform: rotate(324deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
@@ -2191,33 +2199,41 @@ h1 {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
-  12.5% {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+  10% {
+    -webkit-transform: rotate(36deg);
+            transform: rotate(36deg);
   }
-  25% {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+  20% {
+    -webkit-transform: rotate(72deg);
+            transform: rotate(72deg);
   }
-  37.5% {
-    -webkit-transform: rotate(135deg);
-            transform: rotate(135deg);
+  30% {
+    -webkit-transform: rotate(108deg);
+            transform: rotate(108deg);
+  }
+  40% {
+    -webkit-transform: rotate(144deg);
+            transform: rotate(144deg);
   }
   50% {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
   }
-  62.5% {
-    -webkit-transform: rotate(225deg);
-            transform: rotate(225deg);
+  60% {
+    -webkit-transform: rotate(216deg);
+            transform: rotate(216deg);
   }
-  75% {
-    -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
+  70% {
+    -webkit-transform: rotate(252deg);
+            transform: rotate(252deg);
   }
-  87.5% {
-    -webkit-transform: rotate(315deg);
-            transform: rotate(315deg);
+  80% {
+    -webkit-transform: rotate(288deg);
+            transform: rotate(288deg);
+  }
+  90% {
+    -webkit-transform: rotate(324deg);
+            transform: rotate(324deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
@@ -2941,7 +2957,7 @@ h1 {
 }
 .price {
   padding-top: 120px;
-  padding-bottom: 50px;
+  padding-bottom: 110px;
   overflow: hidden;
 }
 .price__columns {
@@ -3107,6 +3123,9 @@ h1 {
 .price__know:hover .price__answer {
   display: block;
 }
+.price__know:hover .price__question {
+  border-radius: 50% 50% 0 0;
+}
 .price__question {
   width: 24px;
   height: 24px;
@@ -3130,7 +3149,6 @@ h1 {
   background-color: #FFC856;
 }
 .payment {
-  padding-top: 60px;
   padding-bottom: 145px;
 }
 .payment__wrap {
