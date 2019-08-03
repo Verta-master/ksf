@@ -96,6 +96,35 @@
   }
 }
 
+.header--client {
+  .logo svg {
+    fill: @yellow;
+  }
+  .menu__item {
+    &:nth-child(3) {
+      background-color: @yellow;
+
+      .menu__link {
+        &::before,
+        &::after {
+          width: 100%;
+          opacity: 1;
+          background-color: @black;
+        }
+      }
+    }
+    &:hover:nth-child(3) .menu__link,
+    &:active:nth-child(3) .menu__link {
+      color: @black;
+      
+      &::before,
+      &::after {
+        background-color: @black;
+      }
+    }
+  }
+}
+
 .header__wrap {
   display: flex;
   justify-content: space-between;

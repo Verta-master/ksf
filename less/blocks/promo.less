@@ -141,6 +141,43 @@
   }
 }
 
+.promo--client {
+  background-color: @yellow;
+  
+  .promo__wrap {
+    padding-bottom: 140px;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 5;
+      bottom: 0;
+      right: -445px;
+      width: 723px;
+      height: 1164px;
+      background-image: url(../img/images/bg-member.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      pointer-events: none;
+    }
+  }
+  h1 {
+    margin-bottom: 60px;
+    
+    span {
+      color: #fff;
+    }
+  }
+  .promo__info {
+    max-width: 600px;
+    margin-right: 145px;
+  }
+  .promo__preview {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}
+
 .promo__wrap {
   display: flex;
   justify-content: flex-start;
