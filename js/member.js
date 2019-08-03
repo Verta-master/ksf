@@ -52,8 +52,12 @@ $('.recommend__link').click(function() {
 $('.btn-scroll').click(function() {
   event.preventDefault();
   var id  = $(this).attr('href');
-  var top = $(window).height() - 220;
+  var blockHeight = 220;
+  if (window.innerWidth < 480) {
+    blockHeight = 390;
+  }
+  var top = $(window).height() - blockHeight;
   $('body, html').animate({
-        scrollTop: $('#payment').offset().top - top
-    }, 500);
+    scrollTop: $('#payment').offset().top - top
+  }, 500);
 });
