@@ -2064,6 +2064,7 @@ h1 {
   padding-bottom: 150px;
   color: #fff;
   background-color: #001E20;
+  overflow: hidden;
 }
 .ksf .title {
   margin-bottom: 96px;
@@ -2119,10 +2120,109 @@ h1 {
   position: absolute;
   right: 30px;
   top: 55px;
-}
-.ksf__img img {
   width: 420px;
   height: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.ksf__img img {
+  display: block;
+}
+.ksf__circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 420px;
+  height: 420px;
+  -webkit-animation: rotation 1.5s infinite;
+          animation: rotation 1.5s infinite;
+}
+.ksf__circle-logo {
+  width: 291px;
+  height: 87px;
+}
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  12.5% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  37.5% {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  62.5% {
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  87.5% {
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  12.5% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  37.5% {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  62.5% {
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  87.5% {
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 .ksf__crab {
   position: relative;
@@ -4036,7 +4136,8 @@ h1 {
   .person__wrap {
     max-width: 650px;
   }
-  .ksf__img img {
+  .ksf__circle,
+  .ksf__img {
     width: 350px;
     height: 350px;
   }
@@ -4573,6 +4674,11 @@ h1 {
     width: 319px;
     height: 319px;
     top: 60px;
+  }
+  .ksf__circle-logo {
+    width: 250px;
+    height: 75px;
+    margin-top: 20px;
   }
   .btn {
     width: 100%;
