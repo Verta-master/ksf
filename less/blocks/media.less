@@ -530,7 +530,6 @@
     padding-top: 85px;
     padding-bottom: 50px;
     top: 0;
-    overflow: hidden;
   }
   .rule__img,
   .rule__info {
@@ -1601,32 +1600,26 @@
     width: 100%;
     padding-top: 170px;
     padding-bottom: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .pill__tube-3 {
-    display: block;
-    width: 258px;
-    height: auto;
-  }
-  .pill__tube-2 {
-    display: block;
-    width: 175px;
-    height: auto;
-  }
-  .pill__tube-1 {
-    display: block;
-    width: 76px;
-    height: auto;
   }
   .pill_info {
     margin-bottom: 0;
   }
-  .pill__tablet {
-    top: 0;
-    left: 48%;
+  .pill__circle--top {
+    .pill__tube-red,
+    .pill__tube-white {
+      width: 180px;
+      height: auto;
+    }
+  }
+  .pill__circle--middle {
+    .pill__tube-red,
+    .pill__tube-white {
+      width: 250px;
+      height: auto;
+    }
+    .pill__tube-red {
+      margin-top: -80px;
+    }
   }
   .closed {
     padding-top: 65px;
