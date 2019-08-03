@@ -260,9 +260,6 @@
   }
   
   .promo--portfolio {
-    &::after {
-      transform: translateX(475px);
-    }
     .promo__wrap {
       padding-bottom: 100px;
     }
@@ -292,8 +289,7 @@
     width: 500px;
   }
   .promo--main .promo__wrap::after {
-    left: 0;
-    right: auto;
+    left: 200px;
   }
   .promo--member .promo__wrap::after {
     right: -345px;
@@ -327,6 +323,7 @@
   .promo--client .promo__info {
     margin-right: 0;
     width: 550px;
+    max-width: 100%;
   }
 }
 
@@ -338,14 +335,16 @@
   .promo__info {
     position: relative;
   }
+  .promo--member .promo__links,
   .promo__links {
     margin-top: 0;
     position: absolute;
     top: 400px;
     left: 50px;
+    right: auto;
   }
-  .promo__wrap::after {
-    right: 0;
+  .promo--main .promo__wrap::after {
+    left: 0;
     width: 600px;
     bottom: -125px;
   }
@@ -555,7 +554,7 @@
     padding-bottom: 250px;
   }
   .promo--client .promo__preview {
-    margin-top: 600px;
+    margin-top: 650px;
   }
   .service__img {
     position: static;
@@ -576,6 +575,7 @@
     font-size: 36px;
     line-height: 42px;
   }
+  .promo--member .promo__links,
   .promo__links {
     top: 250px;
   }
@@ -697,10 +697,6 @@
     p:last-of-type {
       width: 90px;
     }
-  }
-  .promo--blacklist::after,
-  .promo--portfolio::after {
-    top: 147px;
   }
   .promo__preview,
   .promo--whitelist .promo__preview {
@@ -853,8 +849,10 @@
   .promo--whitelist .promo__preview {
     margin-top: 0;
   }
+  .promo--member .promo__links,
   .promo__links {
     left: 30px;
+    top: 230px;
   }
   .promo__link {
     width: 140px;
@@ -1179,19 +1177,6 @@
   .promo--portfolio {
     padding-top: 80px;
     
-    &::before {
-      content: "";
-      position: absolute;
-      z-index: 1;
-      display: block;
-      width: 233px;
-      height: 640px;
-      top: 10px;
-      left: -20px;
-      background-image: url(../img/images/bg-portfolio-mobile.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
     h1 {
       margin-bottom: 10px;
     }
@@ -1213,6 +1198,14 @@
       margin: 0;
     }
   }
+  .promo--blacklist .promo__links::after,
+  .promo--portfolio .promo__links::after {
+    width: 233px;
+    height: 640px;
+    top: -322px;
+    left: -65px;
+    background-image: url(../img/images/bg-portfolio-mobile.svg);
+  }
   .promo--whitelist {
     .promo__text {
       margin-top: 430px;
@@ -1220,10 +1213,6 @@
     .promo__pic {
       margin-top: 100px;
     }
-  }
-  .promo--blacklist::after,
-  .promo--portfolio::after {
-    display: none;
   }
   .promo--blacklist {
     .promo__wrap::after {
@@ -1386,10 +1375,10 @@
   .promo--member .promo__wrap {
     padding-bottom: 130px;
   }
-  .promo--client .promo__wrap::after,
-  .promo--member .promo__wrap::after {
-    left: 98px;
-    top: -15px;
+  .promo--client .promo__links::after,
+  .promo--member .promo__links::after {
+    top: -265px;
+    left: 68px;
   }
   .promo__list {
     padding-left: 30px;

@@ -8,19 +8,7 @@
 .promo--portfolio {
   color: #fff;
   background-color: @green;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 1363px;
-    height: 1151px;
-    z-index: 101;
-    top: -3px;
-    right: 50vw;
-    transform: translateX(413px);
-    background-image: url(../img/images/bg-portfolio.svg);
-    pointer-events: none;
-  }
+  
   .promo__wrap {
     padding-bottom: 140px;
   }
@@ -36,12 +24,25 @@
     margin-top: 0;
     margin-bottom: 30px;
   }
+  .promo__links {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1363px;
+      height: 1151px;
+      z-index: 200;
+      top: -178px;
+      right: -49px;
+      background-image: url(../img/images/bg-portfolio.svg);
+      pointer-events: none;
+    }
+  }
 }
 
 .promo--blacklist {
   background-color: @black;
   
-  &::after {
+  .promo__links::after {
     width: 1363px;
     height: 1267px;
     background-image: url(../img/images/bg-blacklist.svg);
@@ -109,20 +110,6 @@
   .promo__wrap {
     position: relative;
     padding-bottom: 140px;
-    
-    &::after {
-      content: "";
-      position: absolute;
-      z-index: 5;
-      bottom: 0;
-      right: -445px;
-      width: 723px;
-      height: 1164px;
-      background-image: url(../img/images/bg-member.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-      pointer-events: none;
-    }
   }
   .promo__info {
     padding-top: 360px;
@@ -139,6 +126,9 @@
       height: 138px;
     }
   }
+  .promo__links {
+    top: 0;
+  }
 }
 
 .promo--client {
@@ -147,20 +137,6 @@
   
   .promo__wrap {
     padding-bottom: 80px;
-    
-    &::after {
-      content: "";
-      position: absolute;
-      z-index: 5;
-      bottom: -40px;
-      right: -385px;
-      width: 723px;
-      height: 1164px;
-      background-image: url(../img/images/bg-member.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-      pointer-events: none;
-    }
   }
   h1 {
     margin-bottom: 85px;
@@ -188,10 +164,24 @@
   }
 }
 
+.promo--member,
+.promo--client {
+  .promo__links::after {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    top: -178px;
+    left: 116px;
+    width: 723px;
+    height: 1164px;
+    background-image: url(../img/images/bg-member.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+  }
+}
+
 .promo__wrap {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
   position: relative;
   padding-bottom: 150px;
 }
@@ -201,7 +191,7 @@
     content: "";
     position: absolute;
     bottom: -75px;
-    right: 150px;
+    left: 300px;
     width: 720px;
     height: 379px;
     background-image: url(../img/images/people.svg);
@@ -261,8 +251,10 @@
 
 .promo__links {
   margin-top: 100px;
-  position: relative;
+  position: absolute;
   z-index: 5;
+  top: -45px;
+  right: 220px;
 }
 
 .promo__link {
