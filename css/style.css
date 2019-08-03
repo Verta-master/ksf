@@ -758,7 +758,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 10px;
+  padding-right: 15px;
 }
 .menu__item {
   padding-left: 22px;
@@ -853,20 +853,6 @@ h1 {
   color: #fff;
   background-color: #007550;
 }
-.promo--blacklist::after,
-.promo--portfolio::after {
-  content: "";
-  position: absolute;
-  width: 1363px;
-  height: 1151px;
-  z-index: 101;
-  top: -3px;
-  right: 50vw;
-  -webkit-transform: translateX(413px);
-          transform: translateX(413px);
-  background-image: url(../img/images/bg-portfolio.svg);
-  pointer-events: none;
-}
 .promo--blacklist .promo__wrap,
 .promo--portfolio .promo__wrap {
   padding-bottom: 140px;
@@ -886,10 +872,22 @@ h1 {
   margin-top: 0;
   margin-bottom: 30px;
 }
+.promo--blacklist .promo__links::after,
+.promo--portfolio .promo__links::after {
+  content: "";
+  position: absolute;
+  width: 1363px;
+  height: 1151px;
+  z-index: 200;
+  top: -178px;
+  right: -49px;
+  background-image: url(../img/images/bg-portfolio.svg);
+  pointer-events: none;
+}
 .promo--blacklist {
   background-color: #001E20;
 }
-.promo--blacklist::after {
+.promo--blacklist .promo__links::after {
   width: 1363px;
   height: 1267px;
   background-image: url(../img/images/bg-blacklist.svg);
@@ -950,19 +948,6 @@ h1 {
   position: relative;
   padding-bottom: 140px;
 }
-.promo--member .promo__wrap::after {
-  content: "";
-  position: absolute;
-  z-index: 5;
-  bottom: 0;
-  right: -445px;
-  width: 723px;
-  height: 1164px;
-  background-image: url(../img/images/bg-member.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  pointer-events: none;
-}
 .promo--member .promo__info {
   padding-top: 360px;
   width: 600px;
@@ -977,25 +962,15 @@ h1 {
   width: 167px;
   height: 138px;
 }
+.promo--member .promo__links {
+  top: 0;
+}
 .promo--client {
   padding-top: 70px;
   background-color: #FFC856;
 }
 .promo--client .promo__wrap {
   padding-bottom: 80px;
-}
-.promo--client .promo__wrap::after {
-  content: "";
-  position: absolute;
-  z-index: 5;
-  bottom: -40px;
-  right: -385px;
-  width: 723px;
-  height: 1164px;
-  background-image: url(../img/images/bg-member.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  pointer-events: none;
 }
 .promo--client h1 {
   margin-bottom: 85px;
@@ -1019,16 +994,21 @@ h1 {
   width: 144px;
   height: 156px;
 }
+.promo--member .promo__links::after,
+.promo--client .promo__links::after {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  top: -178px;
+  left: 116px;
+  width: 723px;
+  height: 1164px;
+  background-image: url(../img/images/bg-member.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
 .promo__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   position: relative;
   padding-bottom: 150px;
 }
@@ -1036,7 +1016,7 @@ h1 {
   content: "";
   position: absolute;
   bottom: -75px;
-  right: 150px;
+  left: 300px;
   width: 720px;
   height: 379px;
   background-image: url(../img/images/people.svg);
@@ -1083,8 +1063,10 @@ h1 {
 }
 .promo__links {
   margin-top: 100px;
-  position: relative;
+  position: absolute;
   z-index: 5;
+  top: -45px;
+  right: 220px;
 }
 .promo__link {
   display: -webkit-box;
@@ -4162,10 +4144,6 @@ h1 {
     width: 350px;
     height: 350px;
   }
-  .promo--portfolio::after {
-    -webkit-transform: translateX(475px);
-            transform: translateX(475px);
-  }
   .promo--portfolio .promo__wrap {
     padding-bottom: 100px;
   }
@@ -4196,8 +4174,7 @@ h1 {
     width: 500px;
   }
   .promo--main .promo__wrap::after {
-    left: 0;
-    right: auto;
+    left: 200px;
   }
   .promo--member .promo__wrap::after {
     right: -345px;
@@ -4227,6 +4204,7 @@ h1 {
   .promo--client .promo__info {
     margin-right: 0;
     width: 550px;
+    max-width: 100%;
   }
 }
 @media (max-width: 1022px) {
@@ -4236,14 +4214,16 @@ h1 {
   .promo__info {
     position: relative;
   }
+  .promo--member .promo__links,
   .promo__links {
     margin-top: 0;
     position: absolute;
     top: 400px;
     left: 50px;
+    right: auto;
   }
-  .promo__wrap::after {
-    right: 0;
+  .promo--main .promo__wrap::after {
+    left: 0;
     width: 600px;
     bottom: -125px;
   }
@@ -4470,7 +4450,7 @@ h1 {
     padding-bottom: 250px;
   }
   .promo--client .promo__preview {
-    margin-top: 600px;
+    margin-top: 650px;
   }
   .service__img {
     position: static;
@@ -4489,6 +4469,7 @@ h1 {
     font-size: 36px;
     line-height: 42px;
   }
+  .promo--member .promo__links,
   .promo__links {
     top: 250px;
   }
@@ -4616,10 +4597,6 @@ h1 {
   }
   .recommend__line p:last-of-type {
     width: 90px;
-  }
-  .promo--blacklist::after,
-  .promo--portfolio::after {
-    top: 147px;
   }
   .promo__preview,
   .promo--whitelist .promo__preview {
@@ -4768,8 +4745,10 @@ h1 {
   .promo--whitelist .promo__preview {
     margin-top: 0;
   }
+  .promo--member .promo__links,
   .promo__links {
     left: 30px;
+    top: 230px;
   }
   .promo__link {
     width: 140px;
@@ -5075,21 +5054,6 @@ h1 {
   .promo--portfolio {
     padding-top: 80px;
   }
-  .promo--whitelist::before,
-  .promo--blacklist::before,
-  .promo--portfolio::before {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    display: block;
-    width: 233px;
-    height: 640px;
-    top: 10px;
-    left: -20px;
-    background-image: url(../img/images/bg-portfolio-mobile.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
   .promo--whitelist h1,
   .promo--blacklist h1,
   .promo--portfolio h1 {
@@ -5121,15 +5085,19 @@ h1 {
     max-width: 100%;
     margin: 0;
   }
+  .promo--blacklist .promo__links::after,
+  .promo--portfolio .promo__links::after {
+    width: 233px;
+    height: 640px;
+    top: -322px;
+    left: -65px;
+    background-image: url(../img/images/bg-portfolio-mobile.svg);
+  }
   .promo--whitelist .promo__text {
     margin-top: 430px;
   }
   .promo--whitelist .promo__pic {
     margin-top: 100px;
-  }
-  .promo--blacklist::after,
-  .promo--portfolio::after {
-    display: none;
   }
   .promo--blacklist .promo__wrap::after {
     bottom: 10px;
@@ -5292,10 +5260,10 @@ h1 {
   .promo--member .promo__wrap {
     padding-bottom: 130px;
   }
-  .promo--client .promo__wrap::after,
-  .promo--member .promo__wrap::after {
-    left: 98px;
-    top: -15px;
+  .promo--client .promo__links::after,
+  .promo--member .promo__links::after {
+    top: -265px;
+    left: 68px;
   }
   .promo__list {
     padding-left: 30px;
