@@ -1,11 +1,11 @@
 .service {
-  padding-top: 95px;
+  padding-top: 55px;
   padding-bottom: 80px;
   color: #fff;
   background-color: @black;
   
   .title-2 {
-    margin-bottom: 80px;
+    margin-bottom: 90px;
     color: #fff;
   }
 }
@@ -15,7 +15,7 @@
   z-index: 2;
   width: 420px;
   margin-top: 0;
-  margin-bottom: 90px;
+  margin-bottom: 100px;
   color: #001E20;
   
   &::before {
@@ -34,16 +34,15 @@
 }
 
 .service__wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.service__info {
-  width: ~"calc(100% - 510px)";
+  position: relative;
+  z-index: 2;
 }
 
 .service__img {
+  position: absolute;
+  z-index: -1;
+  top: -110px;
+  right: -30px;
   width: 510px;
   
   img {
@@ -55,7 +54,7 @@
 
 .service__columns {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .service__block {
@@ -64,7 +63,8 @@
   flex-direction: column;
   
   &--yellow {
-//    width: 400px;
+    width: 400px;
+    margin-left: 35px;
     
     .service__title {
       color: @yellow;
@@ -73,11 +73,14 @@
       height: 10px;
       background-image: url(../img/icons/next-yellow.svg);
     }
+    .service__list {
+      padding-top: 25px;
+    }
   }
 }
 
 .service__title {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 500;
@@ -92,11 +95,12 @@
   li {
     position: relative;
     padding-left: 20px;
+    margin-bottom: 1px;
     
     &::after {
       content: "";
       position: absolute;
-      top: 5px;
+      top: 8px;
       left: 0;
       width: 8px;
       height: 9px;
@@ -104,10 +108,15 @@
       background-repeat: no-repeat;
       background-size: contain;
     }
+    &:last-child::after {
+      display: none;
+    }
   }
 }
 
 .service__btn {
-  width: 100%;
+  width: 300px;
   margin-top: auto;
+  font-size: 18px;
+  line-height: 24px;
 }

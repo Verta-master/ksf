@@ -1,18 +1,24 @@
 .order {
-  margin-bottom: 100px;
-  padding-top: 100px;
+  margin-bottom: 80px;
+  padding-top: 60px;
   color: #fff;
-  background-image: linear-gradient(to top, #fff 0%, #fff 100px, @green 100px, @green 100%);
+  background-image: linear-gradient(to top, #fff 0%, #fff 110px, @green 110px, @green 100%);
+  
+  .title-2 {
+    margin-bottom: 20px;
+  }
 }
 
 .order__wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  position: relative;
+  z-index: 2;
 }
 
 .order__img {
-  width: 594px;
+  position: absolute;
+  z-index: -1;
+  top: -50px;
+  right: -50px;
   
   img {
     display: block;
@@ -29,7 +35,8 @@
   width: 576px;
   max-width: 100%;
   margin-top: 90px;
-  padding: 50px 40px;
+  padding: 60px 40px;
+  padding-bottom: 20px;
   background-color: @yellow;
 }
 
@@ -37,7 +44,7 @@
 .order__input {
   display: block;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   background-color: #fff;
   
   &::placeholder {
@@ -48,13 +55,13 @@
 
 .order__input {
   height: 57px;
-  padding: 0 20px;
+  padding: 0 18px;
 }
 
 .order__message {
   height: 156px;
   min-height: 156px;
-  padding: 20px;
+  padding: 18px;
 }
 
 .order__btn {
@@ -71,7 +78,7 @@
 .order__comment {
   max-width: 460px;
   margin-bottom: 0;
-  margin-top: 20px;
+  margin-top: 25px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 300;
