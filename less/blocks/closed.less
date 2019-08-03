@@ -8,20 +8,6 @@
   background-image: linear-gradient(to top left, rgba(0,0,0,0.3), @red, rgba(255,255,255,0.15));
   overflow: hidden;
   
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 62%;
-    left: 20%;
-    transform: translateY(-50%);
-    width: 1522px;
-    height: 1655px;
-    background-image: url(../img/images/cross-line.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  
   .title {
     margin-bottom: 100px;
     
@@ -29,6 +15,23 @@
       display: block;
       color: #fff;
     }
+  }
+}
+
+.close__outside {
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -300px;
+    left: 20px;
+    width: 1522px;
+    height: 1655px;
+    background-image: url(../img/images/cross-line.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
