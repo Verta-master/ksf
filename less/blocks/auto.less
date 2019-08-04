@@ -1,33 +1,91 @@
 .auto {
+  position: relative;
+  z-index: 1;
   height: 892px;
-  background-image: url(../img/images/bg-car.svg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
   overflow: hidden;
 }
 
-.auto__wrap {
-  position: relative;
-}
-
 .auto__sun {
-  position: relative;
+  position: absolute;
   z-index: -1;
-  left: 200px;
-  top: -0;
+  left: ~"calc(50% - 310px)";
+  top: 0;
 }
 
-.auto__car {
-  position: relative;
-  z-index: 5;
-  top: -150px;
+.auto__birds {
+  position: absolute;
+  z-index: 2;
+  left: ~"calc(50% - 287px)";
+  top: 115px;
+}
+
+.auto__yellow {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1913px;
+  height: 379px;
+  
+  img {
+    display: block;
+    width: 1913px;
+    height: 379px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 99%;
+    width: 50vw;
+    height: 194px;
+    background-color: @yellow;
+  }
+}
+
+.auto__green {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1920px;
+  height: 773px;
+  
+  img {
+    display: block;
+    width: 1920px;
+    height: 773px;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 522px;
+    background-color: @green;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 99%;
+    width: 50vw;
+    height: 707px;
+    background-color: @green;
+  }
 }
 
 .auto__text {
   position: relative;
   z-index: 10;
-  top: -155px;
+  padding-top: 405px;
   max-width: 460px;
   color: #fff;
   
