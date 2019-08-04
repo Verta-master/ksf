@@ -255,26 +255,35 @@
   right: 220px;
 }
 
+.promo--profile {
+  .promo__link {
+    border: 1px solid #000;
+  }
+}
+
 .promo__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+  display: block;
   width: 234px;
   height: 234px;
   overflow: hidden;
   
   img {
     display: block;
-    max-width: none;
-    height: 100%;
-    width: auto;
+    object-fit: cover;
+    object-position: 50%;
+//    max-width: none;
+//    height: 100%;
+//    width: auto;
     .transition();
   }
   
   &:hover,
   &:active {
     img {
-      transform: scale(1.05);
+      transform: scale(1.02);
       .transition();
     }
   }

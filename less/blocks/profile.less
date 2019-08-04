@@ -1,0 +1,84 @@
+.profile__info {
+  width: 540px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile__person {
+  width: 288px;
+}
+
+.profile__list {
+  .reset();
+  list-style: none;
+  width: ~"calc(100% - 310px)";
+  
+  li {
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+}
+
+.profile__img {
+  overflow: hidden;
+  
+  img {
+    display: block;
+    width: 288px;
+    height: 288px;
+    object-fit: cover;
+    object-position: 50%;
+  }
+}
+
+.profile__pic {
+  position: relative;
+  margin-bottom: 55px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -18px;
+    width: 306px;
+    height: 320px;
+    background-image: url(../../img/images/shape-photo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  span {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.profile__connect {
+  width: 250px;
+  height: 50px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__about {
+  position: relative;
+  margin-top: 70px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -18px;
+    width: 1px;
+    background-color: @black;
+  }
+}
+
+.profile__title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+}
