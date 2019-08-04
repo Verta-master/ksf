@@ -35,14 +35,13 @@
     content: "";
     position: absolute;
     z-index: -1;
-    top: -2px;
+    top: 0;
     bottom: 0;
     right: 0;
     width: 441px;
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJMAAACKCAMAAACZ4oh0AAAAdVBMVEVHcEwAHSAAHiAAIiEAeFAAdVAAdVAAdlAAICAAHiAAHSAAdVAAdFAAHiAAICAAcVAAdVAAHiAAdFAAHiAAHiAATTkAdFAAc1AAHiAAdVAAdVAAHiAAdVAAKSYAakoAPzIAVD4ANCwAcE0AX0QASjgAIyMATzsBJGpEAAAAG3RSTlMAXp9AIFyf3yDfvYBAgBAQv+/vj3AwcJDPz69QaSoPAAAD0klEQVR42s2aCXLiMBBF23jDBidkgEwSjbwEyP2POM5CWLxJ6m+7+wCvfr2iXlEI2vwTdjHRWtqmkIgicZqIgj+iNu0/N9FK0qToaxI9ShIVfG+iZ3Ga6ovFfMCD301ierCiy20EdUCYqPB6k4xw3mgSEs717SYJ4YzuJkkIZ3C/aX5RDU3zhzMOWjbN3IMVtd1GUAdEiArbN9GbOE2zhrNL04w9iDonzRfOoHvTXKJ6NNWiYnGaiEI5uZw1nPHjwKa1pA7MJioenESBPE1Ef6ed9GYwaepwBiabpg1nZDRp2nCaaZo0nCsyvcl6EAfGm9aSOjCxqNhi0lThtNE0UTg3VpOmCWdgt2mKcEaWk6YIp62mCcK5IvvbiMnlZOEMiaSJip0m0V6eplHD+eo4acxwBq6bxgtn5DxpPFHumkYLJ0NTfa9icjlyOJ+JdxsxuRxVVMjdhH9FY2saoQdr/iZ0OCPAJLSoALEJ+/cDiCbsK1ocgDYBe7Ai1G0EdQAuKsRtQoUTqInIfxeniRZHxKQyBU5aqhNClFY+UJNSBUCTUgls0l7Vl3MnveuaskNtSj43VdxNx0/K0wNmkqe+7sCblH9TMqAmtqjim4IR9aOJKSo/UxaIDiRnmub0oDpTED3Y/sLUkdWB86WAXF6OEU59hfEBuQSIKq8pKVATI5z6huLxNr3cbqoYubwcrweeujunHuSnO0oGyCVTVHFP4YhqaHISlTcpW0AuL6cBmupbum7KWmD2PTi0UVJMB1zDqVsxPiCXzqLKdkoK1FSLygGaHMOZdsDsvpofuyjJA6QDDj3IdSclA+TSKZxFN8U+nD2aLETlfZQtIJcO4Sz6KLbhzHph6oORS9ceLPthpuHUAxgfkEvLcJZDlBSoyTCcehDjAXJpFc6PYYp5OD1lcAdGLh3CmZhsqngdsAynkaZBUbkZxUzUQ2JG0wBNpuHMDGH94TTUpE4ppANG4dTGGB+QS6NwluaUFKipV5S2wPhATT3hLG0oCaYDAz3ItRUlA+RyMJyFHaU/nJaaOkTltpQMqKlDVGFLeVoCcnm5EqCp78fgZWJPa+lBZU/p7sHCAdYMZ+lCSQG57BGlnTA+UFMjnKUbpT2cvhtMnQ6MXF5uB+lAaw+OrpS2cHrK+Q6sDvSEM3GnVYxc9oUzU4wrAZqa4VwmHNrvK1rFodz3YMGCncNZ8igpIJeNcGomxgdq+glnyaW8AHJ5+4r2rtmUHaQDVz048imXcHoKcIccQcmAmmpRBYJyFrVTgm4LyCX89pAOYC8F5BJ+vjhNX6KUuPP+AwGETu9JAjX4AAAAAElFTkSuQmCC');
     background-repeat: repeat;
     background-size: 147px 138px;
-//    background-position: top -50px center;
   }
 }
 
@@ -80,6 +79,8 @@
 }
 
 .recommend__item {
+  height: 44px;
+  overflow: hidden;
   border-top: 1px solid #000;
   
   &:nth-child(n + 4) {
@@ -123,6 +124,10 @@
   left: 440px;
   z-index: -1;
   padding-right: 190px;
+}
+
+.recommend__link {
+  height: 24px;
 }
 
 .recommend__btn {

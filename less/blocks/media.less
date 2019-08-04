@@ -291,9 +291,6 @@
   .promo--main .promo__wrap::after {
     left: 200px;
   }
-  .promo--member .promo__wrap::after {
-    right: -345px;
-  }
   .price__head {
     padding: 40px 15px;
   }
@@ -324,6 +321,10 @@
     margin-right: 0;
     width: 550px;
     max-width: 100%;
+  }
+  .promo--client .promo__links::after,
+  .promo--member .promo__links::after {
+    display: none;
   }
 }
 
@@ -468,7 +469,7 @@
     margin-bottom: 20px;
   }
   .promo--member .promo__info {
-    padding-top: 60px;
+    padding-top: 10px;
     width: 100%;
   }
   .promo--member h1 {
@@ -483,13 +484,6 @@
     li {
       padding-left: 125px;
     }
-  }
-  .promo--client .promo__wrap::after,
-  .promo--member .promo__wrap::after {
-    left: 165px;
-    right: auto;
-    top: 220px;
-    bottom: auto;
   }
   .price__head {
     padding: 15px;
@@ -574,8 +568,7 @@
     font-size: 36px;
     line-height: 42px;
   }
-  .promo--member .promo__links,
-  .promo__links {
+   .promo__links {
     top: 250px;
   }
   .promo__img {
@@ -701,9 +694,6 @@
   .promo--whitelist .promo__preview {
     font-size: 24px;
     line-height: 28px;
-  }
-  .promo--member .promo__wrap::after {
-    top: 70px;
   }
   .price__head {
     font-size: 14px;
