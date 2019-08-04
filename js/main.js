@@ -168,19 +168,16 @@ initTimer();
 
 //Show more buttons
 var initHeight = $('.recommend__deco').innerHeight();
-console.log('init: ', initHeight);
+var itemNumber = $('.recommend__item').length;
 
 $('.recommend__link').click(function() {
   $('.recommend__item:nth-child(n + 4)').slideDown();
   $(this).hide();
   
-  setTimeout(function() {
-    var realHeight = $('.recommend--member').innerHeight();
-    var blockNumber = Math.ceil(realHeight / 138);
-    var newHeight = blockNumber  * 138;
-    var paddingValue = newHeight - initHeight + 47;
-    $('.recommend__deco').css('padding-bottom', paddingValue);
-   }, 500);
+  var addHeight = (itemNumber - 3) * 44 - 24;
+  var realHeight = initHeight + addHeight;
+  var newHeight = Math.ceil(realHeight / 138) * 138;
+  $('.recommend__deco').css('height', newHeight);
 });
 
 //scroll to anchor

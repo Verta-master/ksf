@@ -468,6 +468,7 @@ button {
   background-color: rgba(255, 255, 255, 0);
 }
 h1 {
+  margin-top: 0;
   font-size: 72px;
   line-height: 80px;
   color: #001E20;
@@ -876,12 +877,13 @@ h1 {
 .promo--portfolio .promo__links::after {
   content: "";
   position: absolute;
-  width: 1363px;
-  height: 1151px;
+  width: 1355px;
+  height: 1143px;
   z-index: 200;
-  top: -178px;
+  top: -177px;
   right: -49px;
   background-image: url(../img/images/bg-portfolio.svg);
+  background-size: 100% 100%;
   pointer-events: none;
 }
 .promo--blacklist {
@@ -962,11 +964,7 @@ h1 {
   width: 167px;
   height: 138px;
 }
-.promo--member .promo__links {
-  top: 0;
-}
 .promo--client {
-  padding-top: 70px;
   background-color: #FFC856;
 }
 .promo--client .promo__wrap {
@@ -1011,6 +1009,7 @@ h1 {
 .promo__wrap {
   position: relative;
   padding-bottom: 150px;
+  padding-top: 47px;
 }
 .promo--main .promo__wrap::after {
   content: "";
@@ -1062,10 +1061,9 @@ h1 {
   margin-bottom: 30px;
 }
 .promo__links {
-  margin-top: 100px;
   position: absolute;
   z-index: 5;
-  top: -45px;
+  top: 103px;
   right: 220px;
 }
 .promo__link {
@@ -1477,7 +1475,7 @@ h1 {
   content: "";
   position: absolute;
   z-index: -1;
-  top: -2px;
+  top: 0;
   bottom: 0;
   right: 0;
   width: 441px;
@@ -1515,6 +1513,8 @@ h1 {
   border-bottom: 1px solid #000;
 }
 .recommend__item {
+  height: 44px;
+  overflow: hidden;
   border-top: 1px solid #000;
 }
 .recommend__item:nth-child(n + 4) {
@@ -1556,6 +1556,9 @@ h1 {
   left: 440px;
   z-index: -1;
   padding-right: 190px;
+}
+.recommend__link {
+  height: 24px;
 }
 .recommend__btn {
   margin-top: 97px;
@@ -4104,9 +4107,6 @@ h1 {
   .promo--main .promo__wrap::after {
     left: 200px;
   }
-  .promo--member .promo__wrap::after {
-    right: -345px;
-  }
   .price__head {
     padding: 40px 15px;
   }
@@ -4133,6 +4133,10 @@ h1 {
     margin-right: 0;
     width: 550px;
     max-width: 100%;
+  }
+  .promo--client .promo__links::after,
+  .promo--member .promo__links::after {
+    display: none;
   }
 }
 @media (max-width: 1022px) {
@@ -4283,7 +4287,7 @@ h1 {
     margin-bottom: 20px;
   }
   .promo--member .promo__info {
-    padding-top: 60px;
+    padding-top: 10px;
     width: 100%;
   }
   .promo--member h1 {
@@ -4297,13 +4301,6 @@ h1 {
   }
   .promo__list li {
     padding-left: 125px;
-  }
-  .promo--client .promo__wrap::after,
-  .promo--member .promo__wrap::after {
-    left: 165px;
-    right: auto;
-    top: 220px;
-    bottom: auto;
   }
   .price__head {
     padding: 15px;
@@ -4396,7 +4393,6 @@ h1 {
     font-size: 36px;
     line-height: 42px;
   }
-  .promo--member .promo__links,
   .promo__links {
     top: 250px;
   }
@@ -4529,9 +4525,6 @@ h1 {
   .promo--whitelist .promo__preview {
     font-size: 24px;
     line-height: 28px;
-  }
-  .promo--member .promo__wrap::after {
-    top: 70px;
   }
   .price__head {
     font-size: 14px;
