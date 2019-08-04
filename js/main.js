@@ -167,9 +167,20 @@ function initTimer() {
 initTimer();
 
 //Show more buttons
+var initHeight = $('.recommend__deco').innerHeight();
+console.log('init: ', initHeight);
+
 $('.recommend__link').click(function() {
   $('.recommend__item:nth-child(n + 4)').slideDown();
   $(this).hide();
+  
+  setTimeout(function() {
+    var realHeight = $('.recommend--member').innerHeight();
+    var blockNumber = Math.ceil(realHeight / 138);
+    var newHeight = blockNumber  * 138;
+    var paddingValue = newHeight - initHeight + 47;
+    $('.recommend__deco').css('padding-bottom', paddingValue);
+   }, 500);
 });
 
 //scroll to anchor
