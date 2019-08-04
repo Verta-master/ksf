@@ -1072,6 +1072,9 @@ h1 {
 .promo--profile .promo__link {
   border: 1px solid #000;
 }
+.promo--profile .promo__wrap {
+  padding-bottom: 70px;
+}
 .promo__link {
   display: block;
   width: 234px;
@@ -3839,6 +3842,9 @@ h1 {
   font-weight: 300;
   color: #001E20;
 }
+.profile h1 {
+  margin-bottom: 65px;
+}
 .profile__info {
   width: 540px;
   display: -webkit-box;
@@ -3855,7 +3861,7 @@ h1 {
   margin: 0;
   padding: 0;
   list-style: none;
-  width: calc(100% - 310px);
+  width: calc(100% - 315px);
 }
 .profile__list li {
   margin-bottom: 12px;
@@ -3875,7 +3881,7 @@ h1 {
 }
 .profile__pic {
   position: relative;
-  margin-bottom: 55px;
+  margin-bottom: 30px;
 }
 .profile__pic::before {
   content: "";
@@ -3908,7 +3914,7 @@ h1 {
 }
 .profile__about {
   position: relative;
-  margin-top: 70px;
+  margin-top: 80px;
 }
 .profile__about::before {
   content: "";
@@ -3919,6 +3925,9 @@ h1 {
   width: 1px;
   background-color: #001E20;
 }
+.profile__about p {
+  margin-bottom: 25px;
+}
 .profile__title {
   font-size: 24px;
   line-height: 28px;
@@ -3926,6 +3935,7 @@ h1 {
 }
 .certificate .title-2 {
   padding-left: 104px;
+  margin-bottom: 15px;
 }
 .certificate__wrap {
   position: relative;
@@ -3975,7 +3985,7 @@ h1 {
 .swiper-button-next {
   width: 78px;
   height: 78px;
-  margin-top: -65px;
+  margin-top: -70px;
   background-size: contain;
   outline: none;
 }
@@ -4007,7 +4017,7 @@ h1 {
   border: 1px solid #000000;
 }
 .table {
-  margin-bottom: 190px;
+  margin-bottom: 195px;
 }
 .table__main {
   width: 100%;
@@ -4015,7 +4025,7 @@ h1 {
 }
 .table__main th {
   width: 150px;
-  padding-bottom: 8px;
+  padding-bottom: 12px;
   text-align: left;
   font-size: 24px;
   line-height: 28px;
@@ -4026,7 +4036,7 @@ h1 {
 }
 .table__main td {
   width: 150px;
-  height: 70px;
+  height: 72px;
   padding: 18px;
   border: 1px solid #000;
 }
@@ -4036,7 +4046,7 @@ h1 {
 }
 .project {
   position: relative;
-  margin-bottom: 200px;
+  margin-bottom: 235px;
 }
 .project .portfolio__preview {
   border: 0;
@@ -4063,7 +4073,7 @@ h1 {
 }
 .project__star {
   position: absolute;
-  top: -30px;
+  top: -55px;
   padding-left: 25px;
 }
 .project__star::before {
@@ -4203,6 +4213,7 @@ h1 {
 }
 .review__img {
   width: 261px;
+  margin-right: 100px;
 }
 .review__img img {
   width: 261px;
