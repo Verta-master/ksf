@@ -1,3 +1,9 @@
+.profile {
+  h1 {
+    margin-bottom: 65px;
+  }
+}
+
 .profile__info {
   width: 540px;
   display: flex;
@@ -11,7 +17,7 @@
 .profile__list {
   .reset();
   list-style: none;
-  width: ~"calc(100% - 310px)";
+  width: ~"calc(100% - 315px)";
   
   li {
     margin-bottom: 12px;
@@ -33,7 +39,7 @@
 
 .profile__pic {
   position: relative;
-  margin-bottom: 55px;
+  margin-bottom: 30px;
   
   &::before {
     content: "";
@@ -64,7 +70,7 @@
 
 .profile__about {
   position: relative;
-  margin-top: 70px;
+  margin-top: 80px;
   
   &::before {
     content: "";
@@ -74,6 +80,9 @@
     left: -18px;
     width: 1px;
     background-color: @black;
+  }
+  p {
+    margin-bottom: 25px;
   }
 }
 
