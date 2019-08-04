@@ -317,7 +317,7 @@ var mySwiper = new Swiper ('.certificate__slider2', {
   slidesPerView: 'auto',
   spaceBetween: 25,
 });
-    
+
 var mySwiper = new Swiper ('.project__slider', {
   navigation: {
     nextEl: '.project__next',
@@ -326,6 +326,27 @@ var mySwiper = new Swiper ('.project__slider', {
   simulateTouch: false,
   preventClicks: false,
   preventClicksPropagation: false,
+});
+
+var reviewsSlider = new Swiper('.review__slider', {
+  effect: 'coverflow',
+  grabCursor: true,
+  loop: true,
+  slidesPerView: 'auto',
+  loopedSlides: 4,
+  centeredSlides: true,
+  autoHeight: true,
+  coverflowEffect: {
+    rotate: 0,
+    slideShadows: false,
+    stretch: 505,
+    depth: 100
+  },
+
+  navigation: {
+    nextEl: '.review__next',
+    prevEl: '.review__prev',
+  }
 });
 
 //Show more button
