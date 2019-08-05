@@ -171,7 +171,7 @@ function movePill() {
   try {
     var screenHeight = $(window).height();
     var pillOffset = $('.pill__img').offset().top - screenHeight;
-    var pillOffsetStop = pillOffset + $('.pill__img').height() + 820;
+    var pillOffsetStop = pillOffset + $('.pill__img').height() + 800;
 
     if ($(this).scrollTop() >= pillOffset && $(this).scrollTop() <= pillOffsetStop) {
       var transZ = 100 - ($(this).scrollTop() - pillOffset) * 0.09;
@@ -262,6 +262,13 @@ $('.portfolio .portfolio__nav li a').on('click', function(event) {
       return regex.test($(this).attr('data-filter'));
     }).removeClass('hidden');
   }
+});
+
+$(window).on('load', function () {
+  var $preloader = $('#preloader'),
+      $svg_anm   = $preloader.find('.preloader__img');
+  $svg_anm.fadeOut();
+  $preloader.delay(1000).fadeOut('slow');
 });
 
 //Sliders

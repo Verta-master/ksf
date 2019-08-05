@@ -22,6 +22,48 @@
   font-style: normal;
   src: url("../fonts/helveticaneuecyr-bold.woff2") format("woff2"), url("../fonts/helveticaneuecyr-bold.woff") format("woff");
 }
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 1000;
+}
+.preloader__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.preloader__logo {
+  display: block;
+  width: 70%;
+  height: auto;
+}
+.preloader__animated {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: rotation 1.2s infinite;
+          animation: rotation 1.2s infinite;
+}
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -411,6 +453,7 @@ textarea {
   transition: ease-out 0.3s;
 }
 body {
+  position: relative;
   width: 100%;
   max-width: 100%;
   font-family: "Helvetica Neue Cyr", "Arial", sans-serif;
@@ -1563,12 +1606,24 @@ h1 {
   margin: 0;
 }
 .recommend__line p:first-of-type {
+  position: relative;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding: 10px 25px;
   border-left: 1px solid #000;
   border-right: 1px solid #000;
+}
+.recommend__line p:first-of-type::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 50%;
+  background-image: -webkit-gradient(linear, right top, left top, from(#fff), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to left, #fff 0%, rgba(255, 255, 255, 0));
 }
 .recommend__line p:last-of-type {
   width: 101px;
@@ -4666,6 +4721,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 12px 15px;
+  pointer-events: none;
 }
 .modal-table__btn--open {
   -webkit-transform: rotate(-90deg);
@@ -6829,8 +6885,8 @@ h1 {
   .modal__text {
     margin-left: 0;
   }
-  .pill__tablet {
-    top: -20px;
+  .pill__img {
+    overflow: hidden;
   }
   .profile__img {
     margin-bottom: 3px;

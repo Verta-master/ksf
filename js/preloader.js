@@ -1,0 +1,1 @@
+$(window).on("load",function(){var d=$("#preloader");d.find(".preloader__img").fadeOut(),d.delay(1e3).fadeOut("slow")});
