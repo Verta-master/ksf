@@ -17,6 +17,28 @@
   padding-top: 12px;
   padding-bottom: 13px;
   
+  &:last-child {
+    padding-right: 0;
+    
+    .menu__link {
+      padding: 5px 10px;
+      line-height: 1;
+      border: 1px solid #000000;
+      .transition();
+
+      &:hover,
+      &:active {
+        color: #fff;
+        background-color: #001E20;
+        .transition();
+      }
+      &::before,
+      &::after {
+        opacity: 0;
+      }
+    }
+  }
+  
   &:hover,
   &:active,
   &--active {
