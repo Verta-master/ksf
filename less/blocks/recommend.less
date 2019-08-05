@@ -104,10 +104,22 @@
     margin: 0;
     
     &:first-of-type {
+      position: relative;
       flex-grow: 1;
       padding: 10px 25px;
       border-left: 1px solid #000;
       border-right: 1px solid #000;
+      
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 50%;
+        background-image: linear-gradient(to left, #fff 0%, rgba(255,255,255,0));
+      }
     }
     
     &:last-of-type {
