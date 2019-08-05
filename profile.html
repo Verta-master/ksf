@@ -621,7 +621,7 @@
           <div class="swiper-button-prev certificate__prev2"></div>
           <div class="swiper-button-next certificate__next2"></div>
         </div>
-        <a data-fancybox="" data-src="#call" href="javascript:;" class="btn btn--black-white connect">Связаться со мной</a>
+        <button type="button" class="btn btn--black-white connect">Связаться со мной</button>
       </div>
     </section>
   </main>
@@ -641,7 +641,21 @@
   
   <!-- Modal window -->
   <div style="display: none;" id="call" class="modal">
-    
+    <div class="wrapper modal__block">
+      <img src="img/images/logo-vertical.svg" class="modal__vertical" alt="Logo" width="56" height="185">
+      <div class="modal__wrap">
+        <img src="img/images/logo-circle-red.svg" alt="Logo" class="modal__logo" width="287" height="287">
+        <a href="tel:+79686220884" class="modal__phone"><span>8 968 622 088 4</span></a>
+        <a href="mailto:eglit.design@gmail.com" class="modal__link"><span>eglit.design@gmail.com</span></a>
+        <a href="http://vk.com/cyber.enso" class="modal__link"><span>vk/cyber.enso</span></a>
+        <div class="modal__text">
+          <button type="button" class="modal__btn">Закрыть</button>
+          <p>Привет!</p>
+          <p>Я доступен для звонка в любое время. Но если вдруг проспал - я перезвоню.</p>
+          <p>В ВК всегда, но почту читаю редко.</p>
+        </div>
+      </div>
+    </div>
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
