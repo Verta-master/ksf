@@ -219,6 +219,13 @@ function movePill() {
   } catch (error) {}
 }
 
+//Modal window list drop buttons
+$('.modal-table__btn').click(function() {
+  $(this).next().slideToggle();
+  $(this).toggleClass('modal-table__btn--open');
+  $(this).next().toggleClass('modal-table__list--open');
+});
+
 //Mobile menu
 $('.menu__btn--open').click(function(e) {
   e.stopPropagation();
