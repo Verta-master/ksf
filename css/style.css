@@ -4003,10 +4003,12 @@ h1 {
 .swiper-button-prev {
   left: 0;
   background-image: url(../img/icons/angle_left.svg);
+  border-radius: 0 10px 0 0;
 }
 .swiper-button-next {
   right: 0;
   background-image: url(../img/icons/angle_right-border.svg);
+  border-radius: 10px 0 0 0;
 }
 .certificate__slide {
   width: 292px;
@@ -6245,9 +6247,11 @@ h1 {
   }
   .swiper-button-next {
     right: -5px;
+    border-radius: 5px 0 0 0;
   }
   .swiper-button-prev {
     left: -5px;
+    border-radius: 0 5px 0 0;
   }
   .table__main th:nth-child(n + 2) {
     display: none;
