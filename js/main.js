@@ -406,3 +406,10 @@ $("body").on("click", "#dp-slider .dp_item:not(:first-child)", function(){
 
   detect_active();
 });
+
+var maxHeight = 0;
+$("#dp-slider .dp_item").each(function() {
+  if ($(this).innerHeight() > maxHeight) {
+    maxHeight = $(this).innerHeight();
+  }
+}).height(maxHeight);
