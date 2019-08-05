@@ -770,6 +770,27 @@ h1 {
   padding-top: 12px;
   padding-bottom: 13px;
 }
+.menu__item:last-child {
+  padding-right: 0;
+}
+.menu__item:last-child .menu__link {
+  padding: 5px 10px;
+  line-height: 1;
+  border: 1px solid #000000;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.menu__item:last-child .menu__link:hover,
+.menu__item:last-child .menu__link:active {
+  color: #fff;
+  background-color: #001E20;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.menu__item:last-child .menu__link::before,
+.menu__item:last-child .menu__link::after {
+  opacity: 0;
+}
 .menu__item:hover .menu__link::before,
 .menu__item:active .menu__link::before,
 .menu__item--active .menu__link::before,
@@ -4512,9 +4533,6 @@ h1 {
   .wrapper {
     width: 100%;
   }
-  .header__link {
-    display: none;
-  }
   .menu__btn {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -4540,6 +4558,7 @@ h1 {
     top: 100%;
     left: 0;
     right: 0;
+    min-height: 100vh;
     padding-left: 45px;
     padding-top: 20px;
     padding-bottom: 10px;
@@ -4584,6 +4603,7 @@ h1 {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
   }
+  .menu__item:last-child::before,
   .menu__item:nth-child(5)::before {
     background-color: #fff;
     border: 1px solid #000;
@@ -4595,6 +4615,13 @@ h1 {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
   }
+  .menu__item:last-child .menu__link {
+    border: 0;
+    padding: 7px 0;
+  }
+  .menu__item:last-child::before {
+    top: 8px;
+  }
   .menu__link {
     display: inline-block;
     padding-top: 7px;
@@ -4602,6 +4629,20 @@ h1 {
     font-size: 18px;
     line-height: 24px;
     font-weight: 500;
+  }
+  .menu__item:last-child .menu__link:hover,
+  .menu__item:last-child .menu__link:active {
+    background-color: #fff;
+    color: #000;
+  }
+  .menu__item:last-child .menu__link:hover::before,
+  .menu__item:last-child .menu__link:active::before,
+  .menu__item:last-child .menu__link:hover::after,
+  .menu__item:last-child .menu__link:active::after {
+    opacity: 1;
+    width: 100%;
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
   }
   .header {
     padding-top: 12px;
