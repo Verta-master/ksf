@@ -2,7 +2,7 @@
   margin-bottom: 200px;
   
   .title-2 {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
     padding-left: 50px;
   }
 }
@@ -24,7 +24,7 @@
 }
 
 .review__info {
-  width: 578px;
+  width: 645px;
   position: relative;
 }
 
@@ -82,29 +82,31 @@
   display: block;
   position: absolute;
   transition: transform 1.2s;
+  overflow: hidden;
 }
 
 #dp-slider .dp_item:first-child {
   z-index: 10 !important;
-  transform: rotateY(0deg) translateX(0px) !important;
+  transform: rotateY(0deg) translateX(0px) translateY(30px) !important;
 }
 
 .dp_item[data-position="2"] {
   z-index: 9;
 //  transform: rotateY(0deg) translateX(10%) scale(0.9);
-  transform: rotateY(0deg) translateX(10px) translateY(-10px);
+  transform: rotateY(0deg) translateX(10px) translateY(20px);
 }
 
 .dp_item[data-position="3"] {
   z-index: 8;
 //  transform: rotateY(0deg) translateX(20%) scale(0.8);
-  transform: rotateY(0deg) translateX(20px) translateY(-20px);
+  transform: rotateY(0deg) translateX(20px) translateY(10px);
 }
 
+.dp_item:nth-child(n+4),
 .dp_item[data-position="4"] {
   z-index: 7;
 //  transform: rotateY(0deg) translateX(30%) scale(0.7);
-  transform: rotateY(0deg) translateX(30px) translateY(-30px);
+  transform: rotateY(0deg) translateX(30px) translateY(0);
 }
 
 #dp-next,  #dp-prev {

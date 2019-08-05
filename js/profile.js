@@ -106,6 +106,8 @@ $("#dp-dots li").click(function(){
   });
 });
 
+var slideHeight = $("#dp-slider .dp_item:first-child").height();
+
 $("body").on("click", "#dp-slider .dp_item:not(:first-child)", function(){
   var get_slide = $(this).attr('data-class');
   console.log(get_slide);
@@ -113,6 +115,7 @@ $("body").on("click", "#dp-slider .dp_item:not(:first-child)", function(){
   $.each($('.dp_item'), function (index, dp_item) {
     $(dp_item).attr('data-position', index + 1);
   });
+//  $("#dp-slider .dp_item:nth-child(n + 2)").css('height', slideHeight);
 
   detect_active();
 });
