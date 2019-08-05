@@ -6,6 +6,7 @@
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>Клуб Сытых Фрилансеров</title>
   <link rel="icon" href="img/favicons/1.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -231,7 +232,7 @@
               </li>
               <li class="price__item">
                 <div class="price__know">
-                  <p><b>Курс:</b><a href="#">Технология Таргета ВК</a><span class="price__question">?</span></p>
+                  <p><b>Курс:</b><a  data-fancybox data-src="#table" href="javascript:;">Технология Таргета ВК</a><span class="price__question">?</span></p>
                   <div class="price__answer">
                     <p>Для тех, у кого нет специализации, и для тех, кто хочет прокачивать свои профессиональные навыки, повышать качество услуг и учиться новому.</p>
                   </div>
@@ -446,11 +447,161 @@
     </div>
   </footer>
   
+  <!-- Modal window -->
+  <div style="display: none;" id="table" class="modal-table">
+    <p class="title-2">Технология длинного названия</p>
+    <div class="modal-table__text">
+      <p>Для тех, у кого нет специализации, и для тех, кто хочет прокачивать свои профессиональные навыки, повышать качество услуг и учиться новому.</p>
+    </div>
+    <div class="modal-table__main">
+      <div class="modal-table__header">
+        <p>Программа</p>
+        <p>Теория</p>
+        <p>Практика</p>
+      </div>
+      <div class="modal-table__group">
+        <div class="modal-table__line">
+          <p>#1   ЧТО ТАКОЕ КОНТЕКСТНАЯ РЕКЛАМА</p>
+          <p>8 часов</p>
+          <p>16 часов</p>
+        </div>
+        <button type="button" class="modal-table__btn modal-table__btn--open"></button>
+        <ul class="modal-table__list modal-table__list--open">
+          <li class="modal-table__item">
+            <p>#1.1   Организационные моменты</p>
+            <p>2 часов</p>
+            <p>2 часов</p>
+          </li>
+          <li class="modal-table__item">
+            <p>#1.2   Как это работает</p>
+            <p>2 часов</p>
+            <p>2 часов</p>
+          </li>
+          <li class="modal-table__item">
+            <p>#1.3   Методы таргетинга в контекстной рекламе</p>
+            <p>2 часов</p>
+            <p>2 часов</p>
+          </li>
+          <li class="modal-table__item">
+            <p>#1.4   Какие бывают рекламные объявления</p>
+            <p>2 часов</p>
+            <p>2 часов</p>
+          </li>
+          <li class="modal-table__item">
+            <p>#1.5   Что такое аукцион и как он работает</p>
+            <p>2 часов</p>
+            <p>2 часов</p>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-table__group">
+        <div class="modal-table__line">
+          <p>#2   ПОДГОТОВКА К НАСТРОЙКЕ И СБОР ИНФОРМАЦИИ</p>
+        </div>
+        <button type="button" class="modal-table__btn"></button>
+        <ul class="modal-table__list">
+          <li class="modal-table__item">
+            <p>#1.1   Организационные моменты</p>
+            <p>2 часов</p>
+            <p>2 часов</p>
+          </li>
+          <li class="modal-table__item">
+            <p>#1.2   Как это работает</p>
+            <p>2 часов</p>
+            <p>2 часов</p>
+          </li>
+          <li class="modal-table__item">
+            <p>#1.3   Методы таргетинга в контекстной рекламе</p>
+            <p>2 часов</p>
+            <p>2 часов</p>
+          </li>
+          <li class="modal-table__item">
+            <p>#1.4   Какие бывают рекламные объявления</p>
+            <p>2 часов</p>
+            <p>2 часов</p>
+          </li>
+          <li class="modal-table__item">
+            <p>#1.5   Что такое аукцион и как он работает</p>
+            <p>2 часов</p>
+            <p>2 часов</p>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-table__group">
+        <div class="modal-table__line">
+          <p>#3   НАСТРОЙКА ЯНДЕКС ДИРЕКТ</p>
+        </div>
+        <button type="button" class="modal-table__btn"></button>
+        <ul class="modal-table__list">
+          <li class="modal-table__item">
+            <p>#1.1   Организационные моменты</p>
+            <p>2 часов</p>
+            <p>2 часов</p>
+          </li>
+          <li class="modal-table__item">
+            <p>#1.2   Как это работает</p>
+            <p>2 часов</p>
+            <p>2 часов</p>
+          </li>
+          <li class="modal-table__item">
+            <p>#1.3   Методы таргетинга в контекстной рекламе</p>
+            <p>2 часов</p>
+            <p>2 часов</p>
+          </li>
+          <li class="modal-table__item">
+            <p>#1.4   Какие бывают рекламные объявления</p>
+            <p>2 часов</p>
+            <p>2 часов</p>
+          </li>
+          <li class="modal-table__item">
+            <p>#1.5   Что такое аукцион и как он работает</p>
+            <p>2 часов</p>
+            <p>2 часов</p>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-table__group">
+        <div class="modal-table__line">
+          <p>#4   ПОДГОТОВКА К НАСТРОЙКЕ И СБОР ИНФОРМАЦИИ</p>
+        </div>
+        <button type="button" class="modal-table__btn"></button>
+        <ul class="modal-table__list">
+          <li class="modal-table__item">
+            <p>#1.1   Организационные моменты</p>
+            <p>2 часов</p>
+            <p>2 часов</p>
+          </li>
+          <li class="modal-table__item">
+            <p>#1.2   Как это работает</p>
+            <p>2 часов</p>
+            <p>2 часов</p>
+          </li>
+          <li class="modal-table__item">
+            <p>#1.3   Методы таргетинга в контекстной рекламе</p>
+            <p>2 часов</p>
+            <p>2 часов</p>
+          </li>
+          <li class="modal-table__item">
+            <p>#1.4   Какие бывают рекламные объявления</p>
+            <p>2 часов</p>
+            <p>2 часов</p>
+          </li>
+          <li class="modal-table__item">
+            <p>#1.5   Что такое аукцион и как он работает</p>
+            <p>2 часов</p>
+            <p>2 часов</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/countdown.min.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/member.js"></script>
   <script src="js/favicon.js"></script>
-  <script src="js/parallax.js"></script>  
+  <script src="js/parallax.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
 </body>
 </html>
