@@ -1575,6 +1575,10 @@ h1 {
   padding: 10px 16px;
   padding-right: 0;
 }
+.recommend__line i {
+  font-style: normal;
+  font-family: "Roboto", "Arial", sans-serif;
+}
 .recommend__img {
   position: absolute;
   top: -40px;
