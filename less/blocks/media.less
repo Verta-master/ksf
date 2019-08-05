@@ -1621,6 +1621,7 @@
     bottom: 80px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 20;
   }
   .pill__img {
     width: 100%;
@@ -1636,6 +1637,9 @@
       width: 180px;
       height: auto;
     }
+    .pill__tube-red {
+      margin-top: -45px;
+    }
   }
   .pill__circle--middle {
     .pill__tube-red,
@@ -1644,8 +1648,11 @@
       height: auto;
     }
     .pill__tube-red {
-      margin-top: -80px;
+      margin-top: -64px;
     }
+  }
+  .pill__circle--bottom .pill__tube-red {
+    margin-top: -156px;
   }
   .closed {
     padding-top: 65px;
