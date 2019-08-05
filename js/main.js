@@ -174,13 +174,14 @@ $('.recommend__link').click(function() {
   $('.recommend__item:nth-child(n + 4)').slideDown();
   $(this).hide();
   
-  var addHeight = (itemNumber - 3) * 44 - 24;
-  var realHeight = initHeight + addHeight;
-  var newHeight = Math.ceil(realHeight / 138) * 138;
-  $('.recommend__deco').animate({
-    height: newHeight
-  }, 10);
-//  $('.recommend__deco').css('height', newHeight);
+  if (window.innerWidth > 768) {
+    var addHeight = (itemNumber - 3) * 44 - 24;
+    var realHeight = initHeight + addHeight;
+    var newHeight = Math.ceil(realHeight / 138) * 138;
+    $('.recommend__deco').animate({
+      height: newHeight
+    }, 10);
+  }
 });
 
 //scroll to anchor
@@ -203,7 +204,7 @@ function movePill() {
   try {
     var screenHeight = $(window).height();
     var pillOffset = $('.pill__img').offset().top - screenHeight;
-    var pillOffsetStop = pillOffset + $('.pill__img').height() + 800;
+    var pillOffsetStop = pillOffset + $('.pill__img').height() + 820;
 
     if ($(this).scrollTop() >= pillOffset && $(this).scrollTop() <= pillOffsetStop) {
       var transZ = 100 - ($(this).scrollTop() - pillOffset) * 0.09;

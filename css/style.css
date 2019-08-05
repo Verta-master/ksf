@@ -3298,24 +3298,6 @@ h1 {
   height: 62px;
   display: block;
 }
-.auto__car {
-  position: absolute;
-  z-index: 4;
-  width: 1256px;
-  height: 281px;
-  display: block;
-  top: 150px;
-  left: calc(50% - 1000px);
-}
-.auto__flag {
-  position: absolute;
-  z-index: 5;
-  bottom: 50px;
-  left: 70%;
-  width: 354px;
-  height: 419px;
-  display: block;
-}
 .auto__yellow {
   position: absolute;
   z-index: 2;
@@ -4572,13 +4554,15 @@ h1 {
   .menu__item::before {
     content: "";
     position: absolute;
-    top: 12px;
+    top: 11px;
     left: 0;
     width: 14px;
     height: 14px;
     display: block;
   }
   .menu__item:first-child::before {
+    left: -2px;
+    top: 9px;
     width: 20px;
     height: 20px;
     background-image: url(../img/icons/icon-label.svg);
@@ -5321,6 +5305,16 @@ h1 {
   .close__outside::before {
     display: none;
   }
+  .auto__yellow,
+  .auto__green {
+    width: 2000px;
+    height: auto;
+    left: calc(50% - 1000px);
+    bottom: 250px;
+  }
+  .auto {
+    background-image: linear-gradient(to top, #007550 0%, #007550 250px, rgba(255, 255, 255, 0) 250px, rgba(255, 255, 255, 0) 100%);
+  }
 }
 @media (max-width: 480px) {
   .ksf__img {
@@ -5783,6 +5777,12 @@ h1 {
     font-size: 24px;
     line-height: 28px;
   }
+  .blacklist__list,
+  .portfolio__list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
   .portfolio__list li {
     width: 320px;
     height: auto;
@@ -6048,7 +6048,7 @@ h1 {
     line-height: 28px;
   }
   .auto__text {
-    padding-top: 150px;
+    padding-top: 320px;
     font-size: 14px;
     line-height: 18px;
   }
@@ -6063,13 +6063,14 @@ h1 {
     display: block;
     width: 96px;
     height: 93px;
-    left: 200px;
+    left: 70px;
     top: 120px;
   }
-  .auto__car {
-    display: block;
-    right: 200px;
-    top: 120px;
+  .auto__birds {
+    left: 80px;
+    top: 150px;
+    width: 33px;
+    height: auto;
   }
   .recommend__deco {
     padding-bottom: 70px;
@@ -6563,6 +6564,15 @@ h1 {
   }
   .modal__text {
     margin-left: 0;
+  }
+  .pill__tablet {
+    top: -20px;
+  }
+  .profile__img {
+    margin-bottom: 3px;
+  }
+  .project__presentation .swiper-container {
+    margin-left: -5px !important;
   }
 }
 @media (max-width: 360px) {
