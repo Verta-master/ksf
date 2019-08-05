@@ -53,7 +53,10 @@ $('.recommend__link').click(function() {
   var addHeight = (itemNumber - 3) * 44 - 24;
   var realHeight = initHeight + addHeight;
   var newHeight = Math.ceil(realHeight / 138) * 138;
-  $('.recommend__deco').css('height', newHeight);
+  $('.recommend__deco').animate({
+    height: newHeight
+  }, 10);
+//  $('.recommend__deco').css('height', newHeight);
 });
 
 //scroll to anchor

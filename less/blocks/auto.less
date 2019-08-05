@@ -1,6 +1,7 @@
 .auto {
   position: relative;
   z-index: 1;
+  width: 100%;
   height: 892px;
   overflow: hidden;
 }
@@ -10,39 +11,57 @@
   z-index: -1;
   left: ~"calc(50% - 310px)";
   top: 0;
+  display: block;
 }
 
 .auto__birds {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   left: ~"calc(50% - 287px)";
   top: 115px;
+  display: block;
+}
+
+.auto__crab {
+  position: absolute;
+  z-index: 2;
+  left: ~"calc(50% + 270px)";
+  top: 165px;
+  width: 65px;
+  height: 62px;
+  display: block;
+}
+
+.auto__car {
+  position: absolute;
+  z-index: 4;
+  width: 1256px;
+  height: 281px;
+  display: block;
+  top: 150px;
+  left: ~"calc(50% - 1000px)";
+}
+
+.auto__flag {
+  position: absolute;
+  z-index: 5;
+  bottom: 50px;
+  left: 70%;
+  width: 354px;
+  height: 419px;
+  display: block;
 }
 
 .auto__yellow {
   position: absolute;
   z-index: 2;
-  top: 0;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 1913px;
-  height: 379px;
-  
-  img {
-    display: block;
-    width: 1913px;
-    height: 379px;
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    bottom: 0;
-    left: 99%;
-    width: 50vw;
-    height: 194px;
-    background-color: @yellow;
-  }
+  width: 5000px;
+  height: 887px;
+  display: block;
+  max-width: none;
 }
 
 .auto__green {
@@ -51,35 +70,10 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 1920px;
+  width: 5000px;
   height: 773px;
-  
-  img {
-    display: block;
-    width: 1920px;
-    height: 773px;
-  }
-  
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    height: 522px;
-    background-color: @green;
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    bottom: 0;
-    right: 99%;
-    width: 50vw;
-    height: 707px;
-    background-color: @green;
-  }
+  display: block;
+  max-width: none;
 }
 
 .auto__text {

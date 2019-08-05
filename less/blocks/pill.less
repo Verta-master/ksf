@@ -79,6 +79,7 @@
 
 .pill__circle--top {
 //  z-index: 7;
+  animation: pill-circle-bottom 8s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite both;
   
   .pill__tube-white {
     width: 220px;
@@ -95,6 +96,7 @@
 
 .pill__circle--middle {
   margin-top: -40px;
+  animation: pill-circle-bottom 12s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite both;
 //  z-index: 5;
   
   .pill__tube-white {
@@ -113,6 +115,7 @@
 
 .pill__circle--bottom {
   margin-top: -90px;
+  animation: pill-circle-bottom 16s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite both;
 //  z-index: 3;
   
   .pill__tube-white {
@@ -158,39 +161,52 @@
 //
 //@keyframes pill-circle-bottom {
 //  0%, 100% {
-//    transform: scale(1.2) translateZ(27px) translateY(0); }
+//    transform: translateY(0); }
 //  10%, 30%, 50%, 70% {
-//    transform: scale(1.2) translateZ(27px) translateY(-8px); }
+//    transform: translateY(-8px); }
 //  20%, 40%, 60% {
-//    transform: scale(1.2) translateZ(27px) translateY(8px); }
+//    transform: translateY(8px); }
 //  80% {
-//    transform: scale(1.2) translateZ(27px) translateY(8px); }
+//    transform: translateY(8px); }
 //  90% {
-//    transform: scale(1.2) translateZ(27px) translateY(-8px); } 
+//    transform: translateY(-8px); } 
 //}
-//
+
+@keyframes pill-circle-bottom {
+  0%, 100% {
+    top: 0; }
+  10%, 30%, 50%, 70% {
+    top: -8px; }
+  20%, 40%, 60% {
+    top: 8px; }
+  80% {
+    top: 8px; }
+  90% {
+    top: -8px; } 
+}
+
 //@keyframes pill-circle-mid {
 //  0%, 100% {
-//    transform: scale(1.2) translateZ(61px) translateY(0); }
+//    transform: translateY(0); }
 //  10%, 30%, 50%, 70% {
-//    transform: scale(1.2) translateZ(61px) translateY(-8px); }
+//    transform: translateY(-8px); }
 //  20%, 40%, 60% {
-//    transform: scale(1.2) translateZ(61px) translateY(8px); }
+//    transform: translateY(8px); }
 //  80% {
-//    transform: scale(1.2) translateZ(61px) translateY(8px); }
+//    transform: translateY(8px); }
 //  90% {
-//    transform: scale(1.2) translateZ(61px) translateY(-8px); } 
+//    transform: translateY(-8px); } 
 //}
 //
 //@keyframes pill-circle-top {
 //  0%, 100% {
-//    transform: scale(1.2) translateZ(68.5px) translateY(0); }
+//    transform: translateY(0); }
 //  10%, 30%, 50%, 70% {
-//    transform: scale(1.2) translateZ(68.5px) translateY(-8px); }
+//    transform: translateY(-8px); }
 //  20%, 40%, 60% {
-//    transform: scale(1.2) translateZ(68.5px) translateY(8px); }
+//    transform: translateY(8px); }
 //  80% {
-//    transform: scale(1.2) translateZ(68.5px) translateY(8px); }
+//    transform: translateY(8px); }
 //  90% {
-//    transform: scale(1.2) translateZ(68.5px) translateY(-8px); } 
+//    transform: translateY(-8px); } 
 //}
