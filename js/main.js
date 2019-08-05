@@ -198,8 +198,9 @@ $(window).scroll(movePill);
 
 function movePill() {
   try {
-    var pillOffset = $('.pill__img').offset().top - 600;
-    var pillOffsetStop = pillOffset + $('.pill__img').height() + 144;
+    var screenHeight = $(window).height();
+    var pillOffset = $('.pill__img').offset().top - screenHeight;
+    var pillOffsetStop = pillOffset + $('.pill__img').height() + 800;
 
     if ($(this).scrollTop() >= pillOffset && $(this).scrollTop() <= pillOffsetStop) {
       var transZ = 100 - ($(this).scrollTop() - pillOffset) * 0.09;

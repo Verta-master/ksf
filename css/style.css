@@ -3261,6 +3261,11 @@ h1 {
 .timer-block .next {
   bottom: -5px;
 }
+.timer-block.seconds .current {
+  width: 27px;
+  text-align: right;
+  margin: -4px auto 0;
+}
 .auto {
   position: relative;
   z-index: 1;
@@ -3432,9 +3437,11 @@ h1 {
 }
 .pill__tablet {
   position: absolute;
-  top: -120px;
+  top: -320px;
   left: 47.5%;
   z-index: 4;
+  width: 25px;
+  height: 81px;
 }
 .pill__circle {
   display: -webkit-box;
@@ -3460,7 +3467,7 @@ h1 {
 .pill__circle--top .pill__tube-red {
   width: 220px;
   height: 118px;
-  margin-top: -58px;
+  margin-top: -63px;
   z-index: 10;
 }
 .pill__circle--middle {
@@ -3474,7 +3481,8 @@ h1 {
 .pill__circle--middle .pill__tube-red {
   width: 346px;
   height: 188px;
-  margin-top: -92px;
+  margin-top: -102px;
+  margin-left: 1px;
   z-index: 10;
 }
 .pill__circle--bottom {
@@ -3486,9 +3494,10 @@ h1 {
   z-index: 2;
 }
 .pill__circle--bottom .pill__tube-red {
-  width: 448px;
-  height: 239px;
-  margin-top: -120px;
+  width: 446px;
+  height: 237px;
+  margin-top: -127px;
+  margin-left: 1px;
   z-index: 10;
 }
 .closed {
@@ -5960,6 +5969,7 @@ h1 {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+    z-index: 20;
   }
   .pill__img {
     width: 100%;
@@ -5974,13 +5984,19 @@ h1 {
     width: 180px;
     height: auto;
   }
+  .pill__circle--top .pill__tube-red {
+    margin-top: -45px;
+  }
   .pill__circle--middle .pill__tube-red,
   .pill__circle--middle .pill__tube-white {
     width: 250px;
     height: auto;
   }
   .pill__circle--middle .pill__tube-red {
-    margin-top: -80px;
+    margin-top: -64px;
+  }
+  .pill__circle--bottom .pill__tube-red {
+    margin-top: -156px;
   }
   .closed {
     padding-top: 65px;
