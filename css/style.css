@@ -951,7 +951,7 @@ h1 {
 }
 .promo--member .promo__wrap {
   position: relative;
-  padding-bottom: 140px;
+  padding-bottom: 90px;
 }
 .promo--member .promo__info {
   padding-top: 360px;
@@ -1472,6 +1472,8 @@ h1 {
   background-repeat: no-repeat;
   background-size: 144px 41px;
   background-position: top 115px left 13px;
+  -webkit-transition: height ease-out 0.3s;
+  transition: height ease-out 0.3s;
 }
 .recommend__deco::before {
   content: "";
@@ -3269,6 +3271,7 @@ h1 {
 .auto {
   position: relative;
   z-index: 1;
+  width: 100%;
   height: 892px;
   overflow: hidden;
 }
@@ -3277,37 +3280,53 @@ h1 {
   z-index: -1;
   left: calc(50% - 310px);
   top: 0;
+  display: block;
 }
 .auto__birds {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   left: calc(50% - 287px);
   top: 115px;
+  display: block;
+}
+.auto__crab {
+  position: absolute;
+  z-index: 2;
+  left: calc(50% + 270px);
+  top: 165px;
+  width: 65px;
+  height: 62px;
+  display: block;
+}
+.auto__car {
+  position: absolute;
+  z-index: 4;
+  width: 1256px;
+  height: 281px;
+  display: block;
+  top: 150px;
+  left: calc(50% - 1000px);
+}
+.auto__flag {
+  position: absolute;
+  z-index: 5;
+  bottom: 50px;
+  left: 70%;
+  width: 354px;
+  height: 419px;
+  display: block;
 }
 .auto__yellow {
   position: absolute;
   z-index: 2;
-  top: 0;
+  bottom: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 1913px;
-  height: 379px;
-}
-.auto__yellow img {
+  width: 5000px;
+  height: 887px;
   display: block;
-  width: 1913px;
-  height: 379px;
-}
-.auto__yellow::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  bottom: 0;
-  left: 99%;
-  width: 50vw;
-  height: 194px;
-  background-color: #FFC856;
+  max-width: none;
 }
 .auto__green {
   position: absolute;
@@ -3316,33 +3335,10 @@ h1 {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 1920px;
+  width: 5000px;
   height: 773px;
-}
-.auto__green img {
   display: block;
-  width: 1920px;
-  height: 773px;
-}
-.auto__green::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  bottom: 0;
-  left: 0;
-  width: 100vw;
-  height: 522px;
-  background-color: #007550;
-}
-.auto__green::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  bottom: 0;
-  right: 99%;
-  width: 50vw;
-  height: 707px;
-  background-color: #007550;
+  max-width: none;
 }
 .auto__text {
   position: relative;
@@ -3459,6 +3455,10 @@ h1 {
           align-items: center;
   position: relative;
 }
+.pill__circle--top {
+  -webkit-animation: pill-circle-bottom 8s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite both;
+          animation: pill-circle-bottom 8s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite both;
+}
 .pill__circle--top .pill__tube-white {
   width: 220px;
   height: 118px;
@@ -3472,6 +3472,8 @@ h1 {
 }
 .pill__circle--middle {
   margin-top: -40px;
+  -webkit-animation: pill-circle-bottom 12s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite both;
+          animation: pill-circle-bottom 12s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite both;
 }
 .pill__circle--middle .pill__tube-white {
   width: 346px;
@@ -3487,6 +3489,8 @@ h1 {
 }
 .pill__circle--bottom {
   margin-top: -90px;
+  -webkit-animation: pill-circle-bottom 16s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite both;
+          animation: pill-circle-bottom 16s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite both;
 }
 .pill__circle--bottom .pill__tube-white {
   width: 448px;
@@ -3499,6 +3503,52 @@ h1 {
   margin-top: -127px;
   margin-left: 1px;
   z-index: 10;
+}
+@-webkit-keyframes pill-circle-bottom {
+  0%,
+  100% {
+    top: 0;
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    top: -8px;
+  }
+  20%,
+  40%,
+  60% {
+    top: 8px;
+  }
+  80% {
+    top: 8px;
+  }
+  90% {
+    top: -8px;
+  }
+}
+@keyframes pill-circle-bottom {
+  0%,
+  100% {
+    top: 0;
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    top: -8px;
+  }
+  20%,
+  40%,
+  60% {
+    top: 8px;
+  }
+  80% {
+    top: 8px;
+  }
+  90% {
+    top: -8px;
+  }
 }
 .closed {
   position: relative;
