@@ -41,33 +41,22 @@ var mySwiper = new Swiper ('.project__slider', {
   preventClicksPropagation: false,
 });
 
-//var reviewsSlider = new Swiper('.review__slider', {
-//  effect: 'coverflow',
-//  grabCursor: true,
-//  loop: true,
-//  slidesPerView: 'auto',
-//  loopedSlides: 4,
-//  centeredSlides: true,
-//  autoHeight: true,
-//  coverflowEffect: {
-//    rotate: 0,
-//    slideShadows: false,
-//    stretch: 505,
-//    depth: 100
-//  },
-//
-//  navigation: {
-//    nextEl: '.review__next',
-//    prevEl: '.review__prev',
-//  }
-//});
-
 //Show more button
 $('.project__show').click(function() {
   $('.project__list').slideDown();
   $('.project__btns').hide();
 });
 
+//Connect button
+$('.connect').click(function() {
+  $('#call').show();
+});
+
+$('.modal__btn').click(function() {
+  $('#call').hide();
+});
+
+//Review slider
 function detect_active() {
   // get active
   var get_active = $("#dp-slider .dp_item:first-child").data("class");
@@ -115,7 +104,6 @@ $("body").on("click", "#dp-slider .dp_item:not(:first-child)", function(){
   $.each($('.dp_item'), function (index, dp_item) {
     $(dp_item).attr('data-position', index + 1);
   });
-//  $("#dp-slider .dp_item:nth-child(n + 2)").css('height', slideHeight);
 
   detect_active();
 });
