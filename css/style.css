@@ -4427,10 +4427,31 @@ h1 {
   transition: transform 1.2s, -webkit-transform 1.2s;
   overflow: hidden;
 }
+.dp_item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  background-image: url(../img/images/paper-angle.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
 #dp-slider .dp_item:first-child {
   z-index: 10 !important;
   -webkit-transform: rotateY(0deg) translateX(0px) translateY(30px) !important;
           transform: rotateY(0deg) translateX(0px) translateY(30px) !important;
+}
+#dp-slider .dp_item:first-child::after {
+  opacity: 1;
+  width: 62px;
+  height: 62px;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
 .dp_item[data-position="2"] {
   z-index: 9;
