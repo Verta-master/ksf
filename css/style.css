@@ -805,7 +805,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 15px;
+  padding-right: 20px;
 }
 .menu__item {
   padding-left: 22px;
@@ -1584,7 +1584,6 @@ h1 {
   border-bottom: 1px solid #000;
 }
 .recommend__item {
-  height: 44px;
   overflow: hidden;
   border-top: 1px solid #000;
 }
@@ -1600,6 +1599,7 @@ h1 {
           justify-content: flex-start;
 }
 .recommend__line span {
+  display: block;
   width: 112px;
   padding: 10px;
   padding-left: 0;
@@ -1625,6 +1625,7 @@ h1 {
   bottom: 1px;
   right: 1px;
   left: 50%;
+  display: block;
   background-image: -webkit-gradient(linear, right top, left top, from(#fff), to(rgba(255, 255, 255, 0)));
   background-image: linear-gradient(to left, #fff 0%, rgba(255, 255, 255, 0));
 }
@@ -4781,9 +4782,6 @@ h1 {
   html {
     zoom: 0.8;
   }
-  body {
-    padding-bottom: 130px;
-  }
   .footer {
     position: absolute;
     bottom: 0;
@@ -4797,6 +4795,16 @@ h1 {
   }
   .price__column--profy .price__head {
     padding-left: 55px;
+  }
+  .reason__wrap::before {
+    left: 15px;
+    top: -2px;
+    bottom: -2px;
+  }
+  .reason .btn,
+  .reason .reason__list,
+  .reason .title {
+    margin-left: 120px;
   }
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
@@ -4819,6 +4827,16 @@ h1 {
   }
   .price__column--profy .price__head {
     padding-left: 55px;
+  }
+  .reason__wrap::before {
+    left: 15px;
+    top: -2px;
+    bottom: -2px;
+  }
+  .reason .btn,
+  .reason .reason__list,
+  .reason .title {
+    margin-left: 120px;
   }
 }
 @media (max-width: 766px) {
