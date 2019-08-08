@@ -251,7 +251,7 @@ gulp.task('dev', gulp.series('clean',
     'js',
     'fonts',
     'img-dev',
-    'svg-sprite',
+//    'svg-sprite',
     'html',
   )
 ));
