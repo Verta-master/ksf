@@ -965,6 +965,7 @@ h1 {
   color: #FF513F;
 }
 .promo--blacklist .promo__pic img {
+  display: block;
   width: 144px;
   height: 134px;
 }
@@ -1514,7 +1515,9 @@ h1 {
   overflow: hidden;
 }
 .recommend--member {
-  margin-top: 0;
+  position: relative;
+  z-index: 5;
+  margin-top: -2px;
   padding-bottom: 0;
 }
 .recommend--member .title {
@@ -1618,9 +1621,9 @@ h1 {
   content: "";
   position: absolute;
   z-index: 2;
-  top: 0;
-  bottom: 0;
-  right: 0;
+  top: 1px;
+  bottom: 1px;
+  right: 1px;
   left: 50%;
   background-image: -webkit-gradient(linear, right top, left top, from(#fff), to(rgba(255, 255, 255, 0)));
   background-image: linear-gradient(to left, #fff 0%, rgba(255, 255, 255, 0));
@@ -2786,6 +2789,7 @@ h1 {
   font-weight: 500;
 }
 .blacklist {
+  margin-top: -2px;
   padding-top: 65px;
   padding-bottom: 105px;
   color: #fff;
@@ -3422,6 +3426,7 @@ h1 {
   font-weight: 500;
 }
 .pill {
+  margin-top: -2px;
   padding-top: 80px;
   padding-bottom: 130px;
   color: #fff;
@@ -4790,6 +4795,9 @@ h1 {
   main {
     min-height: calc(100vh / 0.8 - 130px);
   }
+  .price__column--profy .price__head {
+    padding-left: 55px;
+  }
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
   html {
@@ -4808,6 +4816,9 @@ h1 {
   }
   main {
     min-height: calc(100vh / 0.6 - 130px);
+  }
+  .price__column--profy .price__head {
+    padding-left: 55px;
   }
 }
 @media (max-width: 766px) {
@@ -6132,6 +6143,7 @@ h1 {
   }
   .promo--whitelist .promo__pic {
     margin-top: 100px;
+    margin-left: 0;
   }
   .promo--blacklist .promo__wrap::after {
     bottom: 10px;
@@ -6207,9 +6219,12 @@ h1 {
   }
   .blacklist__nav {
     margin-bottom: 80px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .blacklist__nav li {
-    margin-right: 50px;
+    margin-right: 0;
   }
   .blacklist__nav li:last-child {
     margin-right: 0;
@@ -6232,6 +6247,8 @@ h1 {
     max-width: 100%;
     padding-top: 30px;
     margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .blacklist__name {
     position: absolute;
@@ -6505,7 +6522,7 @@ h1 {
     width: 95%;
     margin-top: 0;
     position: absolute;
-    bottom: 80px;
+    bottom: 82px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -6573,9 +6590,13 @@ h1 {
   .rule {
     padding-top: 80px;
     padding-bottom: 50px;
+    background-image: none;
   }
   .rule .title {
     margin-bottom: 50px;
+  }
+  .rule__img img {
+    margin-left: 0;
   }
   .rule__subtitle {
     font-size: 24px;
