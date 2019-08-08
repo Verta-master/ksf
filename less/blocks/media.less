@@ -1,10 +1,37 @@
+//@media only screen and (width:768px) and (device-width:768px) and (device-height:1024px) and (orientation: landscape) {
+//  body {
+//		transform: scale(0.75);
+////		transform-origin: top right;
+////		position: absolute;
+////		right: 0;
+////		top: 0;
+////		width: 1024px;
+//	}
+//}
+//
+//@media only screen and (width:768px) and (device-width:768px) and (device-height:1024px) {
+//  body {
+//		transform: scale(0.5);
+//		transform-origin: top right;
+//		position: absolute;
+//		right: 0;
+//		top: 0;
+//		width: 768px;
+//	}
+//}
+
 @media screen and (max-width: 1170px) and (min-width: 1024px) {
   html {
     zoom: 0.8;
   }
-  body {
-    padding-bottom: 130px;
-  }
+//  body {
+//    transform: scale(0.85);
+//    transform-origin: top left;
+////    padding-bottom: 130px;
+//  }
+//  #container {
+//    width: 100%;
+//  }
   .footer {
     position: absolute;
     bottom: 0;
@@ -18,6 +45,18 @@
   }
   .price__column--profy .price__head {
     padding-left: 55px;
+  }
+  .reason__wrap::before {
+    left: 15px;
+    top: -2px;
+    bottom: -2px;
+  }
+  .reason {
+    .btn,
+    .reason__list,
+    .title {
+      margin-left: 120px;
+    }
   }
 }
 
@@ -41,6 +80,18 @@
   }
   .price__column--profy .price__head {
     padding-left: 55px;
+  }
+  .reason__wrap::before {
+    left: 15px;
+    top: -2px;
+    bottom: -2px;
+  }
+  .reason {
+    .btn,
+    .reason__list,
+    .title {
+      margin-left: 120px;
+    }
   }
 }
 
