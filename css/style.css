@@ -5656,7 +5656,10 @@ h1 {
     margin-top: 50px;
   }
   .closed {
-    background-image: linear-gradient(-45deg, #FF513F 0%, #FF513F 50px, #fff 50px, #fff 51px, #FF513F 51px, #FF513F 100px, #fff 100px, #fff 101px, #FF513F 101px, #FF513F 150px, #fff 150px, #fff 151px, #FF513F 151px, #FF513F 200px, #fff 200px, #fff 201px, #FF513F 201px, #FF513F 250px, #fff 250px, #fff 251px, #FF513F 251px, #FF513F 100%);
+    background-image: url(../img/images/lines.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom -150px center;
   }
   .close__outside::before {
     display: none;
@@ -5710,6 +5713,27 @@ h1 {
   .modal-table__item p:nth-child(n+2),
   .modal-table__line p:nth-child(n+2) {
     display: none;
+  }
+  .recommend__img {
+    top: 340px;
+    padding-right: 100px;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .recommend__fish-1 {
+    top: 30px;
+  }
+  .recommend__fish-4 {
+    bottom: 40px;
+    right: 50px;
+  }
+  .recommend__fish-5 {
+    bottom: 60px;
+    right: 100px;
+  }
+  .recommend__fish-6 {
+    bottom: 20px;
+    right: 120px;
   }
 }
 @media (max-width: 480px) {
@@ -5885,27 +5909,6 @@ h1 {
     margin-bottom: 15px;
     font-size: 18px;
     font-weight: 400;
-  }
-  .recommend__img {
-    top: 340px;
-    padding-right: 100px;
-    max-width: 100%;
-    overflow: hidden;
-  }
-  .recommend__fish-1 {
-    top: 30px;
-  }
-  .recommend__fish-4 {
-    bottom: 40px;
-    right: 50px;
-  }
-  .recommend__fish-5 {
-    bottom: 60px;
-    right: 100px;
-  }
-  .recommend__fish-6 {
-    bottom: 20px;
-    right: 120px;
   }
   .recommend__line p:first-of-type {
     padding: 12px 15px;
@@ -6558,7 +6561,7 @@ h1 {
   .closed {
     padding-top: 65px;
     padding-bottom: 70px;
-    background-image: linear-gradient(-30deg, #FF513F 0%, #FF513F 50px, #fff 50px, #fff 51px, #FF513F 51px, #FF513F 100px, #fff 100px, #fff 101px, #FF513F 101px, #FF513F 150px, #fff 150px, #fff 151px, #FF513F 151px, #FF513F 200px, #fff 200px, #fff 201px, #FF513F 201px, #FF513F 250px, #fff 250px, #fff 251px, #FF513F 251px, #FF513F 100%);
+    background-position: bottom -100px center;
   }
   .closed .title {
     margin-bottom: 60px;
