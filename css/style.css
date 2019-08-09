@@ -3699,6 +3699,9 @@ h1 {
 .closed__list li:last-child {
   margin-bottom: 0;
 }
+.closed__btn::after {
+  background-color: #fff;
+}
 .service {
   padding-top: 55px;
   padding-bottom: 80px;
@@ -5272,7 +5275,9 @@ h1 {
   .life__img {
     margin-top: 0;
     position: absolute;
-    left: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     bottom: 200px;
   }
   .life__slogan {
@@ -5532,7 +5537,7 @@ h1 {
     height: 257px;
   }
   .recommend__info {
-    margin-bottom: 300px;
+    margin-bottom: 400px;
   }
   .recommend__img {
     left: 15px;
@@ -5596,6 +5601,9 @@ h1 {
   .faq__columns,
   .ksf__btns {
     display: block;
+  }
+  .ksf__btns {
+    text-align: center;
   }
   .ksf__btn {
     width: 100%;
@@ -5759,7 +5767,7 @@ h1 {
     right: 120px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 766px) {
   .ksf__img {
     width: 319px;
     height: 319px;
@@ -5772,18 +5780,30 @@ h1 {
   }
   .btn {
     width: 100%;
+    max-width: 360px;
+  }
+  .reason .btn {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
   .life__slogan {
-    left: 0;
+    width: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     padding-left: 20px;
     padding-right: 20px;
     font-size: 18px;
     line-height: 24px;
+    text-align: center;
   }
   .life__slogan::before {
-    width: 100%;
-    left: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     height: 100px;
+    background-position: center;
   }
   .life__number {
     margin-bottom: 300px;
@@ -5901,10 +5921,11 @@ h1 {
   }
   .fact {
     padding-top: 60px;
+    padding-bottom: 500px;
     background-image: url(../img/images/bg-mobile.svg);
     background-repeat: no-repeat;
     background-position: bottom center;
-    background-size: cover;
+    background-size: 100% auto;
   }
   .fact::after,
   .fact::before {
@@ -5914,8 +5935,8 @@ h1 {
     margin-bottom: 55px;
   }
   .fact__btn {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    display: block;
+    margin: 40px auto;
   }
   .recommend {
     margin-top: -80px;
@@ -5946,6 +5967,9 @@ h1 {
   }
   .recommend__btn {
     margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
   .person__title {
     margin-bottom: 20px;
@@ -6462,7 +6486,10 @@ h1 {
   .timer {
     margin: 0;
     margin-bottom: 10px;
-    width: 100%;
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
   }
   .payment__block {
     width: 100%;
@@ -6476,7 +6503,7 @@ h1 {
     line-height: 28px;
   }
   .auto__text {
-    padding-top: 320px;
+    padding-top: 360px;
     font-size: 14px;
     line-height: 18px;
   }
@@ -6516,7 +6543,7 @@ h1 {
     margin-bottom: 20px;
   }
   .recommend__text p span {
-    color: #007550;
+    color: #007550 !important;
   }
   .recommend--member .recommend__btn {
     margin-top: 45px;
@@ -6527,6 +6554,16 @@ h1 {
   }
   .pill .title {
     margin-bottom: 35px;
+  }
+  .life__info {
+    width: 100%;
+  }
+  .life__btn,
+  .quality__btn,
+  .person__btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .pill__text {
     margin-bottom: 110px;
@@ -6579,7 +6616,7 @@ h1 {
     margin-top: -64px;
   }
   .pill__circle--bottom .pill__tube-red {
-    margin-top: -156px;
+    margin-top: -129px;
   }
   .closed {
     padding-top: 65px;
@@ -6623,6 +6660,13 @@ h1 {
   }
   .rule__img img {
     margin-left: 0;
+    width: 320px;
+    height: auto;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 30px;
   }
   .rule__subtitle {
     font-size: 24px;
@@ -6652,7 +6696,8 @@ h1 {
   }
   .rule__btn {
     height: 60px;
-    margin-top: 125px;
+    margin-top: 215px;
+    margin-left: 0;
     font-size: 24px;
     line-height: 28px;
     font-weight: 500;
@@ -6669,7 +6714,9 @@ h1 {
     width: 287px;
     height: 153px;
     bottom: -30px;
-    left: 20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .promo--main .promo__wrap {
     padding-bottom: 103px;
@@ -6681,6 +6728,10 @@ h1 {
     margin-top: 40px;
     max-width: 300px;
   }
+  .promo--main .promo__preview {
+    margin-top: 0;
+    margin-bottom: 380px;
+  }
   .promo--client .promo__preview {
     margin-top: 405px;
     margin-bottom: 0;
@@ -6690,6 +6741,9 @@ h1 {
   }
   .promo--client .promo__wrap {
     padding-bottom: 25px;
+  }
+  .service__btns {
+    text-align: center;
   }
   .service {
     padding-top: 35px;
@@ -6766,6 +6820,7 @@ h1 {
   .order .title-2 {
     margin-top: 0;
     margin-bottom: 15px;
+    text-align: center;
   }
   .order__info {
     font-size: 14px;
@@ -6897,6 +6952,8 @@ h1 {
     height: 320px;
     max-width: 100%;
     margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .review__info,
   .project__list,
@@ -6986,6 +7043,9 @@ h1 {
   }
   .project__star {
     top: -35px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .modal__logo {
     display: none;
@@ -7015,6 +7075,10 @@ h1 {
   .thanks {
     font-size: 18px;
     line-height: 24px;
+  }
+  .order__btn {
+    width: 100%;
+    max-width: 100%;
   }
 }
 @media (max-width: 360px) {
