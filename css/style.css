@@ -1247,6 +1247,7 @@ h1 {
   padding-top: 75px;
   padding-bottom: 82px;
   background-color: #FFC856;
+  overflow: hidden;
 }
 .show__list {
   margin: 0;
@@ -1452,6 +1453,7 @@ h1 {
   z-index: 0;
   padding-top: 117px;
   padding-bottom: 240px;
+  overflow: hidden;
 }
 .fact::after {
   content: "";
@@ -1883,6 +1885,7 @@ h1 {
 }
 .car {
   background-color: #FFC856;
+  overflow: hidden;
 }
 .car .title span {
   display: block;
@@ -2014,6 +2017,7 @@ h1 {
   padding-bottom: 118px;
   color: #fff;
   background-color: #007550;
+  overflow: hidden;
 }
 .life .title {
   color: #fff;
@@ -2083,6 +2087,9 @@ h1 {
   margin-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
+}
+.reason {
+  overflow: hidden;
 }
 .reason__wrap {
   position: relative;
@@ -5859,8 +5866,10 @@ h1 {
   }
   .promo--member .promo__links,
   .promo__links {
-    left: 30px;
+    left: 40%;
     top: 230px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .promo__link {
     width: 140px;
@@ -6200,6 +6209,10 @@ h1 {
   }
   .promo--blacklist .promo__pic {
     margin-top: 70px;
+  }
+  .promo--blacklist .promo__pic img {
+    margin-left: auto;
+    margin-right: auto;
   }
   .portfolio {
     padding-top: 55px;
@@ -7076,6 +7089,8 @@ h1 {
     font-size: 18px;
     line-height: 24px;
   }
+  .rule__btn,
+  .payment__btn,
   .order__btn {
     width: 100%;
     max-width: 100%;
