@@ -4839,6 +4839,46 @@ h1 {
     margin-left: 120px;
   }
 }
+@media screen and (max-width: 1170px) and (min-width: 768px) {
+  .title,
+  h1 {
+    font-size: 7vw;
+  }
+  .faq__title,
+  .person__title,
+  .recommend__title .fact__title,
+  .promo__preview {
+    font-size: 3.51vw;
+  }
+  .reason__item b,
+  .reason__item span,
+  .life__slogan,
+  .recommend__subtitle,
+  .promo__slogan {
+    font-size: 2.34vw;
+  }
+  section,
+  div,
+  p,
+  .life__wrap,
+  .benefits__list,
+  .car__info,
+  .quality__info,
+  .person__wrap,
+  .more-link,
+  .recommend__list,
+  .recommend__info,
+  .btn,
+  .fact__info,
+  .how__info,
+  .more,
+  .promo__info {
+    font-size: 1.76vw;
+  }
+  .menu__link {
+    font-size: 1.37vw;
+  }
+}
 @media (max-width: 766px) {
   .modal__block {
     padding-bottom: 20px;
