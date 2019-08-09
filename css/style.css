@@ -3188,6 +3188,7 @@ h1 {
 .price__old span {
   color: #001E20;
   text-decoration: line-through;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 .price__know {
   position: relative;
@@ -3278,6 +3279,10 @@ h1 {
   right: 0;
   height: 2px;
   background-color: #001E20;
+}
+.payment__price i {
+  font-style: normal;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 .payment__comment {
   margin-top: 0;
