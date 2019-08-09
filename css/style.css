@@ -6996,10 +6996,10 @@ h1 {
     background-size: 15px 20px;
   }
   #dp-next {
-    right: 30px;
+    right: 25px;
   }
   #dp-prev {
-    right: 20px;
+    right: 10px;
   }
   .profile {
     padding-top: 10px;
@@ -7056,6 +7056,7 @@ h1 {
     top: 330px;
   }
   .project__star {
+    width: 100%;
     top: -35px;
     left: 50%;
     -webkit-transform: translateX(-50%);
