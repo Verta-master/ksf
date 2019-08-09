@@ -4842,20 +4842,20 @@ h1 {
 @media screen and (max-width: 1170px) and (min-width: 768px) {
   .title,
   h1 {
-    font-size: 7vw;
+    font-size: 6vw;
   }
   .faq__title,
   .person__title,
   .recommend__title .fact__title,
   .promo__preview {
-    font-size: 3.51vw;
+    font-size: 3vw;
   }
   .reason__item b,
   .reason__item span,
   .life__slogan,
   .recommend__subtitle,
   .promo__slogan {
-    font-size: 2.34vw;
+    font-size: 2vw;
   }
   section,
   div,
@@ -4873,10 +4873,10 @@ h1 {
   .how__info,
   .more,
   .promo__info {
-    font-size: 1.76vw;
+    font-size: 1.5vw;
   }
   .menu__link {
-    font-size: 1.37vw;
+    font-size: 1.1vw;
   }
 }
 @media (max-width: 766px) {
