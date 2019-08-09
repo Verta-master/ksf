@@ -5865,7 +5865,7 @@ h1 {
   }
   .promo--member .promo__links,
   .promo__links {
-    left: 40%;
+    left: 38%;
     top: 230px;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -6996,10 +6996,10 @@ h1 {
     background-size: 15px 20px;
   }
   #dp-next {
-    right: 50px;
+    right: 30px;
   }
   #dp-prev {
-    right: 40px;
+    right: 20px;
   }
   .profile {
     padding-top: 10px;
@@ -7095,6 +7095,15 @@ h1 {
   .order__btn {
     width: 100%;
     max-width: 100%;
+  }
+}
+@media (max-width: 410px) {
+  .fact {
+    padding-bottom: 350px;
+    background-size: cover;
+  }
+  .pill__circle--bottom .pill__tube-red {
+    margin-top: -155px;
   }
 }
 @media (max-width: 360px) {
