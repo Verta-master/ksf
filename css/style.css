@@ -4450,8 +4450,8 @@ h1 {
 .dp_item::after {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -1px;
+  right: -1px;
   width: 0;
   height: 0;
   background-image: url(../img/images/paper-angle.svg);
@@ -6996,10 +6996,10 @@ h1 {
     background-size: 15px 20px;
   }
   #dp-next {
-    right: 10px;
+    right: 50px;
   }
   #dp-prev {
-    right: 0;
+    right: 40px;
   }
   .profile {
     padding-top: 10px;
@@ -7049,6 +7049,8 @@ h1 {
   .project__list .portfolio__item {
     padding-top: 0;
     padding-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .project__list .portfolio__info {
     top: 330px;
