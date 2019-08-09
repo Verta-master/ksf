@@ -805,7 +805,6 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 20px;
 }
 .menu__item {
   padding-left: 22px;
@@ -815,6 +814,7 @@ h1 {
 }
 .menu__item:last-child {
   padding-right: 0;
+  padding-left: 42px;
 }
 .menu__item:last-child .menu__link {
   padding: 5px 10px;
