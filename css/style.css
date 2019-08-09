@@ -5865,10 +5865,10 @@ h1 {
   }
   .promo--member .promo__links,
   .promo__links {
-    left: 38%;
+    left: 50%;
     top: 230px;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: translateX(-83%);
+            transform: translateX(-83%);
   }
   .promo__link {
     width: 140px;
